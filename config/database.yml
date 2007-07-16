@@ -31,6 +31,6 @@ test:
 production:
   adapter: mysql
   database: mydaddypuzzles_production
-  username: root
-  password: nwrecc01
+  username: puzzlemaster
+  password: a!!w0odIsGuud;=
   socket: /var/run/mysqld/mysqld.sock
