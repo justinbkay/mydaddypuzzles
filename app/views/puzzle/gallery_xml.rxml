@@ -1,0 +1,9 @@
+xml.pictures do
+  @configurations.each do |c|
+    xml.picture do
+      xml.url("/images/full_size/#{c.default_picture}")
+      xml.name("#{c.puzzle.name} - #{c.name}")
+      xml.description(c.puzzle.description)
+    end
+  end
+end

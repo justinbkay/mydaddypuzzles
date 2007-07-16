@@ -1,0 +1,9 @@
+<h2>Customer Stories</h2>
+
+<% @stories.each do |story| %>
+	<%= story.customer_name %> - <%= link_to "Edit", :action => "edit_story", :id => story %><br />
+	<%= story.story %>
+	<hr />
+<% end %>
+
+<%= link_to "Add a Story", :action => "new_story" %>

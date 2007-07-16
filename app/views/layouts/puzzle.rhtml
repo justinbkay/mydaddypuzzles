@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>MyDaddyPuzzles ;o)</title>
+		<%= stylesheet_link_tag 'standard' %>
+		<%= javascript_include_tag 'prototype', 'effects' %>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<div style="float: right;margin-bottom: 25px;">
+					<%= link_to image_tag('mydaddypuzzles.gif', :style => 'border: 0px;'), :action => "index" %><br />
+				</div>
+				
+				<p id="nav" style="clear: both;">
+				<%= link_to_unless_current "Beginning", {:action => "index"} %> ::
+				<%= link_to_unless_current "Story", :action => "story" %> ::
+				<%= link_to_unless_current "Store", :action => "store" %> ::
+				<%= link_to_unless_current "Gallery", :action => "gallery" %> ::
+				<%= link_to_unless_current "User Stories", :action => "stories" %> :: 
+				<%= link_to_unless_current "Talk to us", :action => "contact" %></p>
+			</div>
+			<div id="content">
+				<span style="color: red;"><%= flash[:notice] %></span>
+				<%= yield %>
+			</div>
+			<div id="footer">
+				<p>
+					<span style="letter-spacing: .20em;">www.mydaddypuzzles.com</span><br/>
+					Alexandria, Va<br />
+					&copy; <%= Date.today.year %>
+				</p>
+			</div>	
+		</div>
+	</body>
+</html>

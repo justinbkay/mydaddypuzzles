@@ -1,0 +1,18 @@
+<div class="center">
+	<h2><%= @puzzle.name %></h2>
+	<div id="config_name">
+		<%= @configuration.name %>
+	</div>
+	<div id="image" style="margin: 10px;">
+		<%= image_tag "/images/full_size/#{@puzzle.find_default_configuration.default_picture}" %>
+	</div>
+	<div id="link">
+		<%= images_links_builder(@puzzle) %>
+	</div>
+	<p>
+		<%= link_to "Back to Store", :action => "store" %>
+	</p>
+	<span style="margin: 0px;padding: 0px;position: relative; top: -275px; left: 0px;font-size: 4em; color: #e6d293; background-color: #628199;display: none;" id="status">
+		loading...
+	</span>
+</div>

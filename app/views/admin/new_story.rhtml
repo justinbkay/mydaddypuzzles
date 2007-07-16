@@ -1,0 +1,8 @@
+<h2>Add a Customer Story</h2>
+
+<% form_for :customer_story, @customer_story, :url => {:action => :create_story} do |story_form| %>
+	<%= render :partial => 'story_form', :object => story_form %>
+	<%= submit_tag 'Save' %>
+<% end %>
+
+<%= link_to "Cancel", :action => "list_stories" %>

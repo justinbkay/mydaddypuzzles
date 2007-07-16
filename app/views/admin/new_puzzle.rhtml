@@ -1,0 +1,8 @@
+<h2>New puzzle</h2>
+
+<% form_for :puzzle, @puzzle, :url => { :action => 'create_puzzle'} do |puzzle_form| %>
+  <%= render :partial => 'puzzle_form', :object => puzzle_form %>
+  <%= submit_tag "Create Puzzle" %>
+<% end %>
+
+<%= link_to 'Cancel', :action => 'list_puzzles' %>

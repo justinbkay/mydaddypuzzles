@@ -1,0 +1,28 @@
+<h2>Configurations for <%=h @puzzle.name %></h2>
+<table style="width: 800px; border-collapse: collapse;">
+	<tr>
+		<th>Name</th>
+		<th>Thumbnail</th>
+		<th>Picture</th>
+		<th>Price</th>
+		<th>Active</th>
+		<th>Default</th>
+	</tr>
+<% for config in @puzzle.configurations %>
+	<tr class="<%= cycle('even','odd') %>">
+		<td><%=h config.name %></td>
+		<td><%=h config.default_thumbnail %></td>  
+		<td><%=h config.default_picture %></td>
+		<td><%=h config.price %></td>
+		<td><%= config.active? %></td>
+		<td><%= is_default? config %></td>
+		<td><%= link_to "Edit", :action => "edit_configuration", :id => config %></td>
+	</tr>
+<% end %>
+</table>
+<p>
+	<%= link_to "Add Configuration", :action => "new_configuration", :id => @puzzle %>
+</p>
+<p>
+	<%= link_to "Cancel", :action => "list_puzzles" %>
+</p>

@@ -1,0 +1,35 @@
+<h2>Our Puzzles</h2>
+<div id="show_cart">
+<% unless @cart.items.empty? %>
+	
+		<%= link_to "Show Cart", :action => "show_cart" %><br />
+<% end %>
+</div>
+<div id="cart" style="width: 200px;padding: 4px;text-align: center;">
+<% unless @cart.items.empty? %>	
+	<%= "Shopping Cart total: #{number_to_currency(@cart.items.sum {|item| item.price})}" %>
+<% end %>
+</div>
+<table id="inventory" style="width: 100%; border-collapse: collapse;">
+	<tr style="background-color: #a6ccd4;">
+		<th>&nbsp;</th>
+		<th class="left">Description</th>
+		<th class="left">Size</th>
+		<th>Price</th>
+		<th>&nbsp;</th>
+	</tr>
+<% for puzzle in @products %>
+	<tr class="<%= cycle('even','odd') %>">
+		<td style="text-align: center;">
+			<%= link_to image_tag(puzzle.default_thumbnail), :action => "images", :id => puzzle %><br />
+			<%= link_to "More Images", :action => "images", :id => puzzle %>
+		</td>
+		<td><span style="font-size: 1.25em; font-weight: bold;"><%= puzzle.name %></span><br /><%= puzzle.description %></td>
+		<td><%= puzzle.size %></td>
+		<td class="center"><%= number_to_currency puzzle.price %></td>
+		<td><% form_remote_for "Add to Cart", :url => {:action => "add_to_cart", :id => puzzle} do %><%= radio_button_tag 'finish', puzzle.price, :checked => true %> Natural Stain<br /><%= radio_button_tag 'finish', puzzle.price %> Colored Stain<br /><%= radio_button_tag 'finish', puzzle.unfinished_price %> Unfinished<br /><%= submit_tag 'Add to Cart' %><% end %></td>
+	</tr>
+	  
+<% end %>
+
+</table>

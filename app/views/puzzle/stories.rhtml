@@ -1,0 +1,5 @@
+<h2>Customer Stories</h2>
+
+<% for story in @stories %>
+	<p><span style="font-weight: bold;font-size: 1.5em;"><%= story.customer_name %>:</span> <%= story.story %></p>
+<% end %>

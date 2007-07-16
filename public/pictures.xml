@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pictures>
+	<picture>
+		<url>/images/mydaddypuzzles_camel.jpg</url>
+		<name>Thirsty Camel</name>
+		<description>Some description about the camel</description>
+	</picture>
+	<picture>
+		<url>/images/mydaddypuzzles_lion.jpg</url>
+		<name>Big Lion</name>
+		<description>A nice lion pattern</description>
+	</picture>
+	<picture>
+		<url>/images/alligator_colored.jpg</url>
+		<name>Color Stained Alligator</name>
+		<description>The Alligator with nice colored stain</description>
+	</picture>
+	<picture>
+		<url>/images/alligator_normal.jpg</url>
+		<name>Natural Stained Alligator</name>
+		<description>The Alligator with natural stain</description>
+	</picture>
+	<picture>
+		<url>/images/mydaddypuzzles_fish.jpg</url>
+		<name>Natrual Fish</name>
+		<description>Fish with a natural stain</description>
+	</picture>
+	<picture>
+		<url>/images/mydaddypuzzles_frog_vdps.jpg</url>
+		<name>Color Stained Frog</name>
+		<description>The Frog with nice colored stain</description>
+	</picture>
+	<picture>
+		<url>/images/mydaddypuzzles_lamb.jpg</url>
+		<name>Natural Stained Lamb</name>
+		<description>The lamb</description>
+	</picture>
+	<picture>
+		<url>/images/mydaddypuzzles_orca.jpg</url>
+		<name>Killer Whale pattern</name>
+		<description>A natural stained Orca</description>
+	</picture>
+	<picture>
+		<url>/images/mydaddypuzzles_seahorse.jpg</url>
+		<name>Seahorse</name>
+		<description>Seahorse with a natural stain</description>
+	</picture>
+</pictures>

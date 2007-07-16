@@ -1,0 +1,8 @@
+<p><label for="customer_story_customer_name">Customer Name:</label><br />
+	<%= story_form.text_field 'customer_name' %>
+</p>
+<p><label for="customer_story_story">Story (html):</label><br />
+	<%= story_form.text_area 'story', :size => '70x10' %>
+</p>
+<p><label for="customer_story_active">Active?</label><br />
+	<%= story_form.check_box 'active' %></p>

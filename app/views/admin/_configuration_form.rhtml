@@ -1,0 +1,26 @@
+<%= error_messages_for 'configuration' %>
+
+<!--[form:config]-->
+<%= configuration_form.hidden_field 'puzzle_id', :value => @puzzle.id %>
+
+<p><label for="configuration_name">Name</label><br/>
+<%= configuration_form.text_field 'name'  %></p>
+
+<p><label for="default_thumbnail">Thumbnail Picture</label><br /> 
+	<span style="font-style: italic;"><%= @configuration.default_thumbnail %></span><br/>
+<%= file_field_tag 'default_thumbnail'  %></p>
+
+<p><label for="default_picture">Regular Picture</label><br /> 
+	<span style="font-style: italic;"><%= @configuration.default_picture %></span><br/>
+<%= file_field_tag 'default_picture'  %></p>
+
+<p><label for="configuration_price">Price</label><br/>
+<%= configuration_form.text_field 'price', :size => 7 %></p>
+
+<p><label for="configuration_active">Active?</label><br />
+<%= configuration_form.check_box 'active' %></p>
+
+<p><label for="configuration_out_of_stock">Out of Stock?</label><br />
+<%= configuration_form.check_box 'out_of_stock' %></p>
+
+<!--[eoform:config]-->

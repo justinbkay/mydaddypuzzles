@@ -1,0 +1,54 @@
+<script type="text/javascript" charset="utf-8">
+	function updateStore() {
+		
+	}
+</script>
+<h2>Our Puzzles</h2>
+
+<div id="cart" style="width: 200px;padding: 4px;text-align: center;">
+<% unless @cart.items.empty? %>	
+	<%= "Shopping Cart total: #{number_to_currency(@cart.items.sum {|item| item.price})}" %>
+	<%= link_to "Show Cart", :action => "show_cart" %>
+<% end %>
+</div>
+<table id="inventory" style="width: 100%; border-collapse: collapse;">
+	<tr style="background-color: #a6ccd4;">
+		<th>&nbsp;</th>
+		<th class="left">Description</th>
+		<th class="center">Size</th>
+		<th>Configuration</th>
+	</tr>
+<% for puzzle in @puzzles %>
+	<% next if puzzle.configurations.empty? || puzzle.find_default_configuration.nil? %>
+	
+		<% @default = puzzle.find_default_configuration %>
+	
+	<tr class="<%= cycle('even','odd') %>">
+		<td id="picture_<%= puzzle.id %>" style="text-align: center;width: 150px;">
+			<%= link_to image_tag("/images/thumbnails/#{@default.default_thumbnail}"), :action => "images", :id => @default %><br />
+			<%= link_to "More Images", :action => "images", :id => @default %>
+		</td>
+		<td style="width: 250px;"><span style="font-size: 1.25em; font-weight: bold;"><%= puzzle.name %></span><br /><%= puzzle.description %></td>
+		<td style="width: 200px;text-align: center;"><%= puzzle.size %></td>
+		<td style="width: 200px;">
+			<% form_remote_for "Add to Cart", :url => {:action => "add_to_cart", :id => puzzle} do %>
+				<% puzzle.configurations.each do |c| %>
+					<% if c.active? %>
+						<% unless c.out_of_stock? %>
+							<%= radio_button_tag 'finish', c.id, (@c = c == @default ? true : false) %> 
+							<%= c.name %> :: <%= number_to_currency(c.price, :precision => 0) %><br />
+						<% else %>
+							 <span style="color: red;"><%= c.name %> Out Of Stock</span>
+						<% end %>
+						
+					<% end %>
+				<% end %>
+					
+				<p><%= submit_tag 'Add to Cart' %></p>
+			<% end %>
+		</td>
+	</tr>
+	  
+<% end %>
+
+</table>

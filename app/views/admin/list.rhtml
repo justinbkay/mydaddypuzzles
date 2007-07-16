@@ -1,0 +1,23 @@
+<h2>Puzzles</h2>
+
+<table style="border-collapse: collapse;">
+  <tr>
+  <% for column in Product.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for product in @products %>
+  <tr class="<%= cycle('even','odd') %>">
+  <% for column in Product.content_columns %>
+    <td style="padding: 3px;"><%=h product.send(column.name) %></td>
+  <% end %>
+    <td><%= link_to 'Edit', :action => 'edit', :id => product %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<p>
+	<%= link_to 'Add a Puzzle', :action => 'new' %>
+</p>

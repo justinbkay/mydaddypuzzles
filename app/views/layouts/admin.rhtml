@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Admin: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'scaffold', 'admin' %>
+</head>
+<body style="margin: 0 auto;">
+	<div style="text-align: center; background-color: #000; color: #fff;height: 50px;padding-top: 15px;">
+		<p style="font-size: 3em;margin:5px;">
+			<%= link_to_unless session[:admin], "mydaddypuzzles.com", "http://puzzles.nwrecc.org/", :style => 'margin:5px;color: #fff;font-variant: normal;font-weight: normal;' %> admin
+		</p>
+		<% unless controller.action_name == 'login' %>
+			<p style="margin-top: 30px;">
+				<%= link_to "Puzzles", :action => "index" %> :: <%= link_to "User Stories", :action => "list_stories" %>
+			</p>
+		
+			<p style="position: absolute; top: 10px; left: 30px;">
+				<%= link_to "Logout", {:action => "logout"}, {:style => 'color: #fff;font-size: 1.2em;'} %>
+			</p>
+		<% end %>
+	</div>
+	<div style="width: 1000px; margin-left: 50px;" id="main">
+		<p style="color: green"><%= flash[:notice] %></p>
+
+		<%= yield  %>
+	</div>
+
+
+</body>
+</html>

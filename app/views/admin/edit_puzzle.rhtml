@@ -1,0 +1,11 @@
+<h2>Edit puzzle: <span style="text-decoration: underline;"><%= @puzzle.name %></span></h2>
+
+<% form_for :puzzle, @puzzle, :url => { :action => 'update_puzzle', :id => @puzzle} do |puzzle_form| %>
+  <%= render :partial => 'puzzle_form', :object => puzzle_form %>
+  <p><label for="puzzle_default_configuration">Default Configuration</label><br />
+  <%= puzzle_form.select 'default_configuration', @puzzle.configurations.map {|c| [c.name, c.id]}, {:include_blank => true} %>
+  </p>
+  <%= submit_tag "Update Puzzle" %>
+<% end %>
+
+<%= link_to 'Cancel', :action => 'list_puzzles' %>

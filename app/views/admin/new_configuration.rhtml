@@ -1,0 +1,8 @@
+<h2>New Configuration for <%=h @puzzle.name %></h2>
+
+<% form_for :configuration, @configuration, :url => { :action => 'create_configuration'}, :html => {:multipart => true} do |configuration_form| %>
+  <%= render :partial => 'configuration_form', :object => configuration_form %>
+  <%= submit_tag "Add Configuration" %>
+<% end %>
+
+<%= link_to 'Cancel', :action => 'show_configurations', :id => @puzzle %>
