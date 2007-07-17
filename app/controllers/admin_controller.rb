@@ -110,10 +110,8 @@ class AdminController < ApplicationController
       
       begin
         unless params[:default_picture].original_filename.nil?
-          unless
-            unless @configuration.default_picture == params[:default_picture].original_filename
+          unless @configuration.default_picture == params[:default_picture].original_filename
               remove_file(@configuration.default_picture)
-            end
           end
           save_file(params[:default_picture].original_filename, params[:default_picture].read)
           @configuration.update_attribute(:default_picture,params[:default_picture].original_filename)
