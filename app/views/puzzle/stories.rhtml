@@ -2,7 +2,7 @@
 
 <% for story in @stories %>
 	<p>
-		<span style="font-weight: bold;font-size: 1.5em;"><%= story.customer_name %>:</span><br /> <%= story.story %>
+		<span style="font-weight: bold;font-size: 1.5em;"><%= story.customer_name %>:</span><br /> <%= story.story %> --
 		<span style="font-size: .9em;font-weight: bold;">submitted: <%= story.created_at.strftime("%m/%d/%Y") %></span>
 	</p>
 <% end %>
