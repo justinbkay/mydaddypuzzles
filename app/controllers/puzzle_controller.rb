@@ -60,7 +60,7 @@ class PuzzleController < ApplicationController
   end
   
   def stories
-    @stories = CustomerStory.find(:all, :conditions => 'active = 1', :order => 'created_at')
+    @stories = CustomerStory.find(:all, :conditions => 'active = 1', :order => 'created_at desc')
   end
 
   def store
