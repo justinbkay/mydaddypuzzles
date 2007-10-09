@@ -15,7 +15,7 @@ development:
   adapter: mysql
   database: mydaddypuzzles_development
   username: root
-  password:
+  password: nwrecc01
   #socket: /tmp/mysql.sock
 
 # Warning: The database defined as 'test' will be erased and
