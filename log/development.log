@@ -1359,3 +1359,245 @@ Processing PuzzleController#index (for 127.0.0.1 at 2007-10-09 21:16:21) [GET]
 Rendering  within layouts/puzzle
 Rendering puzzle/index
 Completed in 0.00648 (154 reqs/sec) | Rendering: 0.00554 (85%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-10-19 19:27:29) [GET]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.02784 (35 reqs/sec) | Rendering: 0.02649 (95%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-10-19 19:29:21) [GET]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.00656 (152 reqs/sec) | Rendering: 0.00561 (85%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-10-19 19:29:54) [GET]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.00669 (149 reqs/sec) | Rendering: 0.00566 (84%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-10-19 19:30:43) [GET]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.00725 (137 reqs/sec) | Rendering: 0.00624 (86%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-10-19 19:32:01) [GET]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.00498 (200 reqs/sec) | Rendering: 0.00392 (78%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-10-19 19:32:27) [GET]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/www.ashowofhands.biz" with {:method=>:get}):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:488:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/mongrel.rb:60
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-10-19 19:32:43) [GET]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.00664 (150 reqs/sec) | Rendering: 0.00566 (85%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#story (for 127.0.0.1 at 2007-10-19 19:33:06) [GET]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {"action"=>"story", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/story
+Completed in 0.00823 (121 reqs/sec) | Rendering: 0.00728 (88%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/story]
+
+
+Processing PuzzleController#story (for 127.0.0.1 at 2007-10-19 19:33:38) [GET]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {"action"=>"story", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/story
+Completed in 0.00805 (124 reqs/sec) | Rendering: 0.00711 (88%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/story]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2007-10-19 19:38:00) [GET]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;36;1mPuzzle Load (0.016840)[0m   [0;1mSELECT * FROM puzzles WHERE (active = 1) [0m
+Rendering  within layouts/puzzle
+Rendering puzzle/store
+  [4;35;1mPuzzle Columns (0.001993)[0m   [0mSHOW FIELDS FROM puzzles[0m
+  [4;36;1mConfiguration Columns (0.025445)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mSQL (0.007649)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mConfiguration Load (0.000344)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.000247)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000397)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.000264)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mConfiguration Load (0.000257)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000240)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000351)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000324)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mConfiguration Load (0.000265)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000244)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000360)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mSQL (0.000253)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mConfiguration Load (0.000252)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000240)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000373)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000256)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Load (0.000251)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000238)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000353)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000301)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mConfiguration Load (0.000259)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000251)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000367)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000254)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mConfiguration Load (0.000251)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.000238)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000342)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000258)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mConfiguration Load (0.000251)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000237)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000425)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000320)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mConfiguration Load (0.000268)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000244)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000376)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000255)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mConfiguration Load (0.000254)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000240)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000342)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+Completed in 0.42485 (2 reqs/sec) | Rendering: 0.08170 (19%) | DB: 0.06317 (14%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#add_to_cart (for 127.0.0.1 at 2007-10-19 19:38:03) [POST]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {"finish"=>"2", "commit"=>"Add to Cart", "action"=>"add_to_cart", "id"=>"1", "controller"=>"puzzle"}
+  [4;35;1mConfiguration Columns (0.002534)[0m   [0mSHOW FIELDS FROM configurations[0m
+  [4;36;1mConfiguration Load (0.000366)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;35;1mPuzzle Columns (0.002181)[0m   [0mSHOW FIELDS FROM puzzles[0m
+  [4;36;1mPuzzle Load (0.000386)[0m   [0;1mSELECT * FROM puzzles WHERE (puzzles.`id` = 1) [0m
+Completed in 0.13850 (7 reqs/sec) | Rendering: 0.00672 (4%) | DB: 0.00547 (3%) | 200 OK [http://localhost/puzzle/add_to_cart/1]
+
+
+Processing PuzzleController#show_cart (for 127.0.0.1 at 2007-10-19 19:38:04) [GET]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {"action"=>"show_cart", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/show_cart
+  [4;35;1mConfiguration Columns (0.002387)[0m   [0mSHOW FIELDS FROM configurations[0m
+  [4;36;1mPuzzle Columns (0.001925)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
+Completed in 0.01742 (57 reqs/sec) | Rendering: 0.01214 (69%) | DB: 0.00431 (24%) | 200 OK [http://localhost/puzzle/show_cart]
+
+
+Processing PuzzleController#show_cart (for 127.0.0.1 at 2007-10-19 19:40:59) [GET]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {"action"=>"show_cart", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/show_cart
+  [4;35;1mConfiguration Columns (0.076982)[0m   [0mSHOW FIELDS FROM configurations[0m
+  [4;36;1mPuzzle Columns (0.030648)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
+Completed in 0.12130 (8 reqs/sec) | Rendering: 0.01264 (10%) | DB: 0.10763 (88%) | 200 OK [http://localhost/puzzle/show_cart]
+
+
+Processing PuzzleController#show_cart (for 127.0.0.1 at 2007-10-19 19:42:06) [GET]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {"action"=>"show_cart", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/show_cart
+  [4;35;1mConfiguration Columns (0.002254)[0m   [0mSHOW FIELDS FROM configurations[0m
+  [4;36;1mPuzzle Columns (0.037055)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
+Completed in 0.05285 (18 reqs/sec) | Rendering: 0.01254 (23%) | DB: 0.03931 (74%) | 200 OK [http://localhost/puzzle/show_cart]
+
+
+Processing PuzzleController#show_cart (for 127.0.0.1 at 2007-10-19 19:42:30) [GET]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {"action"=>"show_cart", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/show_cart
+  [4;35;1mConfiguration Columns (0.002443)[0m   [0mSHOW FIELDS FROM configurations[0m
+  [4;36;1mPuzzle Columns (0.001892)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
+Completed in 0.01792 (55 reqs/sec) | Rendering: 0.01265 (70%) | DB: 0.00434 (24%) | 200 OK [http://localhost/puzzle/show_cart]
+
+
+Processing PuzzleController#show_cart (for 127.0.0.1 at 2007-10-19 19:42:37) [GET]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {"action"=>"show_cart", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/show_cart
+  [4;35;1mConfiguration Columns (0.002437)[0m   [0mSHOW FIELDS FROM configurations[0m
+  [4;36;1mPuzzle Columns (0.034814)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
+Completed in 0.05050 (19 reqs/sec) | Rendering: 0.01227 (24%) | DB: 0.03725 (73%) | 200 OK [http://localhost/puzzle/show_cart]
+
+
+Processing PuzzleController#show_cart (for 127.0.0.1 at 2007-10-19 19:42:49) [GET]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {"action"=>"show_cart", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/show_cart
+  [4;35;1mConfiguration Columns (0.002492)[0m   [0mSHOW FIELDS FROM configurations[0m
+  [4;36;1mPuzzle Columns (0.001857)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
+Completed in 0.01785 (56 reqs/sec) | Rendering: 0.01252 (70%) | DB: 0.00435 (24%) | 200 OK [http://localhost/puzzle/show_cart]
+
+
+Processing PuzzleController#show_cart (for 127.0.0.1 at 2007-10-19 19:55:26) [GET]
+  Session ID: b58890485bd329e27d42cc09347fd33b
+  Parameters: {"action"=>"show_cart", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/show_cart
+  [4;35;1mConfiguration Columns (0.070794)[0m   [0mSHOW FIELDS FROM configurations[0m
+  [4;36;1mPuzzle Columns (0.031867)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
+Completed in 0.11674 (8 reqs/sec) | Rendering: 0.01310 (11%) | DB: 0.10266 (87%) | 200 OK [http://localhost/puzzle/show_cart]
