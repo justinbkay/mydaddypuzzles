@@ -1601,3 +1601,262 @@ Rendering puzzle/show_cart
   [4;35;1mConfiguration Columns (0.070794)[0m   [0mSHOW FIELDS FROM configurations[0m
   [4;36;1mPuzzle Columns (0.031867)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
 Completed in 0.11674 (8 reqs/sec) | Rendering: 0.01310 (11%) | DB: 0.10266 (87%) | 200 OK [http://localhost/puzzle/show_cart]
+no route found to match "/login" with {:method=>:get}
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+/Library/Ruby/Gems/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+/Library/Ruby/Gems/gems/mongrel-1.1/bin/../lib/mongrel/rails.rb:76:in `process'
+/Library/Ruby/Gems/gems/mongrel-1.1/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/Library/Ruby/Gems/gems/mongrel-1.1/bin/../lib/mongrel/rails.rb:74:in `process'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:155:in `process_client'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:154:in `each'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:154:in `process_client'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:281:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:281:in `initialize'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:281:in `new'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:281:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:264:in `initialize'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:264:in `new'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:264:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel/configurator.rb:282:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel/configurator.rb:281:in `each'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel/configurator.rb:281:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/bin/mongrel_rails:126:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel/command.rb:212:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/bin/mongrel_rails:279
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+/Library/Ruby/Gems/gems/rails-1.2.6/lib/commands/servers/mongrel.rb:60
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+/Library/Ruby/Gems/gems/rails-1.2.6/lib/commands/server.rb:39
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+Mysql::Error: #42S02Table 'mydaddypuzzles_development.sessions' doesn't exist: SHOW FIELDS FROM sessions
+/Library/Ruby/Gems/gems/activerecord-1.15.6/lib/active_record/connection_adapters/abstract_adapter.rb:128:in `log'
+/Library/Ruby/Gems/gems/activerecord-1.15.6/lib/active_record/connection_adapters/mysql_adapter.rb:243:in `execute'
+/Library/Ruby/Gems/gems/activerecord-1.15.6/lib/active_record/connection_adapters/mysql_adapter.rb:348:in `columns'
+/Library/Ruby/Gems/gems/activerecord-1.15.6/lib/active_record/base.rb:763:in `columns'
+/Library/Ruby/Gems/gems/activerecord-1.15.6/lib/active_record/base.rb:771:in `columns_hash'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/session/active_record_store.rb:105:in `setup_sessid_compatibility!'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/session/active_record_store.rb:79:in `find_by_session_id'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/session/active_record_store.rb:283:in `initialize'
+/Library/Ruby/Gems/gems/activerecord-1.15.6/lib/active_record/base.rb:867:in `silence'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/session/active_record_store.rb:283:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/cgi/session.rb:273:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/cgi/session.rb:273:in `initialize'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/cgi_process.rb:136:in `new'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/cgi_process.rb:136:in `session'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/cgi_process.rb:168:in `stale_session_check!'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/cgi_process.rb:120:in `session'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/base.rb:1058:in `assign_shortcuts_without_flash'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/flash.rb:140:in `assign_shortcuts'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/base.rb:429:in `process_without_filters'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+/Library/Ruby/Gems/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+/Library/Ruby/Gems/gems/mongrel-1.1/bin/../lib/mongrel/rails.rb:76:in `process'
+/Library/Ruby/Gems/gems/mongrel-1.1/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/Library/Ruby/Gems/gems/mongrel-1.1/bin/../lib/mongrel/rails.rb:74:in `process'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:155:in `process_client'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:154:in `each'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:154:in `process_client'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:281:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:281:in `initialize'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:281:in `new'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:281:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:264:in `initialize'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:264:in `new'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:264:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel/configurator.rb:282:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel/configurator.rb:281:in `each'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel/configurator.rb:281:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/bin/mongrel_rails:126:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel/command.rb:212:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/bin/mongrel_rails:279
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+/Library/Ruby/Gems/gems/rails-1.2.6/lib/commands/servers/mongrel.rb:60
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+/Library/Ruby/Gems/gems/rails-1.2.6/lib/commands/server.rb:39
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+Mysql::Error: #42S02Table 'mydaddypuzzles_development.sessions' doesn't exist: SHOW FIELDS FROM sessions
+/Library/Ruby/Gems/gems/activerecord-1.15.6/lib/active_record/connection_adapters/abstract_adapter.rb:128:in `log'
+/Library/Ruby/Gems/gems/activerecord-1.15.6/lib/active_record/connection_adapters/mysql_adapter.rb:243:in `execute'
+/Library/Ruby/Gems/gems/activerecord-1.15.6/lib/active_record/connection_adapters/mysql_adapter.rb:348:in `columns'
+/Library/Ruby/Gems/gems/activerecord-1.15.6/lib/active_record/base.rb:763:in `columns'
+/Library/Ruby/Gems/gems/activerecord-1.15.6/lib/active_record/base.rb:771:in `columns_hash'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/session/active_record_store.rb:105:in `setup_sessid_compatibility!'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/session/active_record_store.rb:79:in `find_by_session_id'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/session/active_record_store.rb:283:in `initialize'
+/Library/Ruby/Gems/gems/activerecord-1.15.6/lib/active_record/base.rb:867:in `silence'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/session/active_record_store.rb:283:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/cgi/session.rb:273:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/cgi/session.rb:273:in `initialize'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/cgi_process.rb:136:in `new'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/cgi_process.rb:136:in `session'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/cgi_process.rb:168:in `stale_session_check!'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/cgi_process.rb:120:in `session'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/base.rb:1058:in `assign_shortcuts_without_flash'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/flash.rb:140:in `assign_shortcuts'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/base.rb:429:in `process_without_filters'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+/Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+/Library/Ruby/Gems/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+/Library/Ruby/Gems/gems/mongrel-1.1/bin/../lib/mongrel/rails.rb:76:in `process'
+/Library/Ruby/Gems/gems/mongrel-1.1/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/Library/Ruby/Gems/gems/mongrel-1.1/bin/../lib/mongrel/rails.rb:74:in `process'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:155:in `process_client'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:154:in `each'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:154:in `process_client'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:281:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:281:in `initialize'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:281:in `new'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:281:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:264:in `initialize'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:264:in `new'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel.rb:264:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel/configurator.rb:282:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel/configurator.rb:281:in `each'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel/configurator.rb:281:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/bin/mongrel_rails:126:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/lib/mongrel/command.rb:212:in `run'
+/Library/Ruby/Gems/gems/mongrel-1.1/bin/mongrel_rails:279
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+/Library/Ruby/Gems/gems/rails-1.2.6/lib/commands/servers/mongrel.rb:60
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/Library/Ruby/Gems/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+/Library/Ruby/Gems/gems/rails-1.2.6/lib/commands/server.rb:39
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-12-05 16:36:54) [GET]
+  Session ID: 5c251206ed77602001a543c963880433
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.05152 (19 reqs/sec) | Rendering: 0.05049 (98%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-12-05 16:38:15) [GET]
+  Session ID: 5c251206ed77602001a543c963880433
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00897 (111 reqs/sec) | Rendering: 0.00788 (87%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-12-05 16:39:29) [GET]
+  Session ID: 5c251206ed77602001a543c963880433
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00850 (117 reqs/sec) | Rendering: 0.00746 (87%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#made_in_usa (for 127.0.0.1 at 2007-12-05 16:39:34) [GET]
+  Session ID: 5c251206ed77602001a543c963880433
+  Parameters: {"action"=>"made_in_usa", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/made_in_usa
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00691 (144 reqs/sec) | Rendering: 0.00576 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/made_in_usa]
+
+
+Processing PuzzleController#made_in_usa (for 127.0.0.1 at 2007-12-05 16:40:17) [GET]
+  Session ID: 5c251206ed77602001a543c963880433
+  Parameters: {"action"=>"made_in_usa", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/made_in_usa
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00740 (135 reqs/sec) | Rendering: 0.00627 (84%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/made_in_usa]
+
+
+Processing PuzzleController#made_in_usa (for 127.0.0.1 at 2007-12-05 16:40:43) [GET]
+  Session ID: 5c251206ed77602001a543c963880433
+  Parameters: {"action"=>"made_in_usa", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/made_in_usa
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00656 (152 reqs/sec) | Rendering: 0.00546 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/made_in_usa]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-12-05 16:40:49) [GET]
+  Session ID: 5c251206ed77602001a543c963880433
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00628 (159 reqs/sec) | Rendering: 0.00530 (84%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#story (for 127.0.0.1 at 2007-12-05 16:40:52) [GET]
+  Session ID: 5c251206ed77602001a543c963880433
+  Parameters: {"action"=>"story", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/story
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.11505 (8 reqs/sec) | Rendering: 0.11404 (99%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/story]
+
+
+Processing PuzzleController#made_in_usa (for 127.0.0.1 at 2007-12-05 16:40:54) [GET]
+  Session ID: 5c251206ed77602001a543c963880433
+  Parameters: {"action"=>"made_in_usa", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/made_in_usa
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00649 (154 reqs/sec) | Rendering: 0.00531 (81%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/made_in_usa]
+
+
+Processing PuzzleController#made_in_usa (for 127.0.0.1 at 2007-12-05 16:41:18) [GET]
+  Session ID: 5c251206ed77602001a543c963880433
+  Parameters: {"action"=>"made_in_usa", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/made_in_usa
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00635 (157 reqs/sec) | Rendering: 0.00525 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/made_in_usa]
+
+
+Processing PuzzleController#made_in_usa (for 127.0.0.1 at 2007-12-05 16:41:32) [GET]
+  Session ID: 5c251206ed77602001a543c963880433
+  Parameters: {"action"=>"made_in_usa", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/made_in_usa
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.01156 (86 reqs/sec) | Rendering: 0.00609 (52%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/made_in_usa]
+
+
+Processing PuzzleController#made_in_usa (for 127.0.0.1 at 2007-12-05 16:41:56) [GET]
+  Session ID: 5c251206ed77602001a543c963880433
+  Parameters: {"action"=>"made_in_usa", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/made_in_usa
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00660 (151 reqs/sec) | Rendering: 0.00553 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/made_in_usa]
