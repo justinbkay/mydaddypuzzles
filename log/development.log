@@ -1860,3 +1860,93 @@ Rendering  within layouts/puzzle
 Rendering puzzle/made_in_usa
 DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
 Completed in 0.00660 (151 reqs/sec) | Rendering: 0.00553 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/made_in_usa]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-12-05 19:21:15) [GET]
+  Session ID: 5c251206ed77602001a543c963880433
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.01130 (88 reqs/sec) | Rendering: 0.01030 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#story (for 127.0.0.1 at 2007-12-05 19:21:21) [GET]
+  Session ID: 5c251206ed77602001a543c963880433
+  Parameters: {"action"=>"story", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/story
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00977 (102 reqs/sec) | Rendering: 0.00876 (89%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/story]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2007-12-05 19:21:21) [GET]
+  Session ID: 5c251206ed77602001a543c963880433
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;36;1mPuzzle Load (0.017405)[0m   [0;1mSELECT * FROM puzzles WHERE (active = 1) [0m
+Rendering  within layouts/puzzle
+Rendering puzzle/store
+  [4;35;1mPuzzle Columns (0.003751)[0m   [0mSHOW FIELDS FROM puzzles[0m
+  [4;36;1mConfiguration Columns (0.003366)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mSQL (0.000993)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mConfiguration Load (0.001343)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.001144)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.001353)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.000525)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mConfiguration Load (0.000871)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000849)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.001159)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000427)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mConfiguration Load (0.000877)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000855)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.001083)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mSQL (0.000446)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mConfiguration Load (0.000888)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000861)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.001191)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000440)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Load (0.000867)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000842)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.001125)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000427)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mConfiguration Load (0.000864)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000864)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.001202)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000712)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mConfiguration Load (0.000911)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.000865)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.001095)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000418)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mConfiguration Load (0.000860)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000835)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.001099)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000408)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mConfiguration Load (0.000863)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000847)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.001139)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000435)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mConfiguration Load (0.000884)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000841)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.001060)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.16704 (5 reqs/sec) | Rendering: 0.07287 (43%) | DB: 0.05929 (35%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#gallery (for 127.0.0.1 at 2007-12-05 19:21:23) [GET]
+  Session ID: 5c251206ed77602001a543c963880433
+  Parameters: {"action"=>"gallery", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/gallery
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.01693 (59 reqs/sec) | Rendering: 0.01587 (93%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/gallery]
+
+
+Processing PuzzleController#stories (for 127.0.0.1 at 2007-12-05 19:21:24) [GET]
+  Session ID: 5c251206ed77602001a543c963880433
+  Parameters: {"action"=>"stories", "controller"=>"puzzle"}
+  [4;35;1mCustomerStory Load (0.012374)[0m   [0mSELECT * FROM customer_stories WHERE (active = 1) ORDER BY created_at desc[0m
+Rendering  within layouts/puzzle
+Rendering puzzle/stories
+  [4;36;1mCustomerStory Columns (0.002474)[0m   [0;1mSHOW FIELDS FROM customer_stories[0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.03057 (32 reqs/sec) | Rendering: 0.00945 (30%) | DB: 0.01485 (48%) | 200 OK [http://localhost/puzzle/stories]

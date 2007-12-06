@@ -9,14 +9,14 @@
 	<body>
 		<div id="wrapper">
 			<div id="header">
-				<div style="float: right;margin-bottom: 25px;">
+				<div style="float: right;margin-bottom: 0px;">
 					<%= link_to image_tag('mydaddypuzzles.gif', :style => 'border: 0px;'), :action => "index" %><br />
 					<%= link_to image_tag('made_in_usa', :alt => 'Made in the USA', :title => 'Made in the USA', :style => 'border: 0px;'), :action => 'made_in_usa' %>
 				</div>
 				
 				<p id="nav" style="clear: both;">
 				<%= link_to_unless_current "Beginning", {:action => "index"} %> ::
-				<%= link_to_unless_current "Story", :action => "story" %> ::
+				<%= link_to_unless_current "News", :action => "story" %> ::
 				<%= link_to_unless_current "Store", :action => "store" %> ::
 				<%= link_to_unless_current "Gallery", :action => "gallery" %> ::
 				<%= link_to_unless_current "User Stories", :action => "stories" %> :: 
