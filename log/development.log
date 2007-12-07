@@ -1950,3 +1950,390 @@ Rendering puzzle/stories
   [4;36;1mCustomerStory Columns (0.002474)[0m   [0;1mSHOW FIELDS FROM customer_stories[0m
 DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /Library/Ruby/Gems/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
 Completed in 0.03057 (32 reqs/sec) | Rendering: 0.00945 (30%) | DB: 0.01485 (48%) | 200 OK [http://localhost/puzzle/stories]
+No such file or directory - /tmp/mysql.sock
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/vendor/mysql.rb:107:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/vendor/mysql.rb:107:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/vendor/mysql.rb:107:in `real_connect'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/connection_adapters/mysql_adapter.rb:389:in `connect'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/connection_adapters/mysql_adapter.rb:152:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/connection_adapters/mysql_adapter.rb:82:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/connection_adapters/mysql_adapter.rb:82:in `mysql_connection'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/connection_adapters/abstract/connection_specification.rb:262:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/connection_adapters/abstract/connection_specification.rb:262:in `connection_without_query_cache='
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/query_cache.rb:54:in `connection='
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/connection_adapters/abstract/connection_specification.rb:230:in `retrieve_connection'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/connection_adapters/abstract/connection_specification.rb:78:in `connection'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/base.rb:763:in `columns'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/base.rb:771:in `columns_hash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session/active_record_store.rb:105:in `setup_sessid_compatibility!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session/active_record_store.rb:79:in `find_by_session_id'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session/active_record_store.rb:283:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-1.15.6/lib/active_record/base.rb:867:in `silence'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session/active_record_store.rb:283:in `initialize'
+/usr/local/lib/ruby/1.8/cgi/session.rb:273:in `new'
+/usr/local/lib/ruby/1.8/cgi/session.rb:273:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/cgi_process.rb:136:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/cgi_process.rb:136:in `session'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/cgi_process.rb:168:in `stale_session_check!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/cgi_process.rb:120:in `session'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1058:in `assign_shortcuts_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/flash.rb:140:in `assign_shortcuts'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:429:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:78:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/rails.rb:76:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:618:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:617:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:736:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel.rb:720:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:271:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/configurator.rb:270:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:127:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/lib/mongrel/command.rb:211:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.0.1/bin/mongrel_rails:243
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:488:in `load'
+/usr/local/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/commands/servers/mongrel.rb:60
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+/usr/local/lib/ruby/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-12-06 21:23:34) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.03982 (25 reqs/sec) | Rendering: 0.03462 (86%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#gallery (for 127.0.0.1 at 2007-12-06 21:24:04) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"gallery", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/gallery
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.03460 (28 reqs/sec) | Rendering: 0.03347 (96%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/gallery]
+
+
+Processing PuzzleController#story (for 127.0.0.1 at 2007-12-06 21:25:48) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"story", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/story
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.01039 (96 reqs/sec) | Rendering: 0.00928 (89%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/story]
+
+
+Processing PuzzleController#story (for 127.0.0.1 at 2007-12-06 21:26:17) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"story", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/story
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.01117 (89 reqs/sec) | Rendering: 0.01004 (89%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/story]
+
+
+Processing PuzzleController#story (for 127.0.0.1 at 2007-12-06 21:26:43) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"story", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/story
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.04135 (24 reqs/sec) | Rendering: 0.04026 (97%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/story]
+
+
+Processing PuzzleController#news (for 127.0.0.1 at 2007-12-06 21:26:49) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"news", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/news
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.10200 (9 reqs/sec) | Rendering: 0.10093 (98%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/news]
+
+
+Processing PuzzleController#news (for 127.0.0.1 at 2007-12-06 21:27:14) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"news", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/news
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00840 (118 reqs/sec) | Rendering: 0.00734 (87%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/news]
+
+
+Processing PuzzleController#news (for 127.0.0.1 at 2007-12-06 21:27:44) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"news", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/news
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00872 (114 reqs/sec) | Rendering: 0.00766 (87%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/news]
+
+
+Processing PuzzleController#news (for 127.0.0.1 at 2007-12-06 21:28:04) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"news", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/news
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00777 (128 reqs/sec) | Rendering: 0.00672 (86%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/news]
+
+
+Processing PuzzleController#contact (for 127.0.0.1 at 2007-12-06 21:28:14) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"contact", "controller"=>"puzzle"}
+  [4;36;1mEmailMessage Columns (0.069831)[0m   [0;1mSHOW FIELDS FROM email_messages[0m
+Rendering  within layouts/puzzle
+Rendering puzzle/contact
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('mailbox.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.08426 (11 reqs/sec) | Rendering: 0.00868 (10%) | DB: 0.06983 (82%) | 200 OK [http://localhost/puzzle/contact]
+
+
+Processing PuzzleController#news (for 127.0.0.1 at 2007-12-06 21:28:16) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"news", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/news
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00660 (151 reqs/sec) | Rendering: 0.00553 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/news]
+
+
+Processing PuzzleController#stories (for 127.0.0.1 at 2007-12-06 21:28:19) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"stories", "controller"=>"puzzle"}
+  [4;35;1mCustomerStory Load (0.205516)[0m   [0mSELECT * FROM customer_stories WHERE (active = 1) ORDER BY created_at desc[0m
+Rendering  within layouts/puzzle
+Rendering puzzle/stories
+  [4;36;1mCustomerStory Columns (0.002954)[0m   [0;1mSHOW FIELDS FROM customer_stories[0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.25201 (3 reqs/sec) | Rendering: 0.02052 (8%) | DB: 0.20847 (82%) | 200 OK [http://localhost/puzzle/stories]
+
+
+Processing PuzzleController#story (for 127.0.0.1 at 2007-12-06 21:28:27) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"story", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/story
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00745 (134 reqs/sec) | Rendering: 0.00626 (84%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/story]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-12-06 21:28:40) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.01160 (86 reqs/sec) | Rendering: 0.01053 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-12-06 21:34:05) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00818 (122 reqs/sec) | Rendering: 0.00712 (87%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-12-06 21:36:37) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00835 (119 reqs/sec) | Rendering: 0.00728 (87%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-12-06 21:39:00) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.04626 (21 reqs/sec) | Rendering: 0.04518 (97%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-12-06 21:40:49) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.02715 (36 reqs/sec) | Rendering: 0.02580 (95%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-12-06 21:41:45) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.03743 (26 reqs/sec) | Rendering: 0.03629 (96%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-12-06 21:42:09) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00943 (106 reqs/sec) | Rendering: 0.00835 (88%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-12-06 21:42:28) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00965 (103 reqs/sec) | Rendering: 0.00858 (88%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-12-06 21:43:43) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.01374 (72 reqs/sec) | Rendering: 0.01250 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-12-06 21:44:14) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00838 (119 reqs/sec) | Rendering: 0.00729 (87%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2007-12-06 21:44:30) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00962 (103 reqs/sec) | Rendering: 0.00821 (85%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2007-12-06 21:45:30) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;35;1mPuzzle Load (0.055770)[0m   [0mSELECT * FROM puzzles WHERE (active = 1) [0m
+Rendering  within layouts/puzzle
+Rendering puzzle/store
+  [4;36;1mPuzzle Columns (0.089535)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
+  [4;35;1mConfiguration Columns (0.099474)[0m   [0mSHOW FIELDS FROM configurations[0m
+  [4;36;1mSQL (0.096068)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mConfiguration Load (0.000897)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000790)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.001043)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mSQL (0.000441)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mConfiguration Load (0.000771)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000760)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.001018)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mSQL (0.000403)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mConfiguration Load (0.000791)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000757)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.001023)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mSQL (0.000401)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mConfiguration Load (0.000765)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000746)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.001045)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mSQL (0.000396)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mConfiguration Load (0.000803)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000748)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.001030)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mSQL (0.000395)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mConfiguration Load (0.000778)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000743)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.001086)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mSQL (0.000405)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mConfiguration Load (0.000763)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000755)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.001005)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mSQL (0.001673)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mConfiguration Load (0.000812)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000753)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.001003)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mSQL (0.000414)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mConfiguration Load (0.000773)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000743)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.001112)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mSQL (0.000496)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+  [4;35;1mConfiguration Load (0.000893)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000829)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.001012)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.65616 (1 reqs/sec) | Rendering: 0.17821 (27%) | DB: 0.37192 (56%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#gallery (for 127.0.0.1 at 2007-12-06 21:45:37) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"gallery", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/gallery
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00644 (155 reqs/sec) | Rendering: 0.00539 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/gallery]
+
+
+Processing PuzzleController#story (for 127.0.0.1 at 2007-12-06 21:45:48) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"story", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/story
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00720 (138 reqs/sec) | Rendering: 0.00610 (84%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/story]
+
+
+Processing PuzzleController#stories (for 127.0.0.1 at 2007-12-06 21:45:52) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"stories", "controller"=>"puzzle"}
+  [4;36;1mCustomerStory Load (0.024438)[0m   [0;1mSELECT * FROM customer_stories WHERE (active = 1) ORDER BY created_at desc[0m
+Rendering  within layouts/puzzle
+Rendering puzzle/stories
+  [4;35;1mCustomerStory Columns (0.002706)[0m   [0mSHOW FIELDS FROM customer_stories[0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.05836 (17 reqs/sec) | Rendering: 0.01351 (23%) | DB: 0.02714 (46%) | 200 OK [http://localhost/puzzle/stories]
+
+
+Processing PuzzleController#news (for 127.0.0.1 at 2007-12-06 21:45:54) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"news", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/news
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00690 (144 reqs/sec) | Rendering: 0.00582 (84%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/news]
+
+
+Processing PuzzleController#contact (for 127.0.0.1 at 2007-12-06 21:45:59) [GET]
+  Session ID: 0b314b55dd4643ca838ade9d76f866b3
+  Parameters: {"action"=>"contact", "controller"=>"puzzle"}
+  [4;36;1mEmailMessage Columns (0.002643)[0m   [0;1mSHOW FIELDS FROM email_messages[0m
+Rendering  within layouts/puzzle
+Rendering puzzle/contact
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('mailbox.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.03796 (26 reqs/sec) | Rendering: 0.00664 (17%) | DB: 0.00264 (6%) | 200 OK [http://localhost/puzzle/contact]

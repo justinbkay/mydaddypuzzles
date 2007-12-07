@@ -44,6 +44,11 @@ class PuzzleController < ApplicationController
   end
   
   def story
+    render
+  end
+  
+  def news
+    render
   end
 
   def gallery

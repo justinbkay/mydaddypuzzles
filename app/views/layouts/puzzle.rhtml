@@ -15,11 +15,12 @@
 				</div>
 				
 				<p id="nav" style="clear: both;">
-				<%= link_to_unless_current "Beginning", {:action => "index"} %> ::
-				<%= link_to_unless_current "News", :action => "story" %> ::
+				<%= link_to_unless_current "Home", {:action => "index"} %> ::
 				<%= link_to_unless_current "Store", :action => "store" %> ::
 				<%= link_to_unless_current "Gallery", :action => "gallery" %> ::
+				<%= link_to_unless_current "Story", :action => "story" %> ::
 				<%= link_to_unless_current "User Stories", :action => "stories" %> :: 
+				<%= link_to_unless_current "News", :action => 'news' %> ::
 				<%= link_to_unless_current "Talk to us", :action => "contact" %></p>
 			</div>
 			<div id="content">
