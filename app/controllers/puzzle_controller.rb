@@ -104,4 +104,22 @@ class PuzzleController < ApplicationController
       @email = EmailMessage.new()
     end
   end
+  
+  def give_away
+    @entry = Entry.new(:month => Date.today.strftime("%B"))
+  end
+  
+  def record_entry
+    @entry = Entry.new(params[:entry])
+    if @entry.save
+      ContactMailer.deliver_enter_drawing(@entry)
+      redirect_to :action => :drawing_confirmation
+    else
+      render :action => :give_away
+    end
+  end
+  
+  def drawing_confirmation
+    render
+  end
 end

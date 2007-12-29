@@ -2,7 +2,7 @@
 # migrations feature of ActiveRecord to incrementally modify your database, and
 # then regenerate this schema definition.
 
-ActiveRecord::Schema.define(:version => 10) do
+ActiveRecord::Schema.define(:version => 12) do
 
   create_table "configurations", :force => true do |t|
     t.column "puzzle_id",         :integer
@@ -29,16 +29,15 @@ ActiveRecord::Schema.define(:version => 10) do
     t.column "name",       :string
   end
 
-  create_table "products", :force => true do |t|
-    t.column "name",              :string
-    t.column "description",       :string
-    t.column "price",             :decimal, :precision => 5, :scale => 2, :default => 0.0
-    t.column "default_thumbnail", :string
-    t.column "default_picture",   :string
-    t.column "size",              :string
-    t.column "active",            :boolean
-    t.column "default_colored",   :string
-    t.column "unfinished_price",  :decimal, :precision => 5, :scale => 2
+  create_table "entries", :force => true do |t|
+    t.column "name",    :string
+    t.column "address", :string
+    t.column "city",    :string
+    t.column "state",   :string
+    t.column "zip",     :string
+    t.column "phone",   :string
+    t.column "email",   :string
+    t.column "month",   :string
   end
 
   create_table "puzzles", :force => true do |t|
@@ -48,5 +47,14 @@ ActiveRecord::Schema.define(:version => 10) do
     t.column "active",                :boolean
     t.column "default_configuration", :integer
   end
+
+  create_table "sessions", :force => true do |t|
+    t.column "session_id", :string
+    t.column "data",       :text
+    t.column "updated_at", :datetime
+  end
+
+  add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
+  add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
 
 end

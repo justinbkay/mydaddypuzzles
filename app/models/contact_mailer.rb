@@ -8,4 +8,13 @@ class ContactMailer < ActionMailer::Base
     @sent_on    = Time.now
     @headers    = {}
   end
+  
+  def enter_drawing(entry)
+    @subject    = "Drawing Entry for #{Date.today.strftime("%B")}"
+    @body       = {'e' => entry}
+    @recipients = 'PuzzleMaster <justinbkay@gmail.com>'
+    @from       = "#{entry.name} <#{entry.email}>"
+    @sent_on    = Time.now
+    @headers    = {}
+  end
 end
