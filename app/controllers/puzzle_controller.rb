@@ -18,6 +18,7 @@ class PuzzleController < ApplicationController
   end
 
   def show_cart
+    @page_title = 'Shopping Cart'
     @cart = find_cart
   end
 
@@ -29,6 +30,7 @@ class PuzzleController < ApplicationController
   end
 
   def index
+    @page_title = 'Welcome'
   end
   
   def display_picture
@@ -44,14 +46,17 @@ class PuzzleController < ApplicationController
   end
   
   def story
+    @page_title = 'Our Story'
     render
   end
   
   def news
+    @page_title = 'News'
     render
   end
 
   def gallery
+    @page_title = 'Puzzle Gallery'
     render
   end
   
@@ -61,16 +66,23 @@ class PuzzleController < ApplicationController
   end
   
   def email_confirmation
+    @page_title = 'Email Confirmation'
     render
   end
   
   def stories
+    @page_title = 'Customer Stories'
     @stories = CustomerStory.find(:all, :conditions => 'active = 1', :order => 'created_at desc')
   end
 
   def store
+    @page_title = 'Puzzle Store'
     @puzzles = Puzzle.find(:all, :conditions => 'active = 1')
     @cart = find_cart
+  end
+  
+  def thanks
+    @page_title = 'Thank you for your payment!'
   end
   
   # def update_store
@@ -87,11 +99,17 @@ class PuzzleController < ApplicationController
   # end
 
   def images
+    @page_title = 'Puzzle Pictures'
     @configuration = Configuration.find(params[:id])
     @puzzle = @configuration.puzzle
   end
 
+  def made_in_usa
+    @page_title = 'Made in the USA'
+  end
+
   def contact
+    @page_title = 'Contact MyDaddypuzzles'
     if request.post?
       @email_message = EmailMessage.new(params[:email_message])
       if @email_message.save
@@ -106,6 +124,7 @@ class PuzzleController < ApplicationController
   end
   
   def give_away
+    @page_title = 'Monthly Drawing Entry'
     @entry = Entry.new(:month => Date.today.strftime("%B"))
   end
   
@@ -120,6 +139,7 @@ class PuzzleController < ApplicationController
   end
   
   def drawing_confirmation
+    @page_title = 'Monthly Drawing Confirmation'
     render
   end
 end
