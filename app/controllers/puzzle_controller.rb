@@ -30,7 +30,7 @@ class PuzzleController < ApplicationController
   end
 
   def index
-    @page_title = 'Welcome'
+    @page_title = 'Handcrafted Wooden Puzzles'
   end
   
   def display_picture
