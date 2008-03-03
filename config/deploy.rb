@@ -1,5 +1,5 @@
 set :application, "mydaddypuzzles"
-set :repository,  "file:///usr/local/svn/mydaddypuzzles"
+set :repository,  "--username jkay --password camdon file:///usr/local/svn/mydaddypuzzles"
 set :deploy_to, "/usr/local/rails/#{application}"
 set :runner, nil
 
