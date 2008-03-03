@@ -24,7 +24,7 @@
 			<%= link_to image_tag(puzzle.default_thumbnail), :action => "images", :id => puzzle %><br />
 			<%= link_to "More Images", :action => "images", :id => puzzle %>
 		</td>
-		<td><span style="font-size: 1.25em; font-weight: bold;"><%= puzzle.name %></span><br /><%= puzzle.description %></td>
+		<td><span style="font-size: 1.5em; font-weight: bold;"><%= puzzle.name %></span><br /><%= puzzle.description %></td>
 		<td><%= puzzle.size %></td>
 		<td class="center"><%= number_to_currency puzzle.price %></td>
 		<td><% form_remote_for "Add to Cart", :url => {:action => "add_to_cart", :id => puzzle} do %><%= radio_button_tag 'finish', puzzle.price, :checked => true %> Natural Stain<br /><%= radio_button_tag 'finish', puzzle.price %> Colored Stain<br /><%= radio_button_tag 'finish', puzzle.unfinished_price %> Unfinished<br /><%= submit_tag 'Add to Cart' %><% end %></td>

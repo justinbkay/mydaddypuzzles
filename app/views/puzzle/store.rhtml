@@ -28,7 +28,7 @@
 			<%= link_to image_tag("/images/thumbnails/#{@default.default_thumbnail}"), :action => "images", :id => @default %><br />
 			<%= link_to "More Images", :action => "images", :id => @default %>
 		</td>
-		<td style="width: 250px;"><span style="font-size: 1.25em; font-weight: bold;"><%= puzzle.name %></span><br /><%= puzzle.description %></td>
+		<td style="width: 250px;"><span style="font-size: 2em; font-weight: bold;"><%= puzzle.name %></span><br /><%= puzzle.description %></td>
 		<td style="width: 200px;text-align: center;"><%= puzzle.size %></td>
 		<td style="width: 200px;">
 			<% form_remote_for "Add to Cart", :url => {:action => "add_to_cart", :id => puzzle} do %>
