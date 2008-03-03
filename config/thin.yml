@@ -1,5 +1,5 @@
 --- 
-pid: tmp/pids/thin.pid
+pid: tmp/pids/dispatch.0.pid
 log: log/thin.log
 timeout: 60
 port: 8000
