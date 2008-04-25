@@ -4194,3 +4194,1524 @@ Rendering  within layouts/puzzle
 Rendering puzzle/index
 DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
 Completed in 0.00578 (173 reqs/sec) | Rendering: 0.00485 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-25 16:37:16) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.15035 (6 reqs/sec) | Rendering: 0.14897 (99%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 16:37:22) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;36;1mPuzzle Load (0.024075)[0m   [0;1mSELECT * FROM puzzles WHERE (active = 1) [0m
+Rendering  within layouts/puzzle
+Rendering puzzle/store
+  [4;35;1mPuzzle Columns (0.002206)[0m   [0mSHOW FIELDS FROM puzzles[0m
+  [4;36;1mConfiguration Columns (0.042494)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mSQL (0.160218)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mConfiguration Load (0.000480)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.000278)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000440)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.000237)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mConfiguration Load (0.000207)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000195)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000318)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000263)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mConfiguration Load (0.000212)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000242)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000314)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mSQL (0.000277)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mConfiguration Load (0.000252)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000196)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000299)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000291)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Load (0.000209)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000480)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000340)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000212)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mConfiguration Load (0.000233)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000205)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000343)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000423)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mConfiguration Load (0.000260)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.000193)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000340)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000240)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mConfiguration Load (0.000261)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000259)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000423)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000292)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mConfiguration Load (0.000380)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000248)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000413)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000268)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mConfiguration Load (0.000220)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000287)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000347)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.32615 (3 reqs/sec) | Rendering: 0.05216 (15%) | DB: 0.24037 (73%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 16:37:52) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;35;1mPuzzle Load (0.000393)[0m   [0mSELECT * FROM puzzles WHERE (active = 1) [0m
+Rendering  within layouts/puzzle
+Rendering puzzle/store
+  [4;36;1mPuzzle Columns (0.001941)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
+  [4;35;1mConfiguration Columns (0.001632)[0m   [0mSHOW FIELDS FROM configurations[0m
+  [4;36;1mSQL (0.000301)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mConfiguration Load (0.000253)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000237)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.000377)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mSQL (0.000310)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mConfiguration Load (0.000462)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000288)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000437)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mSQL (0.000372)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mConfiguration Load (0.000272)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000315)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000651)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mSQL (0.000346)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mConfiguration Load (0.000281)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000303)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000393)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mSQL (0.000219)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mConfiguration Load (0.000231)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000186)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000473)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mSQL (0.000341)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mConfiguration Load (0.000583)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000386)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000342)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mSQL (0.000225)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mConfiguration Load (0.000221)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000207)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.000465)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mSQL (0.000799)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mConfiguration Load (0.000308)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000286)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000327)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mSQL (0.001691)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mConfiguration Load (0.000667)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000302)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000838)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mSQL (0.000553)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+  [4;35;1mConfiguration Load (0.000664)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000509)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000683)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.08397 (11 reqs/sec) | Rendering: 0.05730 (68%) | DB: 0.02107 (25%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#add_to_cart (for 127.0.0.1 at 2008-04-25 16:37:57) [POST]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"finish"=>"3", "commit"=>"Add to Cart", "action"=>"add_to_cart", "id"=>"1", "controller"=>"puzzle"}
+  [4;36;1mConfiguration Columns (0.002819)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mConfiguration Load (0.000353)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 3) [0m
+  [4;36;1mPuzzle Columns (0.002060)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
+  [4;35;1mPuzzle Load (0.000364)[0m   [0mSELECT * FROM puzzles WHERE (puzzles.`id` = 1) [0m
+Completed in 0.04215 (23 reqs/sec) | Rendering: 0.00854 (20%) | DB: 0.00560 (13%) | 200 OK [http://localhost/puzzle/add_to_cart/1]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 16:38:17) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;36;1mPuzzle Load (0.000328)[0m   [0;1mSELECT * FROM puzzles WHERE (active = 1) [0m
+Rendering  within layouts/puzzle
+Rendering puzzle/store
+  [4;35;1mPuzzle Columns (0.002157)[0m   [0mSHOW FIELDS FROM puzzles[0m
+  [4;36;1mConfiguration Columns (0.001711)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mSQL (0.005908)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mConfiguration Load (0.001381)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.000379)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000512)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.000247)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mConfiguration Load (0.000210)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000192)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000551)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000478)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mConfiguration Load (0.000308)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000213)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.002884)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mSQL (0.000364)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mConfiguration Load (0.000278)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000245)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.004633)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000429)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Load (0.003895)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000327)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000423)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000314)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mConfiguration Load (0.000260)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000205)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000529)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000291)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mConfiguration Load (0.000261)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.000197)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000319)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000231)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mConfiguration Load (0.000319)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000187)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.001895)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000397)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mConfiguration Load (0.000221)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000200)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000343)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000270)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mConfiguration Load (0.000675)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000261)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000319)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.08670 (11 reqs/sec) | Rendering: 0.04945 (57%) | DB: 0.03575 (41%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#add_to_cart (for 127.0.0.1 at 2008-04-25 16:38:21) [POST]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"finish"=>"3", "commit"=>"Add to Cart", "action"=>"add_to_cart", "id"=>"1", "controller"=>"puzzle"}
+  [4;35;1mConfiguration Columns (0.002357)[0m   [0mSHOW FIELDS FROM configurations[0m
+  [4;36;1mConfiguration Load (0.000991)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 3) [0m
+Completed in 0.01527 (65 reqs/sec) | Rendering: 0.00860 (56%) | DB: 0.00335 (21%) | 200 OK [http://localhost/puzzle/add_to_cart/1]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 16:39:09) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;35;1mPuzzle Load (0.000344)[0m   [0mSELECT * FROM puzzles WHERE (active = 1) [0m
+Rendering  within layouts/puzzle
+Rendering puzzle/store
+  [4;36;1mPuzzle Columns (0.002468)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
+  [4;35;1mConfiguration Columns (0.002050)[0m   [0mSHOW FIELDS FROM configurations[0m
+  [4;36;1mSQL (0.000420)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mConfiguration Load (0.000296)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000287)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.001536)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mSQL (0.000379)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mConfiguration Load (0.000304)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000197)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000313)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mSQL (0.000253)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mConfiguration Load (0.000209)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000187)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000414)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mSQL (0.000234)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mConfiguration Load (0.000206)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000187)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000318)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mSQL (0.000214)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mConfiguration Load (0.000202)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000186)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000296)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mSQL (0.000314)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mConfiguration Load (0.000253)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000191)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000329)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mSQL (0.000220)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mConfiguration Load (0.000203)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000190)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.000310)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mSQL (0.000252)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mConfiguration Load (0.000207)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000184)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000911)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mSQL (0.000283)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mConfiguration Load (0.000212)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000187)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000318)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mSQL (0.000270)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+  [4;35;1mConfiguration Load (0.000223)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000228)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000296)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.06306 (15 reqs/sec) | Rendering: 0.04441 (70%) | DB: 0.01708 (27%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#add_to_cart (for 127.0.0.1 at 2008-04-25 16:39:14) [POST]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"finish"=>"3", "commit"=>"Add to Cart", "action"=>"add_to_cart", "id"=>"1", "controller"=>"puzzle"}
+  [4;36;1mConfiguration Columns (0.002655)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mConfiguration Load (0.000495)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 3) [0m
+Completed in 0.01371 (72 reqs/sec) | Rendering: 0.00810 (59%) | DB: 0.00315 (22%) | 200 OK [http://localhost/puzzle/add_to_cart/1]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 16:39:47) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;36;1mPuzzle Load (0.005448)[0m   [0;1mSELECT * FROM puzzles WHERE (active = 1) [0m
+Rendering  within layouts/puzzle
+Rendering puzzle/store
+  [4;35;1mPuzzle Columns (0.002037)[0m   [0mSHOW FIELDS FROM puzzles[0m
+  [4;36;1mConfiguration Columns (0.001796)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mSQL (0.000601)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mConfiguration Load (0.000328)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.000276)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000458)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.000371)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mConfiguration Load (0.000314)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000303)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000535)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000314)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mConfiguration Load (0.000238)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000193)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000340)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mSQL (0.000391)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mConfiguration Load (0.000324)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000204)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000565)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000328)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Load (0.000260)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000312)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000876)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.001118)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mConfiguration Load (0.000363)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000265)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000485)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000325)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mConfiguration Load (0.000265)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.001303)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000396)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000234)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mConfiguration Load (0.000350)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000237)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000556)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000333)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mConfiguration Load (0.000281)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000275)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000430)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000391)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mConfiguration Load (0.000543)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000222)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000584)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.07782 (12 reqs/sec) | Rendering: 0.05011 (64%) | DB: 0.02577 (33%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 16:41:05) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;35;1mPuzzle Load (0.000359)[0m   [0mSELECT * FROM puzzles WHERE (active = 1) [0m
+Rendering  within layouts/puzzle
+Rendering puzzle/store
+  [4;36;1mPuzzle Columns (0.001849)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
+  [4;35;1mConfiguration Columns (0.001635)[0m   [0mSHOW FIELDS FROM configurations[0m
+  [4;36;1mSQL (0.000609)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mConfiguration Load (0.000307)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000200)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.000359)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mSQL (0.000238)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mConfiguration Load (0.000287)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000231)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000358)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mSQL (0.000291)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mConfiguration Load (0.000210)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000186)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000332)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mSQL (0.000207)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mConfiguration Load (0.000652)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000284)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000388)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mSQL (0.000938)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mConfiguration Load (0.000453)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000238)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000312)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mSQL (0.000218)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mConfiguration Load (0.000205)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000194)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000386)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mSQL (0.000445)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mConfiguration Load (0.000259)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000192)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.000391)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mSQL (0.000243)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mConfiguration Load (0.000209)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000187)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000334)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mSQL (0.000217)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mConfiguration Load (0.000203)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000209)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000294)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mSQL (0.000230)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+  [4;35;1mConfiguration Load (0.000207)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000208)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000777)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.05902 (16 reqs/sec) | Rendering: 0.04081 (69%) | DB: 0.01653 (28%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#stories (for 127.0.0.1 at 2008-04-25 16:41:10) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"stories", "controller"=>"puzzle"}
+  [4;36;1mCustomerStory Load (0.081044)[0m   [0;1mSELECT * FROM customer_stories WHERE (active = 1) ORDER BY created_at desc[0m
+Rendering  within layouts/puzzle
+Rendering puzzle/stories
+  [4;35;1mCustomerStory Columns (0.001983)[0m   [0mSHOW FIELDS FROM customer_stories[0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.13096 (7 reqs/sec) | Rendering: 0.02634 (20%) | DB: 0.08303 (63%) | 200 OK [http://localhost/puzzle/stories]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 16:41:14) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;36;1mPuzzle Load (0.000349)[0m   [0;1mSELECT * FROM puzzles WHERE (active = 1) [0m
+Rendering  within layouts/puzzle
+Rendering puzzle/store
+  [4;35;1mPuzzle Columns (0.002062)[0m   [0mSHOW FIELDS FROM puzzles[0m
+  [4;36;1mConfiguration Columns (0.001871)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mSQL (0.000348)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mConfiguration Load (0.000254)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.000198)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000384)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.000241)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mConfiguration Load (0.000218)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000203)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000359)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000218)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mConfiguration Load (0.000235)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000221)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000358)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mSQL (0.000250)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mConfiguration Load (0.000212)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000205)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000432)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000292)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Load (0.057277)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000380)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000506)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000393)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mConfiguration Load (0.000243)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000196)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000330)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000216)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mConfiguration Load (0.000202)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.000185)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000489)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000317)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mConfiguration Load (0.000243)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000200)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000408)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000223)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mConfiguration Load (0.000223)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000205)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000383)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000224)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mConfiguration Load (0.000243)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000211)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000367)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.11513 (8 reqs/sec) | Rendering: 0.04100 (35%) | DB: 0.07258 (63%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-25 16:41:18) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00672 (148 reqs/sec) | Rendering: 0.00566 (84%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-25 16:41:45) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00931 (107 reqs/sec) | Rendering: 0.00821 (88%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 16:41:54) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;35;1mPuzzle Load (0.000383)[0m   [0mSELECT * FROM puzzles WHERE (active = 1) [0m
+Rendering  within layouts/puzzle
+Rendering puzzle/store
+  [4;36;1mPuzzle Columns (0.002306)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
+  [4;35;1mConfiguration Columns (0.002101)[0m   [0mSHOW FIELDS FROM configurations[0m
+  [4;36;1mSQL (0.000472)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mConfiguration Load (0.000449)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000316)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.000865)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mSQL (0.000493)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mConfiguration Load (0.000281)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000330)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000597)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mSQL (0.000290)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mConfiguration Load (0.000211)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000187)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000291)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mSQL (0.000251)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mConfiguration Load (0.000205)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000190)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000319)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mSQL (0.001032)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mConfiguration Load (0.000230)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000212)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000320)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mSQL (0.000357)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mConfiguration Load (0.000214)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000185)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000356)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mSQL (0.000727)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mConfiguration Load (0.000242)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000204)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.000450)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mSQL (0.000232)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mConfiguration Load (0.000201)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000249)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000325)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mSQL (0.000211)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mConfiguration Load (0.000242)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000186)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000369)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mSQL (0.000234)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+  [4;35;1mConfiguration Load (0.000202)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000187)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000329)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.14081 (7 reqs/sec) | Rendering: 0.12096 (85%) | DB: 0.01803 (12%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#add_to_cart (for 127.0.0.1 at 2008-04-25 16:42:01) [POST]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"finish"=>"3", "commit"=>"Add to Cart", "action"=>"add_to_cart", "id"=>"1", "controller"=>"puzzle"}
+  [4;36;1mConfiguration Columns (0.002969)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mConfiguration Load (0.000368)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 3) [0m
+Completed in 0.01384 (72 reqs/sec) | Rendering: 0.00792 (57%) | DB: 0.00334 (24%) | 200 OK [http://localhost/puzzle/add_to_cart/1]
+
+
+Processing PuzzleController#add_to_cart (for 127.0.0.1 at 2008-04-25 16:43:47) [POST]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"finish"=>"17", "commit"=>"Add to Cart", "action"=>"add_to_cart", "id"=>"2", "controller"=>"puzzle"}
+  [4;36;1mConfiguration Columns (0.002240)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mConfiguration Load (0.000315)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 17) [0m
+  [4;36;1mPuzzle Columns (0.001630)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
+  [4;35;1mPuzzle Load (0.000326)[0m   [0mSELECT * FROM puzzles WHERE (puzzles.`id` = 2) [0m
+Completed in 0.01495 (66 reqs/sec) | Rendering: 0.00649 (43%) | DB: 0.00451 (30%) | 200 OK [http://localhost/puzzle/add_to_cart/2]
+
+
+Processing PuzzleController#add_to_cart (for 127.0.0.1 at 2008-04-25 16:43:53) [POST]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"finish"=>"7", "commit"=>"Add to Cart", "action"=>"add_to_cart", "id"=>"3", "controller"=>"puzzle"}
+  [4;36;1mConfiguration Columns (0.001978)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mConfiguration Load (0.000351)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 7) [0m
+  [4;36;1mPuzzle Columns (0.001625)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
+  [4;35;1mPuzzle Load (0.000297)[0m   [0mSELECT * FROM puzzles WHERE (puzzles.`id` = 3) [0m
+Completed in 0.01607 (62 reqs/sec) | Rendering: 0.00779 (48%) | DB: 0.00425 (26%) | 200 OK [http://localhost/puzzle/add_to_cart/3]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 16:44:23) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;36;1mPuzzle Load (0.000378)[0m   [0;1mSELECT * FROM puzzles WHERE (active = 1) [0m
+Rendering  within layouts/puzzle
+Rendering puzzle/store
+  [4;35;1mPuzzle Columns (0.002032)[0m   [0mSHOW FIELDS FROM puzzles[0m
+  [4;36;1mConfiguration Columns (0.001756)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mSQL (0.000374)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mConfiguration Load (0.000246)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.000194)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000514)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.000393)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mConfiguration Load (0.000324)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.001232)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000502)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000341)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mConfiguration Load (0.000563)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000283)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000332)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mSQL (0.000223)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mConfiguration Load (0.000222)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000188)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000331)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000222)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Load (0.000223)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000189)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000335)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000352)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mConfiguration Load (0.000215)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000189)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000318)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000292)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mConfiguration Load (0.000216)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.000202)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000314)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000278)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mConfiguration Load (0.000247)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000214)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000393)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000423)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mConfiguration Load (0.000266)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000200)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000358)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000251)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mConfiguration Load (0.002498)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000329)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000438)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.07651 (13 reqs/sec) | Rendering: 0.05551 (72%) | DB: 0.01939 (25%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#add_to_cart (for 127.0.0.1 at 2008-04-25 16:44:28) [POST]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"finish"=>"2", "commit"=>"Add to Cart", "action"=>"add_to_cart", "id"=>"1", "controller"=>"puzzle"}
+  [4;35;1mConfiguration Columns (0.006751)[0m   [0mSHOW FIELDS FROM configurations[0m
+  [4;36;1mConfiguration Load (0.000543)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;35;1mPuzzle Columns (0.002121)[0m   [0mSHOW FIELDS FROM puzzles[0m
+  [4;36;1mPuzzle Load (0.000583)[0m   [0;1mSELECT * FROM puzzles WHERE (puzzles.`id` = 1) [0m
+Completed in 0.02291 (43 reqs/sec) | Rendering: 0.00833 (36%) | DB: 0.01000 (43%) | 200 OK [http://localhost/puzzle/add_to_cart/1]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 16:44:41) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;35;1mPuzzle Load (0.000419)[0m   [0mSELECT * FROM puzzles WHERE (active = 1) [0m
+Rendering  within layouts/puzzle
+Rendering puzzle/store
+  [4;36;1mPuzzle Columns (0.006501)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
+  [4;35;1mConfiguration Columns (0.024281)[0m   [0mSHOW FIELDS FROM configurations[0m
+  [4;36;1mSQL (0.001467)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mConfiguration Load (0.000321)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000675)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.000471)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mSQL (0.000909)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mConfiguration Load (0.000546)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000246)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000478)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mSQL (0.000301)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mConfiguration Load (0.000234)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000226)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000353)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mSQL (0.000255)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mConfiguration Load (0.000210)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000679)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000628)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mSQL (0.000382)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mConfiguration Load (0.000237)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000264)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000391)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mSQL (0.000346)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mConfiguration Load (0.000271)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000251)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000644)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mSQL (0.000355)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mConfiguration Load (0.000270)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000277)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.000416)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mSQL (0.000315)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mConfiguration Load (0.000304)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000236)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000445)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mSQL (0.000336)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mConfiguration Load (0.003711)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.001170)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000502)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mSQL (0.000390)[0m   [0;1mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+  [4;35;1mConfiguration Load (0.000235)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000191)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.003202)[0m   [0mSELECT * FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.11218 (8 reqs/sec) | Rendering: 0.05572 (49%) | DB: 0.05434 (48%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#add_to_cart (for 127.0.0.1 at 2008-04-25 16:44:44) [POST]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"finish"=>"3", "commit"=>"Add to Cart", "action"=>"add_to_cart", "id"=>"1", "controller"=>"puzzle"}
+  [4;36;1mConfiguration Columns (0.002171)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mConfiguration Load (0.001011)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 3) [0m
+Completed in 0.01330 (75 reqs/sec) | Rendering: 0.00770 (57%) | DB: 0.00318 (23%) | 200 OK [http://localhost/puzzle/add_to_cart/1]
+
+
+Processing PuzzleController#show_cart (for 127.0.0.1 at 2008-04-25 16:44:49) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"show_cart", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/show_cart
+  [4;36;1mConfiguration Columns (0.003811)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mPuzzle Columns (0.011550)[0m   [0mSHOW FIELDS FROM puzzles[0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.05267 (18 reqs/sec) | Rendering: 0.03631 (68%) | DB: 0.01536 (29%) | 200 OK [http://localhost/puzzle/show_cart]
+
+
+Processing PuzzleController#remove_item (for 127.0.0.1 at 2008-04-25 16:44:56) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"remove_item", "id"=>"3", "controller"=>"puzzle"}
+  [4;36;1mConfiguration Columns (0.002082)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mConfiguration Load (0.001045)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 3) [0m
+Redirected to http://localhost:3000/puzzle/show_cart
+Completed in 0.00702 (142 reqs/sec) | DB: 0.00313 (44%) | 302 Found [http://localhost/puzzle/remove_item/3]
+
+
+Processing PuzzleController#show_cart (for 127.0.0.1 at 2008-04-25 16:44:56) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"show_cart", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/show_cart
+  [4;36;1mConfiguration Columns (0.002256)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mPuzzle Columns (0.001665)[0m   [0mSHOW FIELDS FROM puzzles[0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.01418 (70 reqs/sec) | Rendering: 0.00925 (65%) | DB: 0.00392 (27%) | 200 OK [http://localhost/puzzle/show_cart]
+
+
+Processing PuzzleController#remove_item (for 127.0.0.1 at 2008-04-25 16:44:59) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"remove_item", "id"=>"7", "controller"=>"puzzle"}
+  [4;36;1mConfiguration Columns (0.002109)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mConfiguration Load (0.001417)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 7) [0m
+Redirected to http://localhost:3000/puzzle/show_cart
+Completed in 0.00732 (136 reqs/sec) | DB: 0.00353 (48%) | 302 Found [http://localhost/puzzle/remove_item/7]
+
+
+Processing PuzzleController#show_cart (for 127.0.0.1 at 2008-04-25 16:44:59) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"show_cart", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/show_cart
+  [4;36;1mConfiguration Columns (0.002221)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mPuzzle Columns (0.002106)[0m   [0mSHOW FIELDS FROM puzzles[0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.01578 (63 reqs/sec) | Rendering: 0.01036 (65%) | DB: 0.00433 (27%) | 200 OK [http://localhost/puzzle/show_cart]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 16:45:07) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;36;1mPuzzle Load (0.000407)[0m   [0;1mSELECT * FROM puzzles WHERE (active = 1) [0m
+Rendering  within layouts/puzzle
+Rendering puzzle/store
+  [4;35;1mPuzzle Columns (0.002458)[0m   [0mSHOW FIELDS FROM puzzles[0m
+  [4;36;1mConfiguration Columns (0.002226)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mSQL (0.000421)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mConfiguration Load (0.000429)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.000222)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000953)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.000356)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mConfiguration Load (0.000283)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000210)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000325)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000572)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mConfiguration Load (0.000276)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000199)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000400)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mSQL (0.000263)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mConfiguration Load (0.000211)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000225)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000390)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000283)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Load (0.000223)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000218)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000382)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000405)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mConfiguration Load (0.000245)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000220)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000336)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000289)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mConfiguration Load (0.000294)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.000217)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000492)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000347)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mConfiguration Load (0.000304)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000203)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000558)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000296)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mConfiguration Load (0.000217)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000192)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000541)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000284)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mConfiguration Load (0.000224)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000203)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.001081)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.06563 (15 reqs/sec) | Rendering: 0.04486 (68%) | DB: 0.01888 (28%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#gallery (for 127.0.0.1 at 2008-04-25 16:45:18) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"gallery", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/gallery
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.03115 (32 reqs/sec) | Rendering: 0.03008 (96%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/gallery]
+
+
+Processing PuzzleController#gallery (for 127.0.0.1 at 2008-04-25 16:45:44) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"gallery", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/gallery
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.01139 (87 reqs/sec) | Rendering: 0.01003 (88%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/gallery]
+
+
+Processing PuzzleController#story (for 127.0.0.1 at 2008-04-25 16:45:48) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"story", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/story
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.04315 (23 reqs/sec) | Rendering: 0.04211 (97%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/story]
+
+
+Processing PuzzleController#stories (for 127.0.0.1 at 2008-04-25 16:45:51) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"stories", "controller"=>"puzzle"}
+  [4;35;1mCustomerStory Load (0.000532)[0m   [0mSELECT * FROM customer_stories WHERE (active = 1) ORDER BY created_at desc[0m
+Rendering  within layouts/puzzle
+Rendering puzzle/stories
+  [4;36;1mCustomerStory Columns (0.001773)[0m   [0;1mSHOW FIELDS FROM customer_stories[0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.02882 (34 reqs/sec) | Rendering: 0.00668 (23%) | DB: 0.00230 (7%) | 200 OK [http://localhost/puzzle/stories]
+
+
+Processing PuzzleController#news (for 127.0.0.1 at 2008-04-25 16:45:53) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"news", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/news
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.03920 (25 reqs/sec) | Rendering: 0.03817 (97%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/news]
+
+
+Processing PuzzleController#contact (for 127.0.0.1 at 2008-04-25 16:45:56) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"contact", "controller"=>"puzzle"}
+  [4;35;1mEmailMessage Columns (0.098292)[0m   [0mSHOW FIELDS FROM email_messages[0m
+Rendering  within layouts/puzzle
+Rendering puzzle/contact
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('mailbox.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.13684 (7 reqs/sec) | Rendering: 0.01250 (9%) | DB: 0.09829 (71%) | 200 OK [http://localhost/puzzle/contact]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-25 16:46:00) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering  within layouts/puzzle
+Rendering puzzle/index
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.00602 (166 reqs/sec) | Rendering: 0.00504 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 16:46:06) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;36;1mPuzzle Load (0.000419)[0m   [0;1mSELECT * FROM puzzles WHERE (active = 1) [0m
+Rendering  within layouts/puzzle
+Rendering puzzle/store
+  [4;35;1mPuzzle Columns (0.005672)[0m   [0mSHOW FIELDS FROM puzzles[0m
+  [4;36;1mConfiguration Columns (0.003959)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mSQL (0.004481)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mConfiguration Load (0.000418)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.000295)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000533)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.000378)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mConfiguration Load (0.000545)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000973)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000469)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.009747)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mConfiguration Load (0.004591)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000334)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000359)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mSQL (0.000226)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mConfiguration Load (0.000205)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000207)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000356)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000281)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Load (0.000210)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000210)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000423)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000237)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mConfiguration Load (0.000206)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000299)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.004806)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000546)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mConfiguration Load (0.002276)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.001568)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.001651)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.005521)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mConfiguration Load (0.000357)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.001078)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.003187)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000655)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mConfiguration Load (0.000340)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.001588)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000492)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.002403)[0m   [0mSELECT count(*) AS count_all FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mConfiguration Load (0.000415)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000238)[0m   [0mSELECT * FROM configurations WHERE (configurations.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000422)[0m   [0;1mSELECT * FROM configurations WHERE (configurations.puzzle_id = 10) [0m
+DEPRECATION WARNING: You've called image_path with a source that doesn't include an extension. In Rails 2.0, that will not result in .png automatically being appended. So you should call image_path('made_in_usa.png') instead  See http://www.rubyonrails.org/deprecation for details. (called from image_tag at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-1.13.6/lib/action_view/helpers/asset_tag_helper.rb:188)
+Completed in 0.12837 (7 reqs/sec) | Rendering: 0.06254 (48%) | DB: 0.06358 (49%) | 200 OK [http://localhost/puzzle/store]
+  [4;36;1mSQL (0.000325)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;35;1mSQL (0.078078)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000408)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000199)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000210)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000176)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000176)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000190)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000177)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000175)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000240)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000177)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000173)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000175)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to AddSaleFlag (13)
+  [4;36;1mSQL (0.274926)[0m   [0;1mALTER TABLE configurations ADD `on_sale` tinyint(1) DEFAULT 0[0m
+  [4;35;1mSQL (0.001542)[0m   [0mUPDATE schema_info SET version = 13[0m
+  [4;36;1mSQL (0.000348)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000878)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.011642)[0m   [0;1mSHOW FIELDS FROM configurations[0m
+  [4;35;1mSQL (0.030560)[0m   [0mSHOW KEYS FROM configurations[0m
+  [4;36;1mSQL (0.010682)[0m   [0;1mSHOW FIELDS FROM customer_stories[0m
+  [4;35;1mSQL (0.006023)[0m   [0mSHOW KEYS FROM customer_stories[0m
+  [4;36;1mSQL (0.004962)[0m   [0;1mSHOW FIELDS FROM email_messages[0m
+  [4;35;1mSQL (0.003194)[0m   [0mSHOW KEYS FROM email_messages[0m
+  [4;36;1mSQL (0.055831)[0m   [0;1mSHOW FIELDS FROM entries[0m
+  [4;35;1mSQL (0.018909)[0m   [0mSHOW KEYS FROM entries[0m
+  [4;36;1mSQL (0.006921)[0m   [0;1mSHOW FIELDS FROM puzzles[0m
+  [4;35;1mSQL (0.001602)[0m   [0mSHOW KEYS FROM puzzles[0m
+  [4;36;1mSQL (0.005756)[0m   [0;1mSHOW FIELDS FROM sessions[0m
+  [4;35;1mSQL (0.043715)[0m   [0mSHOW KEYS FROM sessions[0m
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 16:49:57) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;36;1mPuzzle Load (0.000377)[0m   [0;1mSELECT * FROM `puzzles` WHERE (active = 1) [0m
+Rendering template within layouts/puzzle
+Rendering puzzle/store
+  [4;35;1mPuzzle Columns (0.002000)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mConfiguration Columns (0.002055)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mSQL (0.000337)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mConfiguration Load (0.000329)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000480)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.000564)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mConfiguration Load (0.000258)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000411)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000255)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mConfiguration Load (0.000217)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000306)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mSQL (0.000219)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mConfiguration Load (0.000209)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000331)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000224)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Load (0.000210)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000324)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000252)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mConfiguration Load (0.000217)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000554)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000242)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mConfiguration Load (0.000261)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000337)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000216)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mConfiguration Load (0.000247)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000314)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000282)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mConfiguration Load (0.000529)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000379)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000386)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mConfiguration Load (0.000275)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000564)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+Completed in 0.20563 (4 reqs/sec) | Rendering: 0.18807 (91%) | DB: 0.01416 (6%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-04-25 16:49:58) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/images/made_in_usa" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-25 16:50:09) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.06174 (16 reqs/sec) | Rendering: 0.05939 (96%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-04-25 16:50:10) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/images/made_in_usa" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-25 16:50:43) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.01012 (98 reqs/sec) | Rendering: 0.00768 (75%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 16:50:59) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;35;1mPuzzle Load (0.000387)[0m   [0mSELECT * FROM `puzzles` WHERE (active = 1) [0m
+Rendering template within layouts/puzzle
+Rendering puzzle/store
+  [4;36;1mPuzzle Columns (0.092892)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mConfiguration Columns (0.287991)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mSQL (0.106700)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mConfiguration Load (0.000458)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.000450)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mSQL (0.000301)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mConfiguration Load (0.000361)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000449)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mSQL (0.000303)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mConfiguration Load (0.000236)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000361)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mSQL (0.000244)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mConfiguration Load (0.000227)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000321)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mSQL (0.000229)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mConfiguration Load (0.000220)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000584)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mSQL (0.000314)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mConfiguration Load (0.000232)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000368)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mSQL (0.000284)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mConfiguration Load (0.000222)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.000372)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mSQL (0.000273)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mConfiguration Load (0.000224)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000302)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mSQL (0.000239)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mConfiguration Load (0.000221)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000397)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mSQL (0.000291)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+  [4;35;1mConfiguration Load (0.000272)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000548)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+Completed in 0.54045 (1 reqs/sec) | Rendering: 0.04021 (7%) | DB: 0.49727 (92%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#add_to_cart (for 127.0.0.1 at 2008-04-25 16:51:02) [POST]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"commit"=>"Add to Cart", "finish"=>"2", "action"=>"add_to_cart", "id"=>"1", "controller"=>"puzzle"}
+  [4;36;1mConfiguration Columns (0.110085)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (0.146264)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+Completed in 0.26650 (3 reqs/sec) | Rendering: 0.00581 (2%) | DB: 0.25635 (96%) | 200 OK [http://localhost/puzzle/add_to_cart/1]
+
+
+Processing PuzzleController#show_cart (for 127.0.0.1 at 2008-04-25 16:52:00) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"show_cart", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/show_cart
+  [4;36;1mConfiguration Columns (0.002124)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mPuzzle Columns (0.001854)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+Completed in 0.16804 (5 reqs/sec) | Rendering: 0.16167 (96%) | DB: 0.00398 (2%) | 200 OK [http://localhost/puzzle/show_cart]
+
+
+Processing PuzzleController#empty_cart (for 127.0.0.1 at 2008-04-25 16:52:04) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"empty_cart", "controller"=>"puzzle"}
+Redirected to http://localhost:3000/puzzle/show_cart
+Completed in 0.00267 (374 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/puzzle/empty_cart]
+
+
+Processing PuzzleController#show_cart (for 127.0.0.1 at 2008-04-25 16:52:04) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"show_cart", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/show_cart
+Completed in 0.01065 (93 reqs/sec) | Rendering: 0.00449 (42%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/show_cart]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 16:52:09) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;36;1mPuzzle Load (0.000399)[0m   [0;1mSELECT * FROM `puzzles` WHERE (active = 1) [0m
+Rendering template within layouts/puzzle
+Rendering puzzle/store
+  [4;35;1mPuzzle Columns (0.039018)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mConfiguration Columns (0.385447)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mSQL (0.225410)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mConfiguration Load (0.000370)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000456)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.000310)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mConfiguration Load (0.000230)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000642)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000283)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mConfiguration Load (0.000222)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000354)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mSQL (0.000249)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mConfiguration Load (0.000229)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000392)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000322)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Load (0.000359)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000392)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000504)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mConfiguration Load (0.000265)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000587)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000271)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mConfiguration Load (0.000231)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000376)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000285)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mConfiguration Load (0.000278)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000410)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000293)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mConfiguration Load (0.000229)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000420)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000232)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mConfiguration Load (0.000246)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000376)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+Completed in 0.71544 (1 reqs/sec) | Rendering: 0.04893 (6%) | DB: 0.66009 (92%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 16:55:53) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;35;1mPuzzle Load (0.000403)[0m   [0mSELECT * FROM `puzzles` WHERE (active = 1) [0m
+Rendering template within layouts/puzzle
+Rendering puzzle/store
+  [4;36;1mPuzzle Columns (0.002100)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mConfiguration Columns (0.007360)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mSQL (0.007162)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mConfiguration Load (0.004548)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.000451)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mSQL (0.000297)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mConfiguration Load (0.000241)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000663)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mSQL (0.000302)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mConfiguration Load (0.000258)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000405)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mSQL (0.000271)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mConfiguration Load (0.000306)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000809)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mSQL (0.000412)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mConfiguration Load (0.000321)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000455)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mSQL (0.000335)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mConfiguration Load (0.000299)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000591)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mSQL (0.000293)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mConfiguration Load (0.000233)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.000391)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mSQL (0.000270)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mConfiguration Load (0.000277)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000359)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mSQL (0.000293)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mConfiguration Load (0.000234)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000366)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mSQL (0.000248)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+  [4;35;1mConfiguration Load (0.000230)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000355)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+Completed in 0.17264 (5 reqs/sec) | Rendering: 0.05389 (31%) | DB: 0.03154 (18%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 16:58:31) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;36;1mPuzzle Load (0.000594)[0m   [0;1mSELECT * FROM `puzzles` WHERE (active = 1) [0m
+Rendering template within layouts/puzzle
+Rendering puzzle/store
+  [4;35;1mPuzzle Columns (0.036069)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mConfiguration Columns (0.002148)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mSQL (0.000364)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mConfiguration Load (0.000390)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000690)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.003293)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mConfiguration Load (0.000348)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000494)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000350)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mConfiguration Load (0.000223)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000479)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mSQL (0.000325)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mConfiguration Load (0.000250)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000318)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000244)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Load (0.000250)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000406)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000282)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mConfiguration Load (0.000233)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000323)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000246)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mConfiguration Load (0.000269)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000354)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000237)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mConfiguration Load (0.000224)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000374)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000228)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mConfiguration Load (0.000210)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000373)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000244)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mConfiguration Load (0.000525)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000387)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+Completed in 0.11307 (8 reqs/sec) | Rendering: 0.05103 (45%) | DB: 0.05174 (45%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#add_to_cart (for 127.0.0.1 at 2008-04-25 16:59:12) [POST]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"commit"=>"Add to Cart", "finish"=>"2", "action"=>"add_to_cart", "id"=>"1", "controller"=>"puzzle"}
+  [4;35;1mConfiguration Columns (0.009385)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.000559)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;35;1mPuzzle Columns (0.002158)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.000692)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+Completed in 0.07255 (13 reqs/sec) | Rendering: 0.00444 (6%) | DB: 0.01279 (17%) | 200 OK [http://localhost/puzzle/add_to_cart/1]
+
+
+Processing PuzzleController#add_to_cart (for 127.0.0.1 at 2008-04-25 16:59:15) [POST]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"commit"=>"Add to Cart", "finish"=>"1", "action"=>"add_to_cart", "id"=>"1", "controller"=>"puzzle"}
+  [4;35;1mConfiguration Columns (0.002559)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.000516)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 1) [0m
+  [4;35;1mPuzzle Columns (0.001934)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.001391)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+Completed in 0.02025 (49 reqs/sec) | Rendering: 0.00612 (30%) | DB: 0.00640 (31%) | 200 OK [http://localhost/puzzle/add_to_cart/1]
+
+
+Processing PuzzleController#add_to_cart (for 127.0.0.1 at 2008-04-25 16:59:17) [POST]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"commit"=>"Add to Cart", "finish"=>"3", "action"=>"add_to_cart", "id"=>"1", "controller"=>"puzzle"}
+  [4;35;1mConfiguration Columns (0.031707)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.126569)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 3) [0m
+  [4;35;1mPuzzle Columns (0.124118)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.120932)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+Completed in 0.41667 (2 reqs/sec) | Rendering: 0.00553 (1%) | DB: 0.40333 (96%) | 200 OK [http://localhost/puzzle/add_to_cart/1]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 17:05:09) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;35;1mPuzzle Load (0.000341)[0m   [0mSELECT * FROM `puzzles` WHERE (active = 1) [0m
+Rendering template within layouts/puzzle
+Rendering puzzle/store
+  [4;36;1mPuzzle Columns (0.001645)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mConfiguration Columns (0.002540)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mSQL (0.000299)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mConfiguration Load (0.000255)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.000404)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+
+
+ActionView::TemplateError (undefined local variable or method `picture' for #<ActionView::Base:0x252180c>) on line #41 of puzzle/store.rhtml:
+38: 				<% puzzle.configurations.each do |c| %>
+39: 					<% if c.active? %>
+40: 						<% unless c.out_of_stock? %>
+41: 							<%= radio_button_tag 'finish', c.id, (@c = c == @default ? true : false), :onClick => "javascript:void(document.thumbnail#{picture.id}.src = '/images/thumbnails/#{c.default_thumbnail}')" %> 
+42: 							<%= c.name %> :: <%= number_to_currency(c.price, :precision => 0) %><br />
+43: 						<% else %>
+44: 							 <span style="color: red;"><%= c.name %> Out Of Stock</span>
+
+    app/views/puzzle/store.rhtml:41:in `_run_erb_47app47views47puzzle47store46rhtml'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations/association_proxy.rb:125:in `each'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations/association_proxy.rb:125:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations/association_proxy.rb:125:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations/association_collection.rb:162:in `method_missing'
+    app/views/puzzle/store.rhtml:38:in `_run_erb_47app47views47puzzle47store46rhtml'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_helper.rb:248:in `fields_for'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/prototype_helper.rb:386:in `form_remote_for'
+    app/views/puzzle/store.rhtml:37:in `_run_erb_47app47views47puzzle47store46rhtml'
+    app/views/puzzle/store.rhtml:24:in `each'
+    app/views/puzzle/store.rhtml:24:in `_run_erb_47app47views47puzzle47store46rhtml'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 17:05:38) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;36;1mPuzzle Load (0.000325)[0m   [0;1mSELECT * FROM `puzzles` WHERE (active = 1) [0m
+Rendering template within layouts/puzzle
+Rendering puzzle/store
+  [4;35;1mPuzzle Columns (0.002013)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mConfiguration Columns (0.001781)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mSQL (0.000292)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mConfiguration Load (0.000307)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.001100)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.001563)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mConfiguration Load (0.000239)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000444)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000301)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mConfiguration Load (0.000229)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000434)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mSQL (0.000349)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mConfiguration Load (0.000227)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000333)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000259)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Load (0.000245)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000320)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000244)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mConfiguration Load (0.000217)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000395)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000255)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mConfiguration Load (0.000217)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000303)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000273)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mConfiguration Load (0.000221)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000294)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000217)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mConfiguration Load (0.000289)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000325)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000232)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mConfiguration Load (0.000215)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000304)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+Completed in 0.06484 (15 reqs/sec) | Rendering: 0.04708 (72%) | DB: 0.01991 (30%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-25 17:08:45) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;35;1mPuzzle Load (0.000451)[0m   [0mSELECT * FROM `puzzles` WHERE (active = 1) [0m
+Rendering template within layouts/puzzle
+Rendering puzzle/store
+  [4;36;1mPuzzle Columns (0.002493)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mConfiguration Columns (0.002748)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mSQL (0.000403)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mConfiguration Load (0.000330)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.002613)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mSQL (0.000480)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mConfiguration Load (0.000266)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000328)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mSQL (0.000257)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mConfiguration Load (0.000235)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000452)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mSQL (0.000251)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mConfiguration Load (0.000218)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000354)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mSQL (0.000347)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mConfiguration Load (0.000234)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000324)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mSQL (0.000317)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mConfiguration Load (0.000247)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000338)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mSQL (0.000246)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mConfiguration Load (0.000223)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.000389)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mSQL (0.000219)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mConfiguration Load (0.000262)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000421)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mSQL (0.000328)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mConfiguration Load (0.000233)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000383)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mSQL (0.000381)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+  [4;35;1mConfiguration Load (0.000493)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000708)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+Completed in 0.06732 (14 reqs/sec) | Rendering: 0.04621 (68%) | DB: 0.01797 (26%) | 200 OK [http://localhost/puzzle/store]

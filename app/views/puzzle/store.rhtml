@@ -2,10 +2,13 @@
 	function updateStore() {
 		
 	}
+	
 </script>
-<h2>Our Puzzles</h2>
-<p style="font-style: italic;">Your puzzle may not appear exactly as you see below.<br />  We'll use the same color combinations, but we may not necessarily paint <br />each piece the same color that is shown below.  If you have a specific request, <%= link_to "email", :action => "contact" %> us.</p>
-<div id="cart" style="width: 200px;padding: 4px;text-align: center;">
+<p style="font-style: italic;">Your puzzle may not appear exactly as you see below.  We'll use the same color combinations, but we may not necessarily paint each piece the same color that is shown below.  If you have a specific request, <%= link_to "email", :action => "contact" %> us.</p>
+<div style="text-align: center; width: 100%;">
+	<p><%= link_to "Enter to Win a free puzzle from MyDaddyPuzzles!", :action => "give_away" %></p>
+</div>
+<div id="cart" style="display: none; width: 200px;padding: 4px;text-align: center;background-color: #FFF7B8;border: 1px solid red;">
 <% unless @cart.items.empty? %>	
 	<%= "Shopping Cart total: #{number_to_currency(@cart.items.sum {|item| item.price})}" %>
 	<%= link_to "Show Cart", :action => "show_cart" %>
@@ -25,7 +28,7 @@
 	
 	<tr class="<%= cycle('even','odd') %>">
 		<td id="picture_<%= puzzle.id %>" style="text-align: center;width: 150px;">
-			<%= link_to image_tag("/images/thumbnails/#{@default.default_thumbnail}"), :action => "images", :id => @default %><br />
+			<%= link_to image_tag("/images/thumbnails/#{@default.default_thumbnail}", :id => "thumbnail#{puzzle.id}"), :action => "images", :id => @default %><br />
 			<%= link_to "More Images", :action => "images", :id => @default %>
 		</td>
 		<td style="width: 250px;"><span style="font-size: 2em; font-weight: bold;"><%= puzzle.name %></span><br /><%= puzzle.description %></td>
@@ -35,7 +38,7 @@
 				<% puzzle.configurations.each do |c| %>
 					<% if c.active? %>
 						<% unless c.out_of_stock? %>
-							<%= radio_button_tag 'finish', c.id, (@c = c == @default ? true : false) %> 
+							<%= radio_button_tag 'finish', c.id, (@c = c == @default ? true : false), :onClick => "javascript:void(document.all.thumbnail#{puzzle.id}.src = '/images/thumbnails/#{c.default_thumbnail}')" %> 
 							<%= c.name %> :: <%= number_to_currency(c.price, :precision => 0) %><br />
 						<% else %>
 							 <span style="color: red;"><%= c.name %> Out Of Stock</span>
