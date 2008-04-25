@@ -77,7 +77,7 @@ class PuzzleController < ApplicationController
 
   def store
     @page_title = 'Puzzle Store'
-    @puzzles = Puzzle.find(:all, :conditions => 'active = 1')
+    @puzzles = Puzzle.find(:all, :conditions => 'puzzles.active = 1', :order => 'on_sale', :include => :configurations)
     @cart = find_cart
   end
   
