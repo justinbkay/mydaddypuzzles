@@ -2,32 +2,32 @@
 <%= error_messages_for :entry %>
 <p>Enter to win a <strong>free</strong> MyDaddyPuzzle!  Each month MyDaddyPuzzles will give away a puzzle to one lucky visitor.  No purchase necessary to enter.  The drawing will be held on the last day of every month.  April's drawing is for a Camden Camel.  The winner will be notified via email on May 1st.  Good luck and tell your friends!  Fill in the <a href="#entry">Entry Form</a> below for your chance to win!</p>
 
-<%= image_tag 'camel_natural_store.jpg', :title => 'April Puzzle: Camden Camel' %>
+<%= image_tag '/images/full_size/camel_stained_store.jpg', :title => 'April Puzzle: Camden Camel' %>
 <a name="entry"></a>
 <div id="entry_form" style="border: 1px solid brown;margin: 20px;padding: 10px;">
-	<h3>Enter to win a Free Puzzle</h3>
-	
-	<% form_for :entry, @entry, :url => {:action => :record_entry} do |f| %>
-		<p><label for="entry_name">Name</label><br />
-			<%= f.text_field 'name', :size => 20 %></p>
-		<p><label for="entry_address">Address</label><br />
-			<%= f.text_field 'address' %></p>
-		<p><label for="entry_city">City</label><br />
-			<%= f.text_field 'city', :size => 20 %> </p>
-		<p><label for="entry_state">State</label><br />
-			<%= f.text_field 'state', :size => 15 %></p>
-		<p><label for="entry_zip">Zip</label><br />
-			<%= f.text_field 'zip', :size => 8 %></p>
-		<p><label for="phone">Phone Number</label><br />
-			<%= f.text_field 'phone', :size => 15 %></p>
-		<p><label for="Email Address">Email Address</label><br />
-			<%= f.text_field 'email' %></p>
-			<%= f.hidden_field 'month' %>
-		<%= submit_tag 'Enter to Win' %>
-	<% end %>
-	<span style="font-size: .8em; color: red;">* all fields are required</span>
+        <h3>Enter to win a Free Puzzle</h3>
+
+        <% form_for :entry, @entry, :url => {:action => :record_entry} do |f| %>
+                <p><label for="entry_name">Name</label><br />
+                        <%= f.text_field 'name', :size => 20 %></p>
+                <p><label for="entry_address">Address</label><br />
+                        <%= f.text_field 'address' %></p>
+                <p><label for="entry_city">City</label><br />
+                        <%= f.text_field 'city', :size => 20 %> </p>
+                <p><label for="entry_state">State</label><br />
+                        <%= f.text_field 'state', :size => 15 %></p>
+                <p><label for="entry_zip">Zip</label><br />
+                        <%= f.text_field 'zip', :size => 8 %></p>
+                <p><label for="phone">Phone Number</label><br />
+                        <%= f.text_field 'phone', :size => 15 %></p>
+                <p><label for="Email Address">Email Address</label><br />
+                        <%= f.text_field 'email' %></p>
+                        <%= f.hidden_field 'month' %>
+                <%= submit_tag 'Enter to Win' %>
+        <% end %>
+        <span style="font-size: .8em; color: red;">* all fields are required</span>
 </div>
 
 <div id="disclaimer" style="font-size: 1.1em; font-weight: bold;">
-	The information you enter on this page will not be used for any other reason than to contact you and send your free puzzle if you are the winner.  This information will not be shared with any third party. 
+        The information you enter on this page will not be used for any other reason than to contact you and send your free puzzle if you are the winner.  This information will not be shared with any third party.
 </div>
