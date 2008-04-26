@@ -38,7 +38,7 @@
 				<% puzzle.configurations.each do |c| %>
 					<% if c.active? %>
 						<% unless c.out_of_stock? %>
-							<%= radio_button_tag 'finish', c.id, (@c = c == @default ? true : false), :onClick => "javascript:void(document.all.thumbnail#{puzzle.id}.src = '/images/thumbnails/#{c.default_thumbnail}')" %> 
+							<%= radio_button_tag 'finish', c.id, (@c = c == @default ? true : false), :onClick => "javascript:void($(\"thumbnail#{puzzle.id}\").src = '/images/thumbnails/#{c.default_thumbnail}')" %> 
 							<%= c.name %> :: <%= number_to_currency(c.price, :precision => 0) %><br />
 						<% else %>
 							 <span style="color: red;"><%= c.name %> Out Of Stock</span>
