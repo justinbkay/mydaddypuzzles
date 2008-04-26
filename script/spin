@@ -1,1 +1,1 @@
-thin start -C config/thin.yml -d
+cd /usr/local/rails/mydaddypuzzles/current && /usr/bin/thin start -C config/thin.yml -d
