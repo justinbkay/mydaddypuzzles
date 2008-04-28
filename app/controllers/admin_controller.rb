@@ -179,6 +179,59 @@ class AdminController < ApplicationController
 
 ######## end stories
 
+##### Start News #######
+
+  def new_news
+    @news_story = NewsStory.new
+  end
+
+  def list_news
+    @news_stories = NewsStory.find(:all, :order => 'created_at')
+  end
+
+  def edit_news
+    @news_story = NewsStory.find(params[:id])
+  end
+
+  def create_news
+    @news_story = NewsStory.new(params[:news_story])
+    #raise params.inspect
+    begin
+      @news_story.picture = params[:news_picture].original_filename
+      save_file(params[:news_picture].original_filename,params[:news_picture].read, 2)
+    rescue
+      # do nothing on error
+    end
+    
+    if @news_story.save 
+      flash[:notice] = "Article Successfully created..."
+      redirect_to :action => :list_news
+    else
+      render :action => :new_news
+    end
+  end
+
+  def update_news
+    @news_story = NewsStory.find(params[:id])
+    if @news_story.update_attributes(params[:news_story])
+      begin
+        unless params[:news_picture].original_filename.nil?
+          unless @news_story.picture == params[:news_picture].original_filename || @news_story.picture.nil?
+            remove_file(@news_story.picture,2)
+          end
+          save_file(params[:news_picture].original_filename,params[:news_picture].read, 2)
+          @news_story.update_attribute(:picture,params[:news_picture].original_filename)
+        end
+      rescue
+        # let it pass
+      end
+      redirect_to :action => :list_news
+    else
+      render :action => :edit_news
+    end
+  end
+
+##### end news #########
 
 
 private
@@ -188,8 +241,10 @@ private
   end
   
   def save_file(filename, data, thumbnail=nil)
-    if thumbnail
+    if thumbnail == 1
       @rails_root = File.expand_path(RAILS_ROOT) + '/public/images/thumbnails/' + filename
+    elsif thumbnail == 2
+      @rails_root = File.expand_path(RAILS_ROOT) + '/public/images/articles/' + filename
     else
       @rails_root = File.expand_path(RAILS_ROOT) + '/public/images/full_size/' + filename
     end
@@ -199,8 +254,10 @@ private
   end
   
   def remove_file(filename, thumbnail=nil)
-    if thumbnail
+    if thumbnail == 1 
       @rails_root = File.expand_path(RAILS_ROOT) + '/public/images/thumbnails/' + filename
+    elsif thumbnail == 2
+      @rails_root = File.expand_path(RAILS_ROOT) + '/public/images/articles/' + filename
     else
       @rails_root = File.expand_path(RAILS_ROOT) + '/public/images/full_size/' + filename
     end

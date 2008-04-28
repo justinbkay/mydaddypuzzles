@@ -14,7 +14,9 @@
 		</p>
 		<% unless controller.action_name == 'login' %>
 			<p style="margin-top: 30px;">
-				<%= link_to "Puzzles", :action => "index" %> :: <%= link_to "User Stories", :action => "list_stories" %>
+				<%= link_to "Puzzles", :action => "index" %> :: 
+				<%= link_to "User Stories", :action => "list_stories" %> ::
+				<%= link_to "News Stories", :action => "list_news" %>
 			</p>
 		
 			<p style="position: absolute; top: 10px; left: 30px;">

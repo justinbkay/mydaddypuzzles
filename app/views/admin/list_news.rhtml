@@ -1,0 +1,15 @@
+<h2>News Articles</h2>
+<table>
+	<tr>
+		<th>Title</th>
+		<th>Picture</th>
+	</tr>
+	<% for story in @news_stories %>
+		<tr class="<%= cycle('even','odd') %>">
+			<td><%= story.title %></td>
+			<td><%= story.picture %></td>
+			<td><%= link_to "edit", :action => "edit_news", :id => story %></td>
+		</tr>
+	<% end %>
+</table>
+<%= link_to "New Article", :action => "new_news" %>

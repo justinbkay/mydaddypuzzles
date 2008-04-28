@@ -1,0 +1,11 @@
+<p><label for="news_story_title">Title</label><br />
+	<%= news_form.text_field 'title', :size => 30 %></p>
+	
+<p><label for="news_story_body">Article (html)</label><br />
+	<%= news_form.text_area 'body' %></p>
+	
+<p><label for="news_story_picture">Picture (optional, but recommended)</label><br />
+	<%= file_field_tag 'news_picture' %></p>
+	
+<p><label for="news_story_post_date">Post Date (required)</label><br />
+	<%= news_form.date_select 'post_date', :order => [:month,:day,:year] %></p>

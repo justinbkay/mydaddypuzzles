@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 14) do
+ActiveRecord::Schema.define(:version => 15) do
 
   create_table "configurations", :force => true do |t|
     t.integer "puzzle_id"
@@ -46,6 +46,15 @@ ActiveRecord::Schema.define(:version => 14) do
     t.string "phone"
     t.string "email"
     t.string "month"
+  end
+
+  create_table "news_stories", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "picture"
+    t.date     "post_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "puzzles", :force => true do |t|

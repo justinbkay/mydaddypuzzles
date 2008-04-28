@@ -20,7 +20,6 @@ role :db,  "208.78.97.241", :primary => true
 
 desc "start thin web server"
 task :start_thin do
-  run "cd #{release_path}"
-  run "/usr/bin/thin start -C config/thin.yml -d"
+  run "cd #{release_path} && /usr/bin/thin start -C config/thin.yml -d"
 end
 after "deploy:restart", "start_thin"

@@ -51,6 +51,7 @@ class PuzzleController < ApplicationController
   end
   
   def news
+    @stories = NewsStory.find(:all, :order => 'post_date desc')
     @page_title = 'News'
     render
   end
