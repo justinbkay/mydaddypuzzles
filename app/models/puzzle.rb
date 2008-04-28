@@ -1,5 +1,6 @@
 class Puzzle < ActiveRecord::Base
   has_many :configurations
+  has_many :prizes
   
   validates_presence_of :name, :description, :size
   validates_uniqueness_of :name

@@ -1,0 +1,7 @@
+<h2>Pick the puzzles awarded in the give away</h2>
+
+<% for p in @prizes %>
+	<% form_remote_tag :url => {:action => :save_prize, :id => p} do %>
+		<%= Date::MONTHNAMES[p.month] %> <%= select_tag 'puzzle', options_for_select(@puzzles, p.puzzle_id) %> -- <%= submit_tag 'Save' %><br />
+	<% end %>
+<% end %>

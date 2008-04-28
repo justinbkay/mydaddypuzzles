@@ -6,6 +6,7 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Admin: <%= controller.action_name %></title>
   <%= stylesheet_link_tag 'scaffold', 'admin' %>
+  <%= javascript_include_tag 'prototype', 'effects' %>
 </head>
 <body style="margin: 0 auto;">
 	<div style="text-align: center; background-color: #000; color: #fff;height: 50px;padding-top: 15px;">
@@ -16,7 +17,8 @@
 			<p style="margin-top: 30px;">
 				<%= link_to "Puzzles", :action => "index" %> :: 
 				<%= link_to "User Stories", :action => "list_stories" %> ::
-				<%= link_to "News Stories", :action => "list_news" %>
+				<%= link_to "News Stories", :action => "list_news" %> ::
+				<%= link_to "List Prizes", :action => "list_prizes" %>
 			</p>
 		
 			<p style="position: absolute; top: 10px; left: 30px;">
@@ -25,7 +27,7 @@
 		<% end %>
 	</div>
 	<div style="width: 1000px; margin-left: 50px;" id="main">
-		<p style="color: green"><%= flash[:notice] %></p>
+		<p id="flash" style="color: green"><%= flash[:notice] %></p>
 
 		<%= yield  %>
 	</div>

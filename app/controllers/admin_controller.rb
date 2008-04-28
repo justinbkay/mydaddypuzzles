@@ -233,6 +233,24 @@ class AdminController < ApplicationController
 
 ##### end news #########
 
+#### prizes
+
+  def list_prizes
+    @prizes = Prize.find(:all, :order => 'month')
+    @puzzles = Configuration.find(:all, :conditions => 'active = 1').map {|p| [p.puzzle.to_s + ' ' + p.name, p.id]}
+    @puzzles.unshift(['',''])
+  end
+  
+  def save_prize
+    @prize = Prize.find(params[:id])
+    @prize.update_attribute(:puzzle_id, params[:puzzle])
+    
+    render :update do |page|
+      page.replace_html 'flash', "Choice Saved"
+      page.visual_effect :highlight, 'flash'
+    end
+  end
+
 
 private
   def base_part_of(file_name)
