@@ -251,6 +251,9 @@ class AdminController < ApplicationController
     end
   end
 
+  def list_entries
+    @entries = Entry.find(:all)
+  end
 
 private
   def base_part_of(file_name)
