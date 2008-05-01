@@ -94,6 +94,10 @@ label {
 	font-size: .9em;
 }
 
+.sale {
+	color: red;
+}
+
 #wrapper {
 	background: #e6d293 url(/images/puzzle.png) no-repeat top left;
 	/*background: #9FD6E2 url(/images/bg.png) no-repeat top left;*/
