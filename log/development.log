@@ -9375,3 +9375,2335 @@ ActionController::RoutingError (No route matches "/images/articles/Photo%209.jpg
     script/server:3
 
 Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+  [4;36;1mSQL (0.000330)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.288644)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000323)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000192)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000252)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000177)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000173)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000171)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000170)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000169)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000170)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000191)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000169)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000179)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000183)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000174)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000172)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreatedAtEntry (16)
+  [4;35;1mSQL (0.131023)[0m   [0mALTER TABLE `entries` ADD `created_at` datetime[0m
+  [4;36;1mSQL (0.000241)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.000396)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000123)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000190)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000154)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000121)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000120)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000121)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000122)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000119)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000120)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreatedAtEntry (16)
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: Duplicate column name 'created_at': ALTER TABLE `entries` ADD `created_at` datetime[0m
+  [4;36;1mSQL (0.000254)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.000492)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000127)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000123)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000244)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000121)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000122)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000165)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000134)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000177)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreatedAtEntry (16)
+  [4;35;1mSQL (0.000749)[0m   [0mUPDATE schema_info SET version = 16[0m
+  [4;36;1mSQL (0.000170)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreatePrizes (17)
+  [4;35;1mSQL (0.002764)[0m   [0mCREATE TABLE `prizes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `month` int(11) DEFAULT NULL, `puzzle_id` int(11) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mPrize Columns (0.002039)[0m   [0;1mSHOW FIELDS FROM `prizes`[0m
+  [4;35;1mSQL (0.000212)[0m   [0mBEGIN[0m
+  [4;36;1mPrize Create (0.000357)[0m   [0;1mINSERT INTO `prizes` (`month`, `updated_at`, `created_at`, `puzzle_id`) VALUES(1, '2008-04-28 15:31:32', '2008-04-28 15:31:32', NULL)[0m
+  [4;35;1mSQL (0.000592)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mBEGIN[0m
+  [4;35;1mPrize Create (0.000263)[0m   [0mINSERT INTO `prizes` (`month`, `updated_at`, `created_at`, `puzzle_id`) VALUES(2, '2008-04-28 15:31:32', '2008-04-28 15:31:32', NULL)[0m
+  [4;36;1mSQL (0.000972)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000142)[0m   [0mBEGIN[0m
+  [4;36;1mPrize Create (0.000316)[0m   [0;1mINSERT INTO `prizes` (`month`, `updated_at`, `created_at`, `puzzle_id`) VALUES(3, '2008-04-28 15:31:32', '2008-04-28 15:31:32', NULL)[0m
+  [4;35;1mSQL (0.000583)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000161)[0m   [0;1mBEGIN[0m
+  [4;35;1mPrize Create (0.000238)[0m   [0mINSERT INTO `prizes` (`month`, `updated_at`, `created_at`, `puzzle_id`) VALUES(4, '2008-04-28 15:31:32', '2008-04-28 15:31:32', NULL)[0m
+  [4;36;1mSQL (0.000565)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000163)[0m   [0mBEGIN[0m
+  [4;36;1mPrize Create (0.000242)[0m   [0;1mINSERT INTO `prizes` (`month`, `updated_at`, `created_at`, `puzzle_id`) VALUES(5, '2008-04-28 15:31:32', '2008-04-28 15:31:32', NULL)[0m
+  [4;35;1mSQL (0.000515)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mBEGIN[0m
+  [4;35;1mPrize Create (0.000220)[0m   [0mINSERT INTO `prizes` (`month`, `updated_at`, `created_at`, `puzzle_id`) VALUES(6, '2008-04-28 15:31:32', '2008-04-28 15:31:32', NULL)[0m
+  [4;36;1mSQL (0.000507)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000130)[0m   [0mBEGIN[0m
+  [4;36;1mPrize Create (0.000237)[0m   [0;1mINSERT INTO `prizes` (`month`, `updated_at`, `created_at`, `puzzle_id`) VALUES(7, '2008-04-28 15:31:32', '2008-04-28 15:31:32', NULL)[0m
+  [4;35;1mSQL (0.000507)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+  [4;35;1mPrize Create (0.000249)[0m   [0mINSERT INTO `prizes` (`month`, `updated_at`, `created_at`, `puzzle_id`) VALUES(8, '2008-04-28 15:31:32', '2008-04-28 15:31:32', NULL)[0m
+  [4;36;1mSQL (0.000587)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000238)[0m   [0mBEGIN[0m
+  [4;36;1mPrize Create (0.000231)[0m   [0;1mINSERT INTO `prizes` (`month`, `updated_at`, `created_at`, `puzzle_id`) VALUES(9, '2008-04-28 15:31:32', '2008-04-28 15:31:32', NULL)[0m
+  [4;35;1mSQL (0.000497)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mBEGIN[0m
+  [4;35;1mPrize Create (0.000213)[0m   [0mINSERT INTO `prizes` (`month`, `updated_at`, `created_at`, `puzzle_id`) VALUES(10, '2008-04-28 15:31:32', '2008-04-28 15:31:32', NULL)[0m
+  [4;36;1mSQL (0.000482)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mPrize Create (0.000210)[0m   [0;1mINSERT INTO `prizes` (`month`, `updated_at`, `created_at`, `puzzle_id`) VALUES(11, '2008-04-28 15:31:32', '2008-04-28 15:31:32', NULL)[0m
+  [4;35;1mSQL (0.000479)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mBEGIN[0m
+  [4;35;1mPrize Create (0.000233)[0m   [0mINSERT INTO `prizes` (`month`, `updated_at`, `created_at`, `puzzle_id`) VALUES(12, '2008-04-28 15:31:32', '2008-04-28 15:31:32', NULL)[0m
+  [4;36;1mSQL (0.000539)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPrize Load (0.000472)[0m   [0mSELECT * FROM `prizes` WHERE (`prizes`.`id` = 4) [0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mBEGIN[0m
+  [4;35;1mPrize Update (0.000348)[0m   [0mUPDATE `prizes` SET `created_at` = '2008-04-28 15:31:32', `month` = 4, `puzzle_id` = 2, `updated_at` = '2008-04-28 15:31:32' WHERE `id` = 4[0m
+  [4;36;1mSQL (0.020785)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.000894)[0m   [0mUPDATE schema_info SET version = 17[0m
+  [4;36;1mSQL (0.000255)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000459)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.020082)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mSQL (0.002061)[0m   [0mdescribe `configurations`[0m
+  [4;36;1mSQL (0.000509)[0m   [0;1mSHOW KEYS FROM `configurations`[0m
+  [4;35;1mSQL (0.017630)[0m   [0mSHOW FIELDS FROM `customer_stories`[0m
+  [4;36;1mSQL (0.002483)[0m   [0;1mdescribe `customer_stories`[0m
+  [4;35;1mSQL (0.001412)[0m   [0mSHOW KEYS FROM `customer_stories`[0m
+  [4;36;1mSQL (0.003536)[0m   [0;1mSHOW FIELDS FROM `email_messages`[0m
+  [4;35;1mSQL (0.002033)[0m   [0mdescribe `email_messages`[0m
+  [4;36;1mSQL (0.001588)[0m   [0;1mSHOW KEYS FROM `email_messages`[0m
+  [4;35;1mSQL (0.002531)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mSQL (0.003118)[0m   [0;1mdescribe `entries`[0m
+  [4;35;1mSQL (0.000498)[0m   [0mSHOW KEYS FROM `entries`[0m
+  [4;36;1mSQL (0.019496)[0m   [0;1mSHOW FIELDS FROM `news_stories`[0m
+  [4;35;1mSQL (0.002315)[0m   [0mdescribe `news_stories`[0m
+  [4;36;1mSQL (0.000744)[0m   [0;1mSHOW KEYS FROM `news_stories`[0m
+  [4;35;1mSQL (0.001905)[0m   [0mSHOW FIELDS FROM `prizes`[0m
+  [4;36;1mSQL (0.001843)[0m   [0;1mdescribe `prizes`[0m
+  [4;35;1mSQL (0.000721)[0m   [0mSHOW KEYS FROM `prizes`[0m
+  [4;36;1mSQL (0.062317)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mSQL (0.002016)[0m   [0mdescribe `puzzles`[0m
+  [4;36;1mSQL (0.000840)[0m   [0;1mSHOW KEYS FROM `puzzles`[0m
+  [4;35;1mSQL (0.002683)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (0.002087)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (0.041603)[0m   [0mSHOW KEYS FROM `sessions`[0m
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-28 15:46:04) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.01480 (67 reqs/sec) | Rendering: 0.01241 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#give_away (for 127.0.0.1 at 2008-04-28 15:46:07) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"give_away", "controller"=>"puzzle"}
+  [4;36;1mEntry Columns (0.002763)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mPrize Load (0.000635)[0m   [0mSELECT * FROM `prizes` WHERE (month = 4) LIMIT 1[0m
+Rendering template within layouts/puzzle
+Rendering puzzle/give_away
+ERROR: compiling _run_erb_47app47views47puzzle47give_away46rhtml RAISED compile error
+/Users/jkay/Sites/mydaddypuzzles/app/views/puzzle/give_away.rhtml:9: syntax error, unexpected '>'
+_erbout.concat "\t\t"; _erbout.concat(( image_tag '/images/thumbnails/<%= @prize.puzzle.default_thumbnail ).to_s); _erbout.concat "', :title => '"; _erbout.concat(( Date.MONTHNAMES[@prize.month] ).to_s); _erbout.concat " Puzzle: "; _erbout.concat(( @prize.puzzle ).to_s); _erbout.concat "', :style => 'float: right;' %>\n"
+                                                                                                                                                                                                                                                                                                                               ^
+/Users/jkay/Sites/mydaddypuzzles/app/views/puzzle/give_away.rhtml:10: syntax error, unexpected $undefined, expecting ')'
+_erbout.concat "        ";  form_for :entry, @entry, :url => {:action => :record_entry} do |f| ; _erbout.concat "\n"
+                                                                                                                  ^
+/Users/jkay/Sites/mydaddypuzzles/app/views/puzzle/give_away.rhtml:11: syntax error, unexpected '<'
+_erbout.concat "                <p><label for=\"entry_name\">Name</label><br />\n"
+                                    ^
+/Users/jkay/Sites/mydaddypuzzles/app/views/puzzle/give_away.rhtml:27: syntax error, unexpected kEND, expecting ')'
+_erbout.concat "        ";  end ; _erbout.concat "\n"
+                               ^
+/Users/jkay/Sites/mydaddypuzzles/app/views/puzzle/give_away.rhtml:35: syntax error, unexpected kEND, expecting ')'
+Function body: def _run_erb_47app47views47puzzle47give_away46rhtml(local_assigns)
+_erbout = ''; _erbout.concat "<h2>Win a Free Puzzle from MyDaddyPuzzles</h2>\n"
+_erbout.concat(( error_messages_for :entry ).to_s); _erbout.concat "\n"
+_erbout.concat "<p>Enter to win a <strong>free</strong> MyDaddyPuzzle!  Each month MyDaddyPuzzles will give away a puzzle to one lucky visitor.  No purchase necessary to enter.  The drawing will be held on the last day of every month.  "; _erbout.concat(( Date.MONTHNAMES[@prize.month] ).to_s); _erbout.concat "'s drawing is for a "; _erbout.concat(( @prize.puzzle ).to_s); _erbout.concat ".  The winner will be notified via email on "; _erbout.concat(( Date.MONTHNAMES[Date.today.next_month.month] ).to_s); _erbout.concat " 1st.  Good luck and tell your friends!  Fill in the <a href=\"#entry\">Entry Form</a> below for your chance to win!</p>\n"
+_erbout.concat "\n"
+_erbout.concat "\n"
+_erbout.concat "<a name=\"entry\"></a>\n"
+_erbout.concat "<div id=\"entry_form\" style=\"border: 1px solid brown;margin: 20px;padding: 10px;\">\n"
+_erbout.concat "        <h3>Enter to win a Free Puzzle</h3>\n"
+_erbout.concat "\t\t"; _erbout.concat(( image_tag '/images/thumbnails/<%= @prize.puzzle.default_thumbnail ).to_s); _erbout.concat "', :title => '"; _erbout.concat(( Date.MONTHNAMES[@prize.month] ).to_s); _erbout.concat " Puzzle: "; _erbout.concat(( @prize.puzzle ).to_s); _erbout.concat "', :style => 'float: right;' %>\n"
+_erbout.concat "        ";  form_for :entry, @entry, :url => {:action => :record_entry} do |f| ; _erbout.concat "\n"
+_erbout.concat "                <p><label for=\"entry_name\">Name</label><br />\n"
+_erbout.concat "                        "; _erbout.concat(( f.text_field 'name', :size => 20 ).to_s); _erbout.concat "</p>\n"
+_erbout.concat "                <p><label for=\"entry_address\">Address</label><br />\n"
+_erbout.concat "                        "; _erbout.concat(( f.text_field 'address' ).to_s); _erbout.concat "</p>\n"
+_erbout.concat "                <p><label for=\"entry_city\">City</label><br />\n"
+_erbout.concat "                        "; _erbout.concat(( f.text_field 'city', :size => 20 ).to_s); _erbout.concat " </p>\n"
+_erbout.concat "                <p><label for=\"entry_state\">State</label><br />\n"
+_erbout.concat "                        "; _erbout.concat(( f.text_field 'state', :size => 15 ).to_s); _erbout.concat "</p>\n"
+_erbout.concat "                <p><label for=\"entry_zip\">Zip</label><br />\n"
+_erbout.concat "                        "; _erbout.concat(( f.text_field 'zip', :size => 8 ).to_s); _erbout.concat "</p>\n"
+_erbout.concat "                <p><label for=\"phone\">Phone Number</label><br />\n"
+_erbout.concat "                        "; _erbout.concat(( f.text_field 'phone', :size => 15 ).to_s); _erbout.concat "</p>\n"
+_erbout.concat "                <p><label for=\"Email Address\">Email Address</label><br />\n"
+_erbout.concat "                        "; _erbout.concat(( f.text_field 'email' ).to_s); _erbout.concat "</p>\n"
+_erbout.concat "                        "; _erbout.concat(( f.hidden_field 'month' ).to_s); _erbout.concat "\n"
+_erbout.concat "                "; _erbout.concat(( submit_tag 'Enter to Win' ).to_s); _erbout.concat "\n"
+_erbout.concat "        ";  end ; _erbout.concat "\n"
+_erbout.concat "        <span style=\"font-size: .8em; color: red;\">* all fields are required</span>\n"
+_erbout.concat "</div>\n"
+_erbout.concat "\n"
+_erbout.concat "<div id=\"disclaimer\" style=\"font-size: 1.1em; font-weight: bold;\">\n"
+_erbout.concat "        The information you enter on this page will not be used for any other reason than to contact you and send your free puzzle if you are the winner.  This information will not be shared with any third party.\n"
+_erbout.concat "</div>\n"
+_erbout
+end
+Backtrace: /Users/jkay/Sites/mydaddypuzzles/app/views/puzzle/give_away.rhtml:35:in `compile_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+/Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+/Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/Users/jkay/Sites/mydaddypuzzles/app/views/puzzle/give_away.rhtml:9: syntax error, unexpected '>'
+_erbout.concat "\t\t"; _erbout.concat(( image_tag '/images/thumbnails/<%= @prize.puzzle.default_thumbnail ).to_s); _erbout.concat "', :title => '"; _erbout.concat(( Date.MONTHNAMES[@prize.month] ).to_s); _erbout.concat " Puzzle: "; _erbout.concat(( @prize.puzzle ).to_s); _erbout.concat "', :style => 'float: right;' %>\n"
+                                                                                                                                                                                                                                                                                                                               ^
+/Users/jkay/Sites/mydaddypuzzles/app/views/puzzle/give_away.rhtml:10: syntax error, unexpected $undefined, expecting ')'
+_erbout.concat "        ";  form_for :entry, @entry, :url => {:action => :record_entry} do |f| ; _erbout.concat "\n"
+                                                                                                                  ^
+/Users/jkay/Sites/mydaddypuzzles/app/views/puzzle/give_away.rhtml:11: syntax error, unexpected '<'
+_erbout.concat "                <p><label for=\"entry_name\">Name</label><br />\n"
+                                    ^
+/Users/jkay/Sites/mydaddypuzzles/app/views/puzzle/give_away.rhtml:27: syntax error, unexpected kEND, expecting ')'
+_erbout.concat "        ";  end ; _erbout.concat "\n"
+                               ^
+/Users/jkay/Sites/mydaddypuzzles/app/views/puzzle/give_away.rhtml:35: syntax error, unexpected kEND, expecting ')') on line #9 of puzzle/give_away.rhtml:
+6: <a name="entry"></a>
+7: <div id="entry_form" style="border: 1px solid brown;margin: 20px;padding: 10px;">
+8:         <h3>Enter to win a Free Puzzle</h3>
+9: 		<%= image_tag '/images/thumbnails/<%= @prize.puzzle.default_thumbnail %>', :title => '<%= Date.MONTHNAMES[@prize.month] %> Puzzle: <%= @prize.puzzle %>', :style => 'float: right;' %>
+10:         <% form_for :entry, @entry, :url => {:action => :record_entry} do |f| %>
+11:                 <p><label for="entry_name">Name</label><br />
+12:                         <%= f.text_field 'name', :size => 20 %></p>
+
+    app/views/puzzle/give_away.rhtml:35:in `compile_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+  [4;36;1mPuzzle Columns (0.002279)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mConfiguration Columns (0.004872)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PuzzleController#give_away (for 127.0.0.1 at 2008-04-28 15:48:39) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"give_away", "controller"=>"puzzle"}
+  [4;36;1mEntry Columns (0.071278)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mPrize Load (0.000588)[0m   [0mSELECT * FROM `prizes` WHERE (month = 4) LIMIT 1[0m
+Rendering template within layouts/puzzle
+Rendering puzzle/give_away
+
+
+ActionView::TemplateError (undefined method `MONTHNAMES' for Date:Class) on line #3 of puzzle/give_away.rhtml:
+1: <h2>Win a Free Puzzle from MyDaddyPuzzles</h2>
+2: <%= error_messages_for :entry %>
+3: <p>Enter to win a <strong>free</strong> MyDaddyPuzzle!  Each month MyDaddyPuzzles will give away a puzzle to one lucky visitor.  No purchase necessary to enter.  The drawing will be held on the last day of every month.  <%= Date.MONTHNAMES[@prize.month] %>'s drawing is for a <%= @prize.puzzle %>.  The winner will be notified via email on <%= Date.MONTHNAMES[Date.today.next_month.month] %> 1st.  Good luck and tell your friends!  Fill in the <a href="#entry">Entry Form</a> below for your chance to win!</p>
+4: 
+5: 
+6: <a name="entry"></a>
+
+    app/views/puzzle/give_away.rhtml:3:in `_run_erb_47app47views47puzzle47give_away46rhtml'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+  [4;36;1mPuzzle Columns (0.002635)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mConfiguration Columns (0.002219)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PuzzleController#give_away (for 127.0.0.1 at 2008-04-28 15:49:13) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"give_away", "controller"=>"puzzle"}
+  [4;36;1mEntry Columns (0.002420)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mPrize Load (0.000555)[0m   [0mSELECT * FROM `prizes` WHERE (month = 4) LIMIT 1[0m
+Rendering template within layouts/puzzle
+Rendering puzzle/give_away
+  [4;36;1mPrize Columns (0.001909)[0m   [0;1mSHOW FIELDS FROM `prizes`[0m
+  [4;35;1mPuzzle Columns (0.001808)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.000314)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+
+
+ActionView::TemplateError (undefined method `default_thumbnail' for #<Puzzle:0x256eda0>) on line #9 of puzzle/give_away.rhtml:
+6: <a name="entry"></a>
+7: <div id="entry_form" style="border: 1px solid brown;margin: 20px;padding: 10px;">
+8:         <h3>Enter to win a Free Puzzle</h3>
+9: 		<%= image_tag '/images/thumbnails/' + @prize.puzzle.default_thumbnail, :title =>  Date::MONTHNAMES[@prize.month] + ' Puzzle: ' + @prize.puzzle, :style => 'float: right;' %>
+10:         <% form_for :entry, @entry, :url => {:action => :record_entry} do |f| %>
+11:                 <p><label for="entry_name">Name</label><br />
+12:                         <%= f.text_field 'name', :size => 20 %></p>
+
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/attribute_methods.rb:205:in `method_missing'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations/association_proxy.rb:125:in `send'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/associations/association_proxy.rb:125:in `method_missing'
+    app/views/puzzle/give_away.rhtml:9:in `_run_erb_47app47views47puzzle47give_away46rhtml'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+  [4;35;1mConfiguration Columns (0.002852)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PuzzleController#give_away (for 127.0.0.1 at 2008-04-28 15:50:39) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"give_away", "controller"=>"puzzle"}
+  [4;36;1mEntry Columns (0.071437)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mPrize Load (0.000688)[0m   [0mSELECT * FROM `prizes` WHERE (month = 4) LIMIT 1[0m
+Rendering template within layouts/puzzle
+Rendering puzzle/give_away
+  [4;36;1mPrize Columns (0.001816)[0m   [0;1mSHOW FIELDS FROM `prizes`[0m
+  [4;35;1mPuzzle Columns (0.002073)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.000379)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+
+
+ActionView::TemplateError (undefined method `default_thumbnail' for 33:Fixnum) on line #9 of puzzle/give_away.rhtml:
+6: <a name="entry"></a>
+7: <div id="entry_form" style="border: 1px solid brown;margin: 20px;padding: 10px;">
+8:         <h3>Enter to win a Free Puzzle</h3>
+9: 		<%= image_tag '/images/thumbnails/' + @prize.puzzle.default_configuration.default_thumbnail, :title =>  Date::MONTHNAMES[@prize.month] + ' Puzzle: ' + @prize.puzzle, :style => 'float: right;' %>
+10:         <% form_for :entry, @entry, :url => {:action => :record_entry} do |f| %>
+11:                 <p><label for="entry_name">Name</label><br />
+12:                         <%= f.text_field 'name', :size => 20 %></p>
+
+    app/views/puzzle/give_away.rhtml:9:in `_run_erb_47app47views47puzzle47give_away46rhtml'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+  [4;35;1mConfiguration Columns (0.002128)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PuzzleController#give_away (for 127.0.0.1 at 2008-04-28 15:52:32) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"give_away", "controller"=>"puzzle"}
+  [4;36;1mEntry Columns (0.002846)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mPrize Load (0.000617)[0m   [0mSELECT * FROM `prizes` WHERE (month = 4) LIMIT 1[0m
+  [4;36;1mPrize Columns (0.002467)[0m   [0;1mSHOW FIELDS FROM `prizes`[0m
+  [4;35;1mPuzzle Columns (0.002888)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.000364)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mConfiguration Columns (0.002284)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.000712)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+Rendering template within layouts/puzzle
+Rendering puzzle/give_away
+
+
+ActionView::TemplateError (can't convert ActiveRecord::Associations::BelongsToAssociation into String) on line #9 of puzzle/give_away.rhtml:
+6: <a name="entry"></a>
+7: <div id="entry_form" style="border: 1px solid brown;margin: 20px;padding: 10px;">
+8:         <h3>Enter to win a Free Puzzle</h3>
+9: 		<%= image_tag '/images/thumbnails/' + @puzzle.default_thumbnail, :title =>  Date::MONTHNAMES[@prize.month] + ' Puzzle: ' + @prize.puzzle, :style => 'float: right;' %>
+10:         <% form_for :entry, @entry, :url => {:action => :record_entry} do |f| %>
+11:                 <p><label for="entry_name">Name</label><br />
+12:                         <%= f.text_field 'name', :size => 20 %></p>
+
+    app/views/puzzle/give_away.rhtml:9:in `+'
+    app/views/puzzle/give_away.rhtml:9:in `_run_erb_47app47views47puzzle47give_away46rhtml'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PuzzleController#give_away (for 127.0.0.1 at 2008-04-28 15:53:46) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"give_away", "controller"=>"puzzle"}
+  [4;35;1mEntry Columns (0.002821)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mPrize Load (0.000651)[0m   [0;1mSELECT * FROM `prizes` WHERE (month = 4) LIMIT 1[0m
+  [4;35;1mPrize Columns (0.002616)[0m   [0mSHOW FIELDS FROM `prizes`[0m
+  [4;36;1mPuzzle Columns (0.002003)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mPuzzle Load (0.000387)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mConfiguration Columns (0.002219)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (0.000638)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+Rendering template within layouts/puzzle
+Rendering puzzle/give_away
+Completed in 0.04182 (23 reqs/sec) | Rendering: 0.01313 (31%) | DB: 0.01133 (27%) | 200 OK [http://localhost/puzzle/give_away]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-28 15:54:00) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;36;1mPuzzle Load (0.000456)[0m   [0;1mSELECT * FROM `puzzles` WHERE (active = 1) ORDER BY on_sale desc[0m
+Rendering template within layouts/puzzle
+Rendering puzzle/store
+  [4;35;1mPuzzle Columns (0.002023)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mConfiguration Columns (0.001933)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mSQL (0.000361)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mConfiguration Load (0.000339)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000587)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.000319)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mConfiguration Load (0.000217)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000332)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000223)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mConfiguration Load (0.000198)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000297)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000204)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mConfiguration Load (0.000207)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000291)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000236)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mConfiguration Load (0.000225)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000322)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000203)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Load (0.000195)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000346)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000204)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mConfiguration Load (0.000188)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000489)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000267)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mConfiguration Load (0.000210)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000317)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mSQL (0.000198)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mConfiguration Load (0.000195)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000351)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000255)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mConfiguration Load (0.000201)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000320)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+Completed in 0.07259 (13 reqs/sec) | Rendering: 0.05689 (78%) | DB: 0.01271 (17%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#add_to_cart (for 127.0.0.1 at 2008-04-28 15:54:18) [POST]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"commit"=>"Add to Cart", "finish"=>"33", "action"=>"add_to_cart", "id"=>"2", "controller"=>"puzzle"}
+  [4;35;1mConfiguration Columns (0.078938)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.000381)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;35;1mPuzzle Columns (0.001850)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.000338)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+Completed in 0.09401 (10 reqs/sec) | Rendering: 0.00549 (5%) | DB: 0.08151 (86%) | 200 OK [http://localhost/puzzle/add_to_cart/2]
+
+
+Processing PuzzleController#show_cart (for 127.0.0.1 at 2008-04-28 15:54:22) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"show_cart", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/show_cart
+  [4;35;1mConfiguration Columns (0.002288)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mPuzzle Columns (0.001829)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+Completed in 0.03788 (26 reqs/sec) | Rendering: 0.03145 (83%) | DB: 0.00412 (10%) | 200 OK [http://localhost/puzzle/show_cart]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-28 15:54:49) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;35;1mPuzzle Load (0.000449)[0m   [0mSELECT * FROM `puzzles` WHERE (active = 1) ORDER BY on_sale desc[0m
+Rendering template within layouts/puzzle
+Rendering puzzle/store
+  [4;36;1mPuzzle Columns (0.071234)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mConfiguration Columns (0.001981)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mSQL (0.000356)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mConfiguration Load (0.000326)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.000367)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mSQL (0.000300)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mConfiguration Load (0.000246)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000344)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mSQL (0.000260)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mConfiguration Load (0.000205)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000287)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mSQL (0.000192)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mConfiguration Load (0.000193)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.000282)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mSQL (0.000219)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mConfiguration Load (0.000232)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000327)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mSQL (0.000235)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mConfiguration Load (0.000199)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000297)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mSQL (0.000200)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mConfiguration Load (0.000192)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000307)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mSQL (0.000213)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mConfiguration Load (0.000194)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000315)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mSQL (0.000200)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mConfiguration Load (0.000204)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000351)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mSQL (0.000284)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+  [4;35;1mConfiguration Load (0.000206)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000293)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+Completed in 0.12148 (8 reqs/sec) | Rendering: 0.03703 (30%) | DB: 0.08149 (67%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#give_away (for 127.0.0.1 at 2008-04-28 15:54:51) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"give_away", "controller"=>"puzzle"}
+  [4;36;1mEntry Columns (0.002405)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mPrize Load (0.000513)[0m   [0mSELECT * FROM `prizes` WHERE (month = 4) LIMIT 1[0m
+  [4;36;1mPrize Columns (0.001557)[0m   [0;1mSHOW FIELDS FROM `prizes`[0m
+  [4;35;1mPuzzle Columns (0.002723)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.000317)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mConfiguration Columns (0.001938)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.000308)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+Rendering template within layouts/puzzle
+Rendering puzzle/give_away
+Completed in 0.10948 (9 reqs/sec) | Rendering: 0.08509 (77%) | DB: 0.00976 (8%) | 200 OK [http://localhost/puzzle/give_away]
+
+
+Processing PuzzleController#give_away (for 127.0.0.1 at 2008-04-28 15:56:24) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"give_away", "controller"=>"puzzle"}
+  [4;35;1mEntry Columns (0.002795)[0m   [0mSHOW FIELDS FROM `entries`[0m
+  [4;36;1mPrize Load (0.000407)[0m   [0;1mSELECT * FROM `prizes` WHERE (month = 4) LIMIT 1[0m
+  [4;35;1mPrize Columns (0.003451)[0m   [0mSHOW FIELDS FROM `prizes`[0m
+  [4;36;1mPuzzle Columns (0.003006)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mPuzzle Load (0.000358)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;36;1mConfiguration Columns (0.002346)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (0.000543)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+Rendering template within layouts/puzzle
+Rendering puzzle/give_away
+Completed in 0.04183 (23 reqs/sec) | Rendering: 0.01155 (27%) | DB: 0.01291 (30%) | 200 OK [http://localhost/puzzle/give_away]
+
+
+Processing AdminController#create_news (for 127.0.0.1 at 2008-04-28 15:56:43) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"create_news", "controller"=>"admin"}
+  [4;36;1mNewsStory Columns (0.002203)[0m   [0;1mSHOW FIELDS FROM `news_stories`[0m
+  [4;35;1mSQL (0.003208)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000169)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/admin
+Rendering admin/new_news
+Rendered admin/_news_form (0.00276)
+Completed in 0.05544 (18 reqs/sec) | Rendering: 0.03990 (71%) | DB: 0.00558 (10%) | 200 OK [http://localhost/admin/create_news]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2008-04-28 15:56:47) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+  [4;35;1mPuzzle Load (0.000453)[0m   [0mSELECT * FROM `puzzles` ORDER BY name[0m
+Rendering template within layouts/admin
+Rendering admin/list_puzzles
+  [4;36;1mPuzzle Columns (0.002296)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mConfiguration Columns (0.003096)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mSQL (0.000381)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000847)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mSQL (0.000520)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.000269)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mSQL (0.000232)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000226)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mSQL (0.000181)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000207)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mSQL (0.000200)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000178)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+Completed in 0.02895 (34 reqs/sec) | Rendering: 0.01698 (58%) | DB: 0.00909 (31%) | 200 OK [http://localhost/admin]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2008-04-28 16:01:41) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+  [4;36;1mPuzzle Load (0.000499)[0m   [0;1mSELECT * FROM `puzzles` ORDER BY name[0m
+Rendering template within layouts/admin
+Rendering admin/list_puzzles
+  [4;35;1mPuzzle Columns (0.002306)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mConfiguration Columns (0.002215)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mSQL (0.000364)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mSQL (0.003557)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000503)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mSQL (0.000396)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000564)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mSQL (0.000350)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+  [4;35;1mSQL (0.000242)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mSQL (0.000194)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000209)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mSQL (0.000191)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+Completed in 0.03319 (30 reqs/sec) | Rendering: 0.01813 (54%) | DB: 0.01159 (34%) | 200 OK [http://localhost/admin]
+
+
+Processing AdminController#list_prizes (for 127.0.0.1 at 2008-04-28 16:01:44) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"list_prizes", "controller"=>"admin"}
+  [4;35;1mPrize Load (0.000636)[0m   [0mSELECT * FROM `prizes` ORDER BY month[0m
+  [4;36;1mPuzzle Load (0.000274)[0m   [0;1mSELECT * FROM `puzzles` WHERE (active = 1) [0m
+  [4;35;1mPuzzle Columns (0.002207)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+Rendering template within layouts/admin
+Rendering admin/list_prizes
+  [4;36;1mPrize Columns (0.001719)[0m   [0;1mSHOW FIELDS FROM `prizes`[0m
+  [4;35;1mPuzzle Load (0.000536)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+Completed in 0.02242 (44 reqs/sec) | Rendering: 0.00855 (38%) | DB: 0.00537 (23%) | 200 OK [http://localhost/admin/list_prizes]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-28 16:09:08) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.00661 (151 reqs/sec) | Rendering: 0.00433 (65%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#give_away (for 127.0.0.1 at 2008-04-28 16:09:10) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"give_away", "controller"=>"puzzle"}
+  [4;36;1mEntry Columns (0.002890)[0m   [0;1mSHOW FIELDS FROM `entries`[0m
+  [4;35;1mPrize Load (0.000583)[0m   [0mSELECT * FROM `prizes` WHERE (month = 4) LIMIT 1[0m
+  [4;36;1mPrize Columns (0.002613)[0m   [0;1mSHOW FIELDS FROM `prizes`[0m
+  [4;35;1mPuzzle Columns (0.001855)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.000657)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;35;1mConfiguration Columns (0.001983)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.000325)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 1) [0m
+Rendering template within layouts/puzzle
+Rendering puzzle/give_away
+Completed in 0.03505 (28 reqs/sec) | Rendering: 0.00786 (22%) | DB: 0.01091 (31%) | 200 OK [http://localhost/puzzle/give_away]
+
+
+Processing AdminController#list_prizes (for 127.0.0.1 at 2008-04-28 16:15:58) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"list_prizes", "controller"=>"admin"}
+  [4;35;1mPrize Load (0.000476)[0m   [0mSELECT * FROM `prizes` ORDER BY month[0m
+  [4;36;1mConfiguration Load (0.000383)[0m   [0;1mSELECT * FROM `configurations` WHERE (active = 1) [0m
+  [4;35;1mConfiguration Columns (0.074229)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mPuzzle Columns (0.001952)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mPuzzle Load (0.000415)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;36;1mPuzzle Load (0.000318)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mPuzzle Load (0.000315)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;36;1mPuzzle Load (0.000283)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mPuzzle Load (0.000264)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mPuzzle Load (0.000270)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mPuzzle Load (0.000242)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;35;1mPuzzle Load (0.000224)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;36;1mPuzzle Load (0.000229)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;35;1mPuzzle Load (0.000172)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+Rendering template within layouts/admin
+Rendering admin/list_prizes
+  [4;35;1mPrize Columns (0.002139)[0m   [0mSHOW FIELDS FROM `prizes`[0m
+
+
+ActionView::TemplateError (undefined method `MONTHNAMES' for Date:Class) on line #5 of admin/list_prizes.html.erb:
+2: 
+3: <% for p in @prizes %>
+4: 	<% form_remote_tag :url => {:action => :save_prize, :id => p} do %>
+5: 		<%= Date.MONTHNAMES[p.month] %> <%= select_tag 'puzzle', options_for_select(@puzzles, p.puzzle_id) %> -- <%= submit_tag 'Save' %><br />
+6: 	<% end %>
+7: <% end %>
+
+    app/views/admin/list_prizes.html.erb:5:in `_run_erb_47app47views47admin47list_prizes46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/capture_helper.rb:142:in `call'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/capture_helper.rb:142:in `capture_erb_with_buffer'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/capture_helper.rb:44:in `capture'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_tag_helper.rb:417:in `form_tag_in_block'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/form_tag_helper.rb:39:in `form_tag'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/prototype_helper.rb:330:in `form_remote_tag'
+    app/views/admin/list_prizes.html.erb:4:in `_run_erb_47app47views47admin47list_prizes46html46erb'
+    app/views/admin/list_prizes.html.erb:3:in `each'
+    app/views/admin/list_prizes.html.erb:3:in `_run_erb_47app47views47admin47list_prizes46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing AdminController#list_prizes (for 127.0.0.1 at 2008-04-28 16:16:07) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"list_prizes", "controller"=>"admin"}
+  [4;36;1mPrize Load (0.000434)[0m   [0;1mSELECT * FROM `prizes` ORDER BY month[0m
+  [4;35;1mConfiguration Load (0.000369)[0m   [0mSELECT * FROM `configurations` WHERE (active = 1) [0m
+  [4;36;1mConfiguration Columns (0.002366)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mPuzzle Columns (0.001574)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.000299)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;35;1mPuzzle Load (0.000350)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mPuzzle Load (0.000200)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;35;1mPuzzle Load (0.000993)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mPuzzle Load (0.000229)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mPuzzle Load (0.000209)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mPuzzle Load (0.000177)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;36;1mPuzzle Load (0.000177)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;35;1mPuzzle Load (0.000174)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mPuzzle Load (0.000176)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+Rendering template within layouts/admin
+Rendering admin/list_prizes
+  [4;36;1mPrize Columns (0.001498)[0m   [0;1mSHOW FIELDS FROM `prizes`[0m
+Completed in 0.04663 (21 reqs/sec) | Rendering: 0.01722 (36%) | DB: 0.01136 (24%) | 200 OK [http://localhost/admin/list_prizes]
+
+
+Processing AdminController#list_prizes (for 127.0.0.1 at 2008-04-28 16:16:50) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"list_prizes", "controller"=>"admin"}
+  [4;35;1mPrize Load (0.000388)[0m   [0mSELECT * FROM `prizes` ORDER BY month[0m
+  [4;36;1mConfiguration Load (0.000372)[0m   [0;1mSELECT * FROM `configurations` WHERE (active = 1) [0m
+  [4;35;1mConfiguration Columns (0.002388)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mPuzzle Columns (0.001818)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mPuzzle Load (0.000347)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;36;1mPuzzle Load (0.001405)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mPuzzle Load (0.000387)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;36;1mPuzzle Load (0.000248)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mPuzzle Load (0.000224)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mPuzzle Load (0.000171)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mPuzzle Load (0.000201)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;35;1mPuzzle Load (0.000197)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;36;1mPuzzle Load (0.000195)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;35;1mPuzzle Load (0.000184)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+Rendering template within layouts/admin
+Rendering admin/list_prizes
+  [4;35;1mPrize Columns (0.001733)[0m   [0mSHOW FIELDS FROM `prizes`[0m
+Completed in 0.04849 (20 reqs/sec) | Rendering: 0.01688 (34%) | DB: 0.01026 (21%) | 200 OK [http://localhost/admin/list_prizes]
+
+
+Processing AdminController#list_prizes (for 127.0.0.1 at 2008-04-28 16:18:02) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"list_prizes", "controller"=>"admin"}
+  [4;36;1mPrize Load (0.000433)[0m   [0;1mSELECT * FROM `prizes` ORDER BY month[0m
+  [4;35;1mConfiguration Load (0.000390)[0m   [0mSELECT * FROM `configurations` WHERE (active = 1) [0m
+  [4;36;1mConfiguration Columns (0.078616)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mPuzzle Columns (0.001707)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.000325)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;35;1mPuzzle Load (0.000267)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mPuzzle Load (0.000179)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;35;1mPuzzle Load (0.000172)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mPuzzle Load (0.000171)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mPuzzle Load (0.000410)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mPuzzle Load (0.000379)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;36;1mPuzzle Load (0.000207)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;35;1mPuzzle Load (0.000179)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mPuzzle Load (0.000178)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+Rendering template within layouts/admin
+Rendering admin/list_prizes
+  [4;36;1mPrize Columns (0.001765)[0m   [0;1mSHOW FIELDS FROM `prizes`[0m
+Completed in 0.19604 (5 reqs/sec) | Rendering: 0.01831 (9%) | DB: 0.08538 (43%) | 200 OK [http://localhost/admin/list_prizes]
+
+
+Processing AdminController#list_prizes (for 127.0.0.1 at 2008-04-28 16:19:19) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"list_prizes", "controller"=>"admin"}
+  [4;35;1mPrize Load (0.000482)[0m   [0mSELECT * FROM `prizes` ORDER BY month[0m
+  [4;36;1mConfiguration Load (0.000371)[0m   [0;1mSELECT * FROM `configurations` WHERE (active = 1) [0m
+  [4;35;1mConfiguration Columns (0.073540)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mPuzzle Columns (0.001800)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mPuzzle Load (0.000358)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;36;1mPuzzle Load (0.000396)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mPuzzle Load (0.000230)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;36;1mPuzzle Load (0.000461)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mPuzzle Load (0.000292)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mPuzzle Load (0.000238)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mPuzzle Load (0.000216)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;35;1mPuzzle Load (0.000228)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;36;1mPuzzle Load (0.000277)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;35;1mPuzzle Load (0.000264)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+Rendering template within layouts/admin
+Rendering admin/list_prizes
+  [4;35;1mPrize Columns (0.001790)[0m   [0mSHOW FIELDS FROM `prizes`[0m
+Completed in 0.12025 (8 reqs/sec) | Rendering: 0.01694 (14%) | DB: 0.08094 (67%) | 200 OK [http://localhost/admin/list_prizes]
+
+
+Processing AdminController#list_prizes (for 127.0.0.1 at 2008-04-28 16:24:55) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"list_prizes", "controller"=>"admin"}
+  [4;36;1mPrize Load (0.000431)[0m   [0;1mSELECT * FROM `prizes` ORDER BY month[0m
+  [4;35;1mConfiguration Load (0.000365)[0m   [0mSELECT * FROM `configurations` WHERE (active = 1) [0m
+  [4;36;1mConfiguration Columns (0.002461)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mPuzzle Columns (0.001844)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.000406)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;35;1mPuzzle Load (0.004550)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mPuzzle Load (0.000347)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;35;1mPuzzle Load (0.000231)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mPuzzle Load (0.000204)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mPuzzle Load (0.000231)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mPuzzle Load (0.000371)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;36;1mPuzzle Load (0.000252)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;35;1mPuzzle Load (0.000229)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mPuzzle Load (0.000198)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+Rendering template within layouts/admin
+Rendering admin/list_prizes
+  [4;36;1mPrize Columns (0.001931)[0m   [0;1mSHOW FIELDS FROM `prizes`[0m
+Completed in 0.12753 (7 reqs/sec) | Rendering: 0.09240 (72%) | DB: 0.01405 (11%) | 200 OK [http://localhost/admin/list_prizes]
+
+
+Processing AdminController#save_prize (for 127.0.0.1 at 2008-04-28 16:25:18) [POST]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"commit"=>"Save", "action"=>"save_prize", "id"=>"1", "controller"=>"admin", "puzzle"=>"2"}
+  [4;35;1mPrize Columns (0.070488)[0m   [0mSHOW FIELDS FROM `prizes`[0m
+  [4;36;1mPrize Load (0.000487)[0m   [0;1mSELECT * FROM `prizes` WHERE (`prizes`.`id` = 1) [0m
+  [4;35;1mSQL (0.000130)[0m   [0mBEGIN[0m
+  [4;36;1mPrize Update (0.000383)[0m   [0;1mUPDATE `prizes` SET `created_at` = '2008-04-28 15:31:32', `month` = 1, `puzzle_id` = 2, `updated_at` = '2008-04-28 16:25:18' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.036433)[0m   [0mCOMMIT[0m
+Completed in 0.12273 (8 reqs/sec) | Rendering: 0.00538 (4%) | DB: 0.10792 (87%) | 200 OK [http://localhost/admin/save_prize/1]
+
+
+Processing AdminController#list_prizes (for 127.0.0.1 at 2008-04-28 16:25:28) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"list_prizes", "controller"=>"admin"}
+  [4;36;1mPrize Load (0.000431)[0m   [0;1mSELECT * FROM `prizes` ORDER BY month[0m
+  [4;35;1mConfiguration Load (0.000391)[0m   [0mSELECT * FROM `configurations` WHERE (active = 1) [0m
+  [4;36;1mConfiguration Columns (0.001868)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mPuzzle Columns (0.001877)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.000451)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;35;1mPuzzle Load (0.000259)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mPuzzle Load (0.000190)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;35;1mPuzzle Load (0.002023)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mPuzzle Load (0.000226)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mPuzzle Load (0.000181)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mPuzzle Load (0.000198)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;36;1mPuzzle Load (0.000173)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;35;1mPuzzle Load (0.000176)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mPuzzle Load (0.000172)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+Rendering template within layouts/admin
+Rendering admin/list_prizes
+  [4;36;1mPrize Columns (0.001865)[0m   [0;1mSHOW FIELDS FROM `prizes`[0m
+Completed in 0.04625 (21 reqs/sec) | Rendering: 0.01652 (35%) | DB: 0.01048 (22%) | 200 OK [http://localhost/admin/list_prizes]
+
+
+Processing AdminController#list_prizes (for 127.0.0.1 at 2008-04-28 16:26:07) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"list_prizes", "controller"=>"admin"}
+  [4;35;1mPrize Load (0.000431)[0m   [0mSELECT * FROM `prizes` ORDER BY month[0m
+  [4;36;1mConfiguration Load (0.000368)[0m   [0;1mSELECT * FROM `configurations` WHERE (active = 1) [0m
+  [4;35;1mConfiguration Columns (0.002402)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mPuzzle Columns (0.001885)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mPuzzle Load (0.000366)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;36;1mPuzzle Load (0.003470)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mPuzzle Load (0.000332)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;36;1mPuzzle Load (0.000216)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mPuzzle Load (0.000187)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mPuzzle Load (0.000184)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mPuzzle Load (0.000219)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;35;1mPuzzle Load (0.000190)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;36;1mPuzzle Load (0.000187)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;35;1mPuzzle Load (0.000189)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+Rendering template within layouts/admin
+Rendering admin/list_prizes
+  [4;35;1mPrize Columns (0.002150)[0m   [0mSHOW FIELDS FROM `prizes`[0m
+Completed in 0.13247 (7 reqs/sec) | Rendering: 0.09898 (74%) | DB: 0.01278 (9%) | 200 OK [http://localhost/admin/list_prizes]
+
+
+Processing AdminController#save_prize (for 127.0.0.1 at 2008-04-28 16:26:08) [POST]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"commit"=>"Save", "action"=>"save_prize", "id"=>"2", "controller"=>"admin", "puzzle"=>""}
+  [4;36;1mPrize Columns (0.005730)[0m   [0;1mSHOW FIELDS FROM `prizes`[0m
+  [4;35;1mPrize Load (0.005350)[0m   [0mSELECT * FROM `prizes` WHERE (`prizes`.`id` = 2) [0m
+  [4;36;1mSQL (0.000256)[0m   [0;1mBEGIN[0m
+  [4;35;1mPrize Update (0.000367)[0m   [0mUPDATE `prizes` SET `created_at` = '2008-04-28 15:31:32', `month` = 2, `puzzle_id` = NULL, `updated_at` = '2008-04-28 16:26:08' WHERE `id` = 2[0m
+  [4;36;1mSQL (0.038517)[0m   [0;1mCOMMIT[0m
+Completed in 0.06414 (15 reqs/sec) | Rendering: 0.00512 (7%) | DB: 0.05022 (78%) | 200 OK [http://localhost/admin/save_prize/2]
+
+
+Processing AdminController#save_prize (for 127.0.0.1 at 2008-04-28 16:26:38) [POST]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"commit"=>"Save", "action"=>"save_prize", "id"=>"2", "controller"=>"admin", "puzzle"=>"16"}
+  [4;35;1mPrize Columns (0.002229)[0m   [0mSHOW FIELDS FROM `prizes`[0m
+  [4;36;1mPrize Load (0.000361)[0m   [0;1mSELECT * FROM `prizes` WHERE (`prizes`.`id` = 2) [0m
+  [4;35;1mSQL (0.000124)[0m   [0mBEGIN[0m
+  [4;36;1mPrize Update (0.000327)[0m   [0;1mUPDATE `prizes` SET `created_at` = '2008-04-28 15:31:32', `month` = 2, `puzzle_id` = 16, `updated_at` = '2008-04-28 16:26:38' WHERE `id` = 2[0m
+  [4;35;1mSQL (0.000595)[0m   [0mCOMMIT[0m
+Completed in 0.01843 (54 reqs/sec) | Rendering: 0.00608 (32%) | DB: 0.00364 (19%) | 200 OK [http://localhost/admin/save_prize/2]
+
+
+Processing AdminController#list_prizes (for 127.0.0.1 at 2008-04-28 16:26:41) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"list_prizes", "controller"=>"admin"}
+  [4;36;1mPrize Load (0.000420)[0m   [0;1mSELECT * FROM `prizes` ORDER BY month[0m
+  [4;35;1mConfiguration Load (0.000366)[0m   [0mSELECT * FROM `configurations` WHERE (active = 1) [0m
+  [4;36;1mConfiguration Columns (0.002348)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mPuzzle Columns (0.001970)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.001097)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 1) [0m
+  [4;35;1mPuzzle Load (0.000549)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mPuzzle Load (0.000312)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;35;1mPuzzle Load (0.000259)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mPuzzle Load (0.000255)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mPuzzle Load (0.000220)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mPuzzle Load (0.000173)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;36;1mPuzzle Load (0.000169)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;35;1mPuzzle Load (0.000168)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mPuzzle Load (0.000242)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 3) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 7) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 4) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 6) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 9) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 10) [0m
+Rendering template within layouts/admin
+Rendering admin/list_prizes
+  [4;36;1mPrize Columns (0.002085)[0m   [0;1mSHOW FIELDS FROM `prizes`[0m
+Completed in 0.13115 (7 reqs/sec) | Rendering: 0.09909 (75%) | DB: 0.01063 (8%) | 200 OK [http://localhost/admin/list_prizes]
+
+
+Processing AdminController#create_news (for 127.0.0.1 at 2008-04-28 18:14:39) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"create_news", "controller"=>"admin"}
+  [4;36;1mNewsStory Columns (0.002202)[0m   [0;1mSHOW FIELDS FROM `news_stories`[0m
+  [4;35;1mSQL (0.000121)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000108)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/admin
+Rendering admin/new_news
+Rendered admin/_news_form (0.00301)
+Completed in 0.04050 (24 reqs/sec) | Rendering: 0.02978 (73%) | DB: 0.00243 (6%) | 200 OK [http://localhost/admin/create_news]
+
+
+Processing AdminController#create_news (for 127.0.0.1 at 2008-04-28 18:17:54) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"create_news", "controller"=>"admin"}
+  [4;35;1mNewsStory Columns (0.003432)[0m   [0mSHOW FIELDS FROM `news_stories`[0m
+  [4;36;1mSQL (0.000933)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000126)[0m   [0mCOMMIT[0m
+Rendering template within layouts/admin
+Rendering admin/new_news
+Rendered admin/_news_form (0.00189)
+Completed in 0.02267 (44 reqs/sec) | Rendering: 0.00982 (43%) | DB: 0.00449 (19%) | 200 OK [http://localhost/admin/create_news]
+
+
+Processing AdminController#list_entries (for 127.0.0.1 at 2008-04-28 18:17:57) [GET]
+  Session ID: f85cc62edac4786ae9acf3f94deeae6e
+  Parameters: {"action"=>"list_entries", "controller"=>"admin"}
+  [4;36;1mEntry Load (0.000680)[0m   [0;1mSELECT * FROM `entries` [0m
+Rendering template within layouts/admin
+Rendering admin/list_entries
+  [4;35;1mEntry Columns (0.002610)[0m   [0mSHOW FIELDS FROM `entries`[0m
+Completed in 0.04456 (22 reqs/sec) | Rendering: 0.00657 (14%) | DB: 0.00329 (7%) | 200 OK [http://localhost/admin/list_entries]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 17:10:06) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.05286 (18 reqs/sec) | Rendering: 0.04980 (94%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2008-04-30 17:10:16) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as [#<ActionController::Filters::ClassMethods::SymbolFilter:0x2555788 @filter=:security>] rendered_or_redirected.
+Completed in 0.00069 (1453 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/admin/]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2008-04-30 17:10:16) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"login", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/login
+Completed in 0.02329 (42 reqs/sec) | Rendering: 0.02080 (89%) | DB: 0.00000 (0%) | 200 OK [http://localhost/admin/login]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2008-04-30 17:10:23) [POST]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"commit"=>"Authenticate", "username"=>"puzzlemaster", "action"=>"login", "controller"=>"admin", "secret"=>"polysci"}
+Redirected to http://localhost:3000/admin
+Completed in 0.00278 (359 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/admin/login]
+
+
+Processing AdminController#index (for 127.0.0.1 at 2008-04-30 17:10:23) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"index", "controller"=>"admin"}
+  [4;36;1mPuzzle Load (0.088835)[0m   [0;1mSELECT * FROM `puzzles` ORDER BY name[0m
+Rendering template within layouts/admin
+Rendering admin/list_puzzles
+  [4;35;1mPuzzle Columns (0.002166)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mConfiguration Columns (0.037592)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mSQL (0.048609)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mSQL (0.000404)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000250)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mSQL (0.000267)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000245)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mSQL (0.000207)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+  [4;35;1mSQL (0.000235)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mSQL (0.000198)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000185)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mSQL (0.000191)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+Completed in 0.24094 (4 reqs/sec) | Rendering: 0.04250 (17%) | DB: 0.17938 (74%) | 200 OK [http://localhost/admin]
+
+
+Processing AdminController#show_configurations (for 127.0.0.1 at 2008-04-30 17:10:28) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"show_configurations", "id"=>"5", "controller"=>"admin"}
+  [4;35;1mPuzzle Columns (0.002754)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.000417)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+Rendering template within layouts/admin
+Rendering admin/show_configurations
+  [4;35;1mConfiguration Load (0.000568)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Columns (0.001944)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+Completed in 0.03390 (29 reqs/sec) | Rendering: 0.02056 (60%) | DB: 0.00568 (16%) | 200 OK [http://localhost/admin/show_configurations/5]
+
+
+Processing AdminController#edit_configuration (for 127.0.0.1 at 2008-04-30 17:10:31) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"edit_configuration", "id"=>"9", "controller"=>"admin"}
+  [4;35;1mConfiguration Columns (0.002873)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.000440)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 9) [0m
+  [4;35;1mPuzzle Columns (0.003424)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.001026)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+Rendering template within layouts/admin
+Rendering admin/edit_configuration
+Rendered admin/_configuration_form (0.02723)
+Completed in 0.05554 (18 reqs/sec) | Rendering: 0.03495 (62%) | DB: 0.00776 (13%) | 200 OK [http://localhost/admin/edit_configuration/9]
+
+
+Processing AdminController#update_configuration (for 127.0.0.1 at 2008-04-30 17:10:41) [POST]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"configuration"=>{"name"=>"Natural Stain", "price"=>"19.95", "out_of_stock"=>"0", "active"=>"1", "puzzle_id"=>"5"}, "default_picture"=>"", "commit"=>"Update Configuration", "default_thumbnail"=>"", "action"=>"update_configuration", "id"=>"9", "controller"=>"admin"}
+  [4;35;1mConfiguration Columns (0.002542)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.000437)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 9) [0m
+  [4;35;1mSQL (0.000139)[0m   [0mBEGIN[0m
+  [4;36;1mConfiguration Load (0.023979)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.default_thumbnail = 'stained_alligator_thumb.jpg' AND configurations.id <> 9) LIMIT 1[0m
+  [4;35;1mConfiguration Load (0.000634)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.default_picture = 'stained_alligator_store.jpg' AND configurations.id <> 9) LIMIT 1[0m
+  [4;36;1mConfiguration Update (0.011681)[0m   [0;1mUPDATE `configurations` SET `default_thumbnail` = 'stained_alligator_thumb.jpg', `default_picture` = 'stained_alligator_store.jpg', `on_sale` = 0, `out_of_stock` = 0, `price` = '19.95', `puzzle_id` = 5, `active` = 1, `name` = 'Natural Stain' WHERE `id` = 9[0m
+  [4;35;1mSQL (0.000524)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/admin/show_configurations/5
+Completed in 0.05346 (18 reqs/sec) | DB: 0.03994 (74%) | 302 Found [http://localhost/admin/update_configuration/9]
+
+
+Processing AdminController#show_configurations (for 127.0.0.1 at 2008-04-30 17:10:41) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"show_configurations", "id"=>"5", "controller"=>"admin"}
+  [4;36;1mPuzzle Columns (0.001860)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mPuzzle Load (0.000320)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+Rendering template within layouts/admin
+Rendering admin/show_configurations
+  [4;36;1mConfiguration Load (0.000448)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mConfiguration Columns (0.001736)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+Completed in 0.02389 (41 reqs/sec) | Rendering: 0.01175 (49%) | DB: 0.00436 (18%) | 200 OK [http://localhost/admin/show_configurations/5]
+
+
+Processing AdminController#edit_configuration (for 127.0.0.1 at 2008-04-30 17:11:02) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"edit_configuration", "id"=>"26", "controller"=>"admin"}
+  [4;36;1mConfiguration Columns (0.031092)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (0.000527)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 26) [0m
+  [4;36;1mPuzzle Columns (0.001820)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mPuzzle Load (0.000303)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+Rendering template within layouts/admin
+Rendering admin/edit_configuration
+Rendered admin/_configuration_form (0.00223)
+Completed in 0.05344 (18 reqs/sec) | Rendering: 0.00733 (13%) | DB: 0.03374 (63%) | 200 OK [http://localhost/admin/edit_configuration/26]
+
+
+Processing AdminController#update_configuration (for 127.0.0.1 at 2008-04-30 17:11:10) [POST]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"configuration"=>{"name"=>"Unfinished", "price"=>"19.95", "out_of_stock"=>"0", "active"=>"1", "puzzle_id"=>"5"}, "default_picture"=>"", "commit"=>"Update Configuration", "default_thumbnail"=>"", "action"=>"update_configuration", "id"=>"26", "controller"=>"admin"}
+  [4;36;1mConfiguration Columns (0.002327)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mConfiguration Load (0.001116)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 26) [0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mBEGIN[0m
+  [4;35;1mConfiguration Load (0.000529)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.default_thumbnail = 'alligator_unfinished_thumb.jpg' AND configurations.id <> 26) LIMIT 1[0m
+  [4;36;1mConfiguration Load (0.000422)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.default_picture = 'alligator_unfinished_store.jpg' AND configurations.id <> 26) LIMIT 1[0m
+  [4;35;1mConfiguration Update (0.000336)[0m   [0mUPDATE `configurations` SET `default_thumbnail` = 'alligator_unfinished_thumb.jpg', `default_picture` = 'alligator_unfinished_store.jpg', `on_sale` = 0, `out_of_stock` = 0, `price` = '19.95', `puzzle_id` = 5, `active` = 1, `name` = 'Unfinished' WHERE `id` = 26[0m
+  [4;36;1mSQL (0.011910)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/admin/show_configurations/5
+Completed in 0.03002 (33 reqs/sec) | DB: 0.01679 (55%) | 302 Found [http://localhost/admin/update_configuration/26]
+
+
+Processing AdminController#show_configurations (for 127.0.0.1 at 2008-04-30 17:11:10) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"show_configurations", "id"=>"5", "controller"=>"admin"}
+  [4;35;1mPuzzle Columns (0.002119)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.000296)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+Rendering template within layouts/admin
+Rendering admin/show_configurations
+  [4;35;1mConfiguration Load (0.000441)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Columns (0.001699)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+Completed in 0.02302 (43 reqs/sec) | Rendering: 0.01143 (49%) | DB: 0.00455 (19%) | 200 OK [http://localhost/admin/show_configurations/5]
+
+
+Processing AdminController#list_puzzles (for 127.0.0.1 at 2008-04-30 17:11:37) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"list_puzzles", "controller"=>"admin"}
+  [4;35;1mPuzzle Load (0.000511)[0m   [0mSELECT * FROM `puzzles` ORDER BY name[0m
+Rendering template within layouts/admin
+Rendering admin/list_puzzles
+  [4;36;1mPuzzle Columns (0.002004)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mConfiguration Columns (0.001834)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mSQL (0.000323)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000854)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mSQL (0.000247)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.000287)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mSQL (0.000207)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000251)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mSQL (0.000203)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000190)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mSQL (0.000184)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000184)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+Completed in 0.03015 (33 reqs/sec) | Rendering: 0.01618 (53%) | DB: 0.00728 (24%) | 200 OK [http://localhost/admin/list_puzzles]
+
+
+Processing AdminController#logout (for 127.0.0.1 at 2008-04-30 17:11:41) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"logout", "controller"=>"admin"}
+Redirected to http://localhost:3000/admin/login
+Completed in 0.00261 (382 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://localhost/admin/logout]
+
+
+Processing AdminController#login (for 127.0.0.1 at 2008-04-30 17:11:41) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"login", "controller"=>"admin"}
+Rendering template within layouts/admin
+Rendering admin/login
+Completed in 0.00563 (177 reqs/sec) | Rendering: 0.00315 (55%) | DB: 0.00000 (0%) | 200 OK [http://localhost/admin/login]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 17:16:39) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.00840 (119 reqs/sec) | Rendering: 0.00539 (64%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-30 17:16:43) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;36;1mPuzzle Load (0.000529)[0m   [0;1mSELECT * FROM `puzzles` WHERE (active = 1) ORDER BY on_sale desc[0m
+Rendering template within layouts/puzzle
+Rendering puzzle/store
+  [4;35;1mPuzzle Columns (0.001739)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mConfiguration Columns (0.001694)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mSQL (0.000575)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mConfiguration Load (0.000360)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000440)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.000252)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mConfiguration Load (0.000219)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000334)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000218)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mConfiguration Load (0.000279)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000375)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.001189)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mConfiguration Load (0.000447)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000342)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000244)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mConfiguration Load (0.000318)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000362)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000269)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Load (0.000218)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000323)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000245)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mConfiguration Load (0.000227)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000311)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000379)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mConfiguration Load (0.000230)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000381)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mSQL (0.000257)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mConfiguration Load (0.000221)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000334)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000245)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mConfiguration Load (0.000219)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000352)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+Completed in 0.09415 (10 reqs/sec) | Rendering: 0.05091 (54%) | DB: 0.01413 (15%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 17:17:41) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.00955 (104 reqs/sec) | Rendering: 0.00715 (74%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#gallery (for 127.0.0.1 at 2008-04-30 17:18:52) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"gallery", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/gallery
+Completed in 0.02280 (43 reqs/sec) | Rendering: 0.02045 (89%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/gallery]
+
+
+Processing PuzzleController#story (for 127.0.0.1 at 2008-04-30 17:18:58) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"story", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/story
+Completed in 0.03608 (27 reqs/sec) | Rendering: 0.03373 (93%) | DB: 0.00000 (0%) | 200 OK [http://localhost/puzzle/story]
+
+
+Processing PuzzleController#news (for 127.0.0.1 at 2008-04-30 17:18:59) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"news", "controller"=>"puzzle"}
+  [4;35;1mNewsStory Load (0.048855)[0m   [0mSELECT * FROM `news_stories` ORDER BY post_date desc[0m
+Rendering template within layouts/puzzle
+Rendering puzzle/news
+  [4;36;1mNewsStory Columns (0.003159)[0m   [0;1mSHOW FIELDS FROM `news_stories`[0m
+Completed in 0.10267 (9 reqs/sec) | Rendering: 0.02422 (23%) | DB: 0.05201 (50%) | 200 OK [http://localhost/puzzle/news]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-04-30 17:18:59) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/images/articles/Photo%2041.jpg" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-04-30 17:18:59) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/images/articles/Photo%209.jpg" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-04-30 17:18:59) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/images/articles/Photo10.jpg" with {:method=>:get}):
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /Library/Ruby/Gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 17:19:05) [GET]
+  Session ID: 58e29f5f4f4c2b791597e9c802adaf79
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.00848 (117 reqs/sec) | Rendering: 0.00483 (56%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 18:59:17) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.12186 (8 reqs/sec) | Rendering: 0.11878 (97%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 19:02:37) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.00956 (104 reqs/sec) | Rendering: 0.00724 (75%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 19:08:36) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.00969 (103 reqs/sec) | Rendering: 0.00742 (76%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 19:09:40) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.00978 (102 reqs/sec) | Rendering: 0.00746 (76%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 19:10:07) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.06668 (14 reqs/sec) | Rendering: 0.06439 (96%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 19:12:09) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.01055 (94 reqs/sec) | Rendering: 0.00820 (77%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 19:15:14) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.01068 (93 reqs/sec) | Rendering: 0.00836 (78%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-30 19:16:16) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;36;1mPuzzle Load (0.030573)[0m   [0;1mSELECT * FROM `puzzles` WHERE (active = 1) ORDER BY on_sale desc[0m
+Rendering template within layouts/puzzle
+Rendering puzzle/store
+  [4;35;1mPuzzle Columns (0.002329)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mConfiguration Columns (0.036368)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mSQL (0.000506)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mConfiguration Load (0.000360)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000447)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.000279)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mConfiguration Load (0.000274)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000410)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000268)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mConfiguration Load (0.000248)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000342)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000220)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mConfiguration Load (0.000212)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000394)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000245)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mConfiguration Load (0.000211)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000347)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000224)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Load (0.000212)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000311)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000214)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mConfiguration Load (0.000208)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000490)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000291)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mConfiguration Load (0.000216)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000317)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mSQL (0.000218)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mConfiguration Load (0.000206)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000332)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000225)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mConfiguration Load (0.000219)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000313)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+Completed in 0.59661 (1 reqs/sec) | Rendering: 0.11908 (19%) | DB: 0.07803 (13%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#images (for 127.0.0.1 at 2008-04-30 19:16:24) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"images", "id"=>"30", "controller"=>"puzzle"}
+  [4;35;1mConfiguration Columns (0.002630)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.000535)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;35;1mPuzzle Columns (0.001793)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.000468)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+Rendering template within layouts/puzzle
+Rendering puzzle/images
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000562)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+Completed in 0.04493 (22 reqs/sec) | Rendering: 0.02606 (58%) | DB: 0.00599 (13%) | 200 OK [http://localhost/puzzle/images/30]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 19:18:48) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.01096 (91 reqs/sec) | Rendering: 0.00870 (79%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#images (for 127.0.0.1 at 2008-04-30 19:19:06) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"images", "id"=>"30", "controller"=>"puzzle"}
+  [4;35;1mConfiguration Columns (0.076902)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.000404)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;35;1mPuzzle Columns (0.001858)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.000357)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 5) [0m
+Rendering template within layouts/puzzle
+Rendering puzzle/images
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000577)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+Completed in 0.16704 (5 reqs/sec) | Rendering: 0.07460 (44%) | DB: 0.08010 (47%) | 200 OK [http://localhost/puzzle/images/30]
+
+
+Processing PuzzleController#images (for 127.0.0.1 at 2008-04-30 19:19:11) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"images", "id"=>"13", "controller"=>"puzzle"}
+  [4;35;1mConfiguration Columns (0.074577)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.000399)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;35;1mPuzzle Columns (0.001753)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.000331)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 8) [0m
+Rendering template within layouts/puzzle
+Rendering puzzle/images
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000467)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+Completed in 0.09799 (10 reqs/sec) | Rendering: 0.00848 (8%) | DB: 0.07753 (79%) | 200 OK [http://localhost/puzzle/images/13]
+
+
+Processing PuzzleController#images (for 127.0.0.1 at 2008-04-30 19:19:25) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"images", "id"=>"33", "controller"=>"puzzle"}
+  [4;35;1mConfiguration Columns (0.002412)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mConfiguration Load (0.000484)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;35;1mPuzzle Columns (0.001967)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mPuzzle Load (0.000393)[0m   [0;1mSELECT * FROM `puzzles` WHERE (`puzzles`.`id` = 2) [0m
+Rendering template within layouts/puzzle
+Rendering puzzle/images
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000482)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+Completed in 0.02988 (33 reqs/sec) | Rendering: 0.01118 (37%) | DB: 0.00574 (19%) | 200 OK [http://localhost/puzzle/images/33]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-30 19:19:32) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;35;1mPuzzle Load (0.000510)[0m   [0mSELECT * FROM `puzzles` WHERE (active = 1) ORDER BY on_sale desc[0m
+Rendering template within layouts/puzzle
+Rendering puzzle/store
+  [4;36;1mPuzzle Columns (0.002289)[0m   [0;1mSHOW FIELDS FROM `puzzles`[0m
+  [4;35;1mConfiguration Columns (0.001941)[0m   [0mSHOW FIELDS FROM `configurations`[0m
+  [4;36;1mSQL (0.000355)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mConfiguration Load (0.000318)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;35;1mConfiguration Load (0.000576)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mSQL (0.000347)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mConfiguration Load (0.000275)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;35;1mConfiguration Load (0.000446)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mSQL (0.000272)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mConfiguration Load (0.000266)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;35;1mConfiguration Load (0.000361)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mSQL (0.000266)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mConfiguration Load (0.000259)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;35;1mConfiguration Load (0.000362)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mSQL (0.000252)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mConfiguration Load (0.000258)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;35;1mConfiguration Load (0.000388)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mSQL (0.000264)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mConfiguration Load (0.000262)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;35;1mConfiguration Load (0.000373)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mSQL (0.000253)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mConfiguration Load (0.000256)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;35;1mConfiguration Load (0.000376)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mSQL (0.000257)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mConfiguration Load (0.000258)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;35;1mConfiguration Load (0.000355)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mSQL (0.000246)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mConfiguration Load (0.000259)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;35;1mConfiguration Load (0.000371)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mSQL (0.000283)[0m   [0;1mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+  [4;35;1mConfiguration Load (0.000262)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;35;1mConfiguration Load (0.000363)[0m   [0mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+Completed in 0.06945 (14 reqs/sec) | Rendering: 0.04889 (70%) | DB: 0.01418 (20%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 19:19:50) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.01150 (86 reqs/sec) | Rendering: 0.00899 (78%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 19:43:15) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.01912 (52 reqs/sec) | Rendering: 0.01591 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 19:43:48) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.01110 (90 reqs/sec) | Rendering: 0.00884 (79%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 20:04:08) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.01903 (52 reqs/sec) | Rendering: 0.01597 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 20:06:38) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.01147 (87 reqs/sec) | Rendering: 0.00921 (80%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing PuzzleController#store (for 127.0.0.1 at 2008-04-30 20:06:42) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"store", "controller"=>"puzzle"}
+  [4;36;1mPuzzle Load (0.000975)[0m   [0;1mSELECT * FROM `puzzles` WHERE (active = 1) ORDER BY on_sale desc[0m
+Rendering template within layouts/puzzle
+Rendering puzzle/store
+  [4;35;1mPuzzle Columns (0.123730)[0m   [0mSHOW FIELDS FROM `puzzles`[0m
+  [4;36;1mConfiguration Columns (0.287849)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mSQL (0.145048)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;36;1mConfiguration Load (0.000442)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 2) [0m
+  [4;36;1mConfiguration Load (0.000425)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 1) [0m
+  [4;35;1mSQL (0.000272)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;36;1mConfiguration Load (0.000241)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 34) [0m
+  [4;36;1mConfiguration Load (0.000354)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 9) [0m
+  [4;35;1mSQL (0.000350)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;36;1mConfiguration Load (0.000223)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 13) [0m
+  [4;36;1mConfiguration Load (0.000353)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 8) [0m
+  [4;35;1mSQL (0.000225)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;36;1mConfiguration Load (0.000215)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 25) [0m
+  [4;36;1mConfiguration Load (0.000331)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 7) [0m
+  [4;35;1mSQL (0.000233)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;36;1mConfiguration Load (0.000212)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 11) [0m
+  [4;36;1mConfiguration Load (0.000456)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 6) [0m
+  [4;35;1mSQL (0.000249)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;36;1mConfiguration Load (0.000212)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 30) [0m
+  [4;36;1mConfiguration Load (0.000344)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 5) [0m
+  [4;35;1mSQL (0.000422)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;36;1mConfiguration Load (0.000277)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 29) [0m
+  [4;36;1mConfiguration Load (0.000365)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 4) [0m
+  [4;35;1mSQL (0.000270)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;36;1mConfiguration Load (0.000224)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 16) [0m
+  [4;36;1mConfiguration Load (0.000333)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 3) [0m
+  [4;35;1mSQL (0.000241)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;36;1mConfiguration Load (0.000206)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 33) [0m
+  [4;36;1mConfiguration Load (0.000323)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 2) [0m
+  [4;35;1mSQL (0.000222)[0m   [0mSELECT count(*) AS count_all FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+  [4;36;1mConfiguration Load (0.000213)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`id` = 15) [0m
+  [4;36;1mConfiguration Load (0.000316)[0m   [0;1mSELECT * FROM `configurations` WHERE (configurations.puzzle_id = 10) [0m
+Completed in 0.69476 (1 reqs/sec) | Rendering: 0.12165 (17%) | DB: 0.56615 (81%) | 200 OK [http://localhost/puzzle/store]
+
+
+Processing PuzzleController#index (for 127.0.0.1 at 2008-04-30 20:07:24) [GET]
+  Session ID: 2c1f6e4802e4f425e826c3ef7367e934
+  Parameters: {"action"=>"index", "controller"=>"puzzle"}
+Rendering template within layouts/puzzle
+Rendering puzzle/index
+Completed in 0.01123 (89 reqs/sec) | Rendering: 0.00893 (79%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
