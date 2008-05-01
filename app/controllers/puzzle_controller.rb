@@ -31,6 +31,7 @@ class PuzzleController < ApplicationController
 
   def index
     @page_title = 'Handcrafted Wooden Puzzles'
+    @onsale = Puzzle.find(:all, :conditions => 'on_sale = 1', :order => 'name')
   end
   
   def display_picture

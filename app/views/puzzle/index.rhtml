@@ -2,22 +2,13 @@
 	<p><%= link_to "Enter to Win a free puzzle from MyDaddyPuzzles!", :action => "give_away" %></p>
 </div>
 <div id="specials" style="width: 30%; float: left; text-align: center;">
-	<h3 class="sale">May Internet Specials</h3>
-	<p><%= image_tag '/images/full_size/alligator_natural_store.jpg', :width => 200 %><br />
-	<%= link_to "Annie Alligator", :action => "store" %> <br />
-	Regular Price $25	<br />	
-	<span class="sale">ON SALE FOR $19.95</span></p>
-	
-	<p><%= image_tag '/images/full_size/frog_colored_store.jpg', :width => 200 %><br />
-	<%= link_to "Freddy Froggy", :action => "store" %><br />
-	Regular Price $25	<br />	
-	<span class="sale">ON SALE FOR $19.95</span></p>
-	
-	<p><%= image_tag '/images/full_size/orca_natural_store.jpg', :width => 200 %><br />
-	<%= link_to "Ollie Orca", :action => "store" %> <br />
-	Regular Price $25	<br />	
-	<span class="sale">ON SALE FOR $19.95</span></p>
-	
+	<h3 class="sale">Internet Specials</h3>
+	<% for puzzle in @onsale %>
+		<p><%= image_tag "/images/full_size/#{puzzle.find_default_configuration.default_picture}", :width => 200 %><br />
+		<%= link_to puzzle.name, :action => "store" %> <br />
+		<span class="sale">ON SALE FOR <%= number_to_currency(puzzle.find_default_configuration.price, :precision => 2) %></span></p>
+	<% end %>
+	<hr />
 	<p class="sale">
 		SHIPPING SPECIAL	<br />	
 		Purchase 1 to 5 <br />
