@@ -129,7 +129,7 @@ class PuzzleController < ApplicationController
     @page_title = 'Monthly Drawing Entry'
     @entry = Entry.new(:month => Date.today.strftime("%B"))
     @prize = Prize.find(:first, :conditions => ['month = ?', Date.today.month])
-    @puzzle = Configuration.find(@prize.puzzle)
+    @puzzle = Configuration.find(@prize.puzzle.default_configuration)
   end
   
   def record_entry
