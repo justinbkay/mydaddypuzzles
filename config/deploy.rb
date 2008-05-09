@@ -26,6 +26,7 @@ after "deploy:restart", "start_thin"
 
 desc "commit article pics to svn"
 task :commit_pics do
+  run "cd #{release_path} && svn add pubic/images/articles/*"
   run "cd #{release_path} && svn ci public/images/articles/* -m \"adding pic\""
 end
 before "deploy:update", "commit_pics"
