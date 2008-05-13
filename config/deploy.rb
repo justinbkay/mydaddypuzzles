@@ -26,6 +26,10 @@ after "deploy:restart", "start_thin"
 
 desc "commit article pics to svn"
 task :commit_pics do
+  run "cd #{current_path} && svn add public/images/full_size/*"
+  run "cd #{current_path} && svn ci public/images/full_size/* -m \"adding pic\""
+  run "cd #{current_path} && svn add public/images/thumbnails/*"
+  run "cd #{current_path} && svn ci public/images/thumbnails/* -m \"adding pic\""
   run "cd #{current_path} && svn add public/images/articles/*"
   run "cd #{current_path} && svn ci public/images/articles/* -m \"adding pic\""
 end
