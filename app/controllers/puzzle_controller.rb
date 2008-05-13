@@ -19,6 +19,8 @@ class PuzzleController < ApplicationController
 
   def show_cart
     @page_title = 'Shopping Cart'
+    @page_meta = 'MyDaddy Puzzles shopping cart for buying puzzles'
+    @page_keywords = 'buy puzzles kids development'
     @cart = find_cart
   end
 
@@ -31,6 +33,8 @@ class PuzzleController < ApplicationController
 
   def index
     @page_title = 'Handcrafted Wooden Puzzles'
+    @page_meta = 'Handcrafted wooden puzzles made in the usa great for kids development and great gifts'
+    @page_keywords = 'wooden puzzles made in usa wooden'
     @onsale = Puzzle.find(:all, :conditions => 'on_sale = 1', :order => 'name')
   end
   
@@ -48,17 +52,23 @@ class PuzzleController < ApplicationController
   
   def story
     @page_title = 'Our Story'
+    @page_meta = 'The story of how the company of MyDaddyPuzzles came to be'
+    @page_keywords = 'puzzles story of the business'
     render
   end
   
   def news
     @stories = NewsStory.find(:all, :order => 'post_date desc')
     @page_title = 'News'
+    @page_meta = 'Puzzles news items about where to get or see the product'
+    @page_keywords = 'puzzle news wooden'
     render
   end
 
   def gallery
     @page_title = 'Puzzle Gallery'
+    @page_meta = 'See wooden puzzle images here'
+    @page_keywords = 'puzzles made in usa wooden images'
     render
   end
   
@@ -74,11 +84,15 @@ class PuzzleController < ApplicationController
   
   def stories
     @page_title = 'Customer Stories'
+    @page_meta = 'Stories of customers who enjoy their handcrafted wooden puzzles'
+    @page_keywords = 'puzzles made in usa wooden'
     @stories = CustomerStory.find(:all, :conditions => 'active = 1', :order => 'created_at desc')
   end
 
   def store
     @page_title = 'Puzzle Store'
+    @page_meta = 'Buy your very own wooden handcrafted puzzle here'
+    @page_keywords = 'wooden puzzles made in usa store'
     @puzzles = Puzzle.find(:all, :conditions => 'active = 1', :order => 'on_sale desc')
     @cart = find_cart
   end
@@ -108,10 +122,14 @@ class PuzzleController < ApplicationController
 
   def made_in_usa
     @page_title = 'Made in the USA'
+    @page_meta = 'Our puzzles are made in the usa with usa products and materials'
+    @page_keywords = 'wooden handcrafted puzzles made in usa'
   end
 
   def contact
     @page_title = 'Contact MyDaddypuzzles'
+    @page_meta = 'Contact us about your puzzle needs'
+    @page_keywords = 'puzzles made in usa wooden'
     if request.post?
       @email_message = EmailMessage.new(params[:email_message])
       if @email_message.save
@@ -127,6 +145,8 @@ class PuzzleController < ApplicationController
   
   def give_away
     @page_title = 'Monthly Drawing Entry'
+    @page_meta = 'Enter to win a free puzzle monthly in our drawing'
+    @page_keywords = 'puzzles made in usa wooden'
     @entry = Entry.new(:month => Date.today.strftime("%B"))
     @prize = Prize.find(:first, :conditions => ['month = ?', Date.today.month])
     @puzzle = Configuration.find(@prize.puzzle.default_configuration)
