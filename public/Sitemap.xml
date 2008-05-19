@@ -6,39 +6,39 @@
       	<changefreq>monthly</changefreq>
    </url>
    <url>
-      	<loc>http://mydaddypuzzles.com/contact</loc>
+      	<loc>http://mydaddypuzzles.com/puzzle/contact</loc>
       	<changefreq>yearly</changefreq>
    </url>
    <url>
-      	<loc>http://mydaddypuzzles.com/gallery</loc>
+      	<loc>http://mydaddypuzzles.com/puzzle/gallery</loc>
       	<changefreq>monthly</changefreq>
    </url>
 	<url>
-      	<loc>http://mydaddypuzzles.com/give_away</loc>
+      	<loc>http://mydaddypuzzles.com/puzzle/give_away</loc>
       	<changefreq>monthly</changefreq>
    	</url>
 	<url>
-      	<loc>http://mydaddypuzzles.com/images</loc>
+      	<loc>http://mydaddypuzzles.com/puzzle/images</loc>
       	<changefreq>monthly</changefreq>
    	</url>
 	<url>
-      	<loc>http://mydaddypuzzles.com/made_in_usa</loc>
+      	<loc>http://mydaddypuzzles.com/puzzle/made_in_usa</loc>
       <changefreq>yearly</changefreq>
    	</url>
 	<url>
-      	<loc>http://mydaddypuzzles.com/news</loc>
+      	<loc>http://mydaddypuzzles.com/puzzle/news</loc>
       	<changefreq>weekly</changefreq>
    	</url>
 	<url>
-      	<loc>http://mydaddypuzzles.com/store</loc>
+      	<loc>http://mydaddypuzzles.com/puzzle/store</loc>
       	<changefreq>weekly</changefreq>
    	</url>
 	<url>
-	    <loc>http://mydaddypuzzles.com/stories</loc>
+	    <loc>http://mydaddypuzzles.com/puzzle/stories</loc>
 		<changefreq>monthly</changefreq>
 	</url>
 	<url>
-		<loc>http://mydaddypuzzles.com/story</loc>
+		<loc>http://mydaddypuzzles.com/puzzle/story</loc>
 		<changefreq>yearly</changefreq>
 	</url>
 </urlset>
