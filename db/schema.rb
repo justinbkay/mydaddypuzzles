@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 17) do
+ActiveRecord::Schema.define(:version => 18) do
 
   create_table "configurations", :force => true do |t|
     t.integer "puzzle_id"
@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(:version => 17) do
 
   create_table "puzzles", :force => true do |t|
     t.string  "name"
-    t.string  "description"
+    t.text    "description"
     t.string  "size"
     t.boolean "active"
     t.integer "default_configuration"

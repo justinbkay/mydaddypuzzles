@@ -5,10 +5,10 @@
 <%= puzzle_form.text_field 'name'  %></p>
 
 <p><label for="puzzle_description">Description</label><br/>
-<%= puzzle_form.text_field 'description', :size => 50  %></p>
+<%= puzzle_form.text_area 'description', :size => '70x5'  %></p>
 
 <p><label for="puzzle_size">Size</label><br/>
-<%= puzzle_form.text_field 'size', :size => 8 %></p>
+<%= puzzle_form.text_field 'size', :size => 30 %></p>
 
 <p><label for="puzzle_on_sale">On Sale?</label><br />
 <%= puzzle_form.check_box 'on_sale' %></p>
