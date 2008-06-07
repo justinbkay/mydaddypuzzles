@@ -149,7 +149,7 @@ class PuzzleController < ApplicationController
     @page_keywords = 'puzzles made in usa wooden'
     @entry = Entry.new(:month => Date.today.strftime("%B"))
     @prize = Prize.find(:first, :conditions => ['month = ?', Date.today.month])
-    @puzzle = Configuration.find(@prize.puzzle.default_configuration)
+    @puzzle = Configuration.find(@prize.puzzle_id)
   end
   
   def record_entry
