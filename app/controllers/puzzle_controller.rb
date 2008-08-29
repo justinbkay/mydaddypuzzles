@@ -1,5 +1,5 @@
 class PuzzleController < ApplicationController
-  caches_page :index, :story, :gallery
+  caches_page :index, :story, :gallery, :extreme_makeover
   
   def add_to_cart
     @cart = find_cart
@@ -12,6 +12,10 @@ class PuzzleController < ApplicationController
     end
   end
 
+  def extreme_makeover
+    render
+  end
+  
   def empty_cart
     session[:cart] = nil
     redirect_to :action => :show_cart
