@@ -1,9 +1,11 @@
 set :application, "mydaddypuzzles"
+set :user, 'deploy'
 set :repository,  "svn+ssh://208.78.97.241/usr/local/svn/mydaddypuzzles"
 set :deploy_to, "/usr/local/rails/#{application}"
-set :runner, 'root'
+set :runner, 'deploy'
 set :svn, "/usr/bin/svn"
 set :ssh, "/usr/bin/ssh"
+ssh_options[:port] = 2022
 
 # If you aren't deploying to /u/apps/#{application} on the target
 # servers (which is the default), you can specify the actual location
@@ -14,9 +16,9 @@ set :ssh, "/usr/bin/ssh"
 # your SCM below:
 # set :scm, :subversion
 
-role :app, "208.78.97.241"
-role :web, "208.78.97.241"
-role :db,  "208.78.97.241", :primary => true
+role :app, "208.53.44.52"
+role :web, "208.53.44.52"
+role :db,  "208.53.44.52", :primary => true
 
 desc "start thin web server"
 task :start_thin do
