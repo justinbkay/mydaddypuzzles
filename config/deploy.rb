@@ -5,7 +5,7 @@ set :deploy_to, "/usr/local/rails/#{application}"
 set :runner, 'deploy'
 set :svn, "/usr/bin/svn"
 set :ssh, "/usr/bin/ssh"
-ssh_options[:port] = 2022
+
 
 # If you aren't deploying to /u/apps/#{application} on the target
 # servers (which is the default), you can specify the actual location
