@@ -1,6 +1,6 @@
 set :application, "mydaddypuzzles"
 set :user, 'deploy'
-set :repository,  "--username deploy --password challengeme svn+ssh://208.53.44.52/usr/local/svn/mydaddypuzzles"
+set :repository,  "--username deploy --password challengeme svn+ssh://deploy@208.53.44.52/usr/local/svn/mydaddypuzzles"
 set :deploy_to, "/usr/local/rails/#{application}"
 set :runner, 'deploy'
 set :svn, "/usr/bin/svn"
