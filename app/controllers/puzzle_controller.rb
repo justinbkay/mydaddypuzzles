@@ -1,8 +1,8 @@
 class PuzzleController < ApplicationController
-  #caches_page :index 
-  #caches_page :story
-  #caches_page :gallery
-  #caches_page :extreme_makeover
+  caches_page :index 
+  caches_page :story
+  caches_page :gallery
+  caches_page :extreme_makeover
   
   def add_to_cart
     @cart = find_cart
