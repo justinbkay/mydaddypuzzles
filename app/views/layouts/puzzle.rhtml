@@ -8,8 +8,11 @@
 		<meta name="verify-v1" content="LyzhhMjS5nggxIUYJ2+3l/ft+YMX5CPcYTjyczTsnog=" />
 		<%= stylesheet_link_tag 'standard', 'scaffold' %>
 		<%= javascript_include_tag 'prototype', 'effects' %>
+		<%= javascript_include_tag 'moo.fx', 'litebox-1.0', 'prototype.lite' %>
+		<%= stylesheet_link_tag 'lightbox' %>
+		
 	</head>
-	<body>
+	<body onload="initLightbox()">
 		<div id="wrapper">
 			<div id="header">
 				<div style="float: right;margin-bottom: 0px;">
