@@ -35,7 +35,7 @@
 							<%= radio_button_tag 'finish', c.id, (@c = c == @default ? true : false), :onClick => "javascript:void($(\"thumbnail#{puzzle.id}\").src = '/images/thumbnails/#{c.default_thumbnail}')" %> 
 							<%= c.name %> :: <%= number_to_currency(c.price, :precision => 2) %><br />
 						<% else %>
-							 <span style="color: red;"><%= c.name %> Out Of Stock</span>
+							 <span style="color: red;"><%= c.name %> Out Of Stock</span><br />
 						<% end %>
 						
 					<% end %>
