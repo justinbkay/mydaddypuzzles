@@ -23,24 +23,7 @@
 		</tr>
 	</table>
 	<div id="paypal" style="width: 100%; text-align: center;padding-top: 30px;">
-		<form action="https://www.paypal.com/us/cgi-bin/webscr" method="post">
-			<input type="hidden" name="cmd" value="_cart"/>
-			<input type="hidden" name="upload" value="1"/>
-			<input type="hidden" name="business" value="mydaddypuzzles@gmail.com"/>
-		<% @cart.items.each_with_index do |item,index| %>
-			<input type="hidden" name="item_name_<%= index + 1 %>" value="<%= item.title %>"/>
-			<input type="hidden" name="amount_<%= index + 1 %>" value="<%= item.configuration.price %>"/>
-			<input type="hidden" name="quantity_<%= index + 1 %>" value="<%= item.quantity %>">
-		<% end %>
-			<input type="hidden" name="no_shipping" value="2"/>
-			<input type="hidden" name="currency_code" value="USD"/>
-			<input type="hidden" name="return" value="http://www.mydaddypuzzles.com/puzzle/thanks"/>
-			<input type="hidden" name="shopping_url" value="http://www.mydaddypuzzles.com/puzzle/store"/>
-			<input type="submit" name="submit" value="Proceed to Checkout" alt="Make payments with PayPal - it's fast, free and secure!"/>
-		</form>
-		<p>
-			<img src="/images/horizontal_solution_PP.gif" width="210" height="80" alt="Horizontal Solution PP"/>
-		</p>
+		<%= link_to image_tag('https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif', :style => 'border: 0px;'), :action => 'checkout' %>
 		<p style="font-size: .95em;">If you live in the DC Metro area and would like to pick up your puzzles, please <a href="mailto:mydaddypuzzles@gmail.com">email us</a> to make arrangements.  Tell us which puzzles you would like and when you would be able to pick them up.  Puzzles ordered for pick may be paid for with cash or personal check.   You can also visit our friends at <a href="http://www.ashowofhands.biz" target="_blank">A Show of Hands</a> in the Del Ray neighborhood of Alexandria if you just can't wait to start playing with your new puzzles.</p>
 		<p><strong>Return Policy:</strong> <br />
 			 If within 15 days you are not satisfied with a recent purchase, you can return the merchandise for a refund less shipping and handling.  Returned puzzles must be in re-saleable condition.  If not, your return may be subject to a 50% restocking fee. </p>

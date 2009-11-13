@@ -94,6 +94,16 @@ label {
 	font-size: .9em;
 }
 
+td.label {
+	width: 150px;
+	font-size: .9em;
+}
+
+td.field {
+	width: 200px;
+	font-size: .95em;
+}
+
 .sale {
 	color: red;
 }

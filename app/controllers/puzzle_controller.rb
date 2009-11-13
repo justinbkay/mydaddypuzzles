@@ -3,6 +3,7 @@ class PuzzleController < ApplicationController
   #caches_page :story
   #caches_page :gallery
   #caches_page :extreme_makeover
+  include ActiveMerchant::Billing
   
   def add_to_cart
     @cart = find_cart
@@ -17,6 +18,49 @@ class PuzzleController < ApplicationController
 
   def extreme_makeover
     render
+  end
+  
+  def checkout
+    cart = find_cart
+    price = cart.items.sum {|item| item.price} * 100
+    setup_response = gateway.setup_purchase(price,
+      :ip                => request.remote_ip,
+      :return_url        => url_for(:action => 'confirm', :only_path => false),
+      :cancel_return_url => url_for(:action => 'show_cart', :only_path => false)
+    )
+    redirect_to gateway.redirect_url_for(setup_response.token)
+  end
+  
+  def confirm
+    redirect_to :action => 'index' unless params[:token]
+    @cart = find_cart
+    details_response = gateway.details_for(params[:token])
+
+    if !details_response.success?
+      @message = details_response.message
+      render :action => 'error'
+      return
+    end
+
+    @address = details_response.address
+  end
+  
+  def complete
+    cart = find_cart
+    price = cart.items.sum {|item| item.price} * 100
+    purchase = gateway.purchase(price,
+      :ip       => request.remote_ip,
+      :payer_id => params[:payer_id],
+      :token    => params[:token]
+    )
+
+    if !purchase.success?
+      @message = purchase.message
+      render :action => 'error'
+      return
+    else
+      session[:cart] = nil
+    end
   end
   
   def empty_cart
@@ -172,5 +216,14 @@ class PuzzleController < ApplicationController
   def drawing_confirmation
     @page_title = 'Monthly Drawing Confirmation'
     render
+  end
+  
+private
+  def gateway
+    @gateway ||= PaypalExpressGateway.new(
+      :login => 'ryan_1258078809_biz_api1.gmail.com',
+      :password => '1258078814',
+      :signature => 'AO84zOzoAqax-rHP-gFjqDnBjuzkAohS6iWGsgfm1AW6zCPOxZwRYE2f'
+    )
   end
 end
