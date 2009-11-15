@@ -17,4 +17,15 @@ class ContactMailer < ActionMailer::Base
     @sent_on    = Time.now
     @headers    = {}
   end
+  
+  def order_to_fill(order)
+    @subject    = "Order to fill"
+    @body       = {'order' => order}
+    @recipients = 'PuzzleMaster <mydaddypuzzles@gmail.com>'
+    @bcc        = 'justinbkay@gmail.com'
+    @from       = "mydaddypuzzles@gmail.com"
+    @sent_on    = Time.now
+    @headers    = {}
+  end
+  
 end

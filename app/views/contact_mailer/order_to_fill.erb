@@ -1,0 +1,11 @@
+An order has been received.
+
+Transaction ID: <%= @order.reference %>
+Total of items: <%= @order.total %>
+Shipping total: <%= @order.shipping %>
+
+Items
+===========================
+<% @order.line_items.each do |i| -%>
+	<%= i.configuration.name %>::<%= i.configuration.puzzle.name %> 		<%= i.quantity %>				 <%= i.price %>
+<% end -%>

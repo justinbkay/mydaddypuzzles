@@ -53,12 +53,17 @@ class PuzzleController < ApplicationController
       :payer_id => params[:payer_id],
       :token    => params[:token]
     )
-
+    #raise purchase.inspect
     if !purchase.success?
       @message = purchase.message
       render :action => 'error'
       return
     else
+      @order = Order.create(:reference => purchase.params['transaction_id'], :shipping =>  cart.shipping_cost, :total => cart.items.sum {|item| item.price})
+      cart.items.each do |i|
+        @order.line_items << LineItem.create(:configuration_id => i.configuration.id, :quantity => i.quantity, :price => i.price)
+      end
+      ContactMailer.deliver_order_to_fill(@order)
       session[:cart] = nil
     end
   end
@@ -220,10 +225,19 @@ class PuzzleController < ApplicationController
   
 private
   def gateway
+    if RAILS_ENV == 'production'
+      login = 'mydaddypuzzles_api1.gmail.com'
+      password = 'XMVXDN6DBBKLA2S7'
+      signature = 'AFcWxV21C7fd0v3bYYYRCpSSRl31AZHDiRvUxQHKgHjRTRQr9FCGiYeu'
+    else
+      login = 'ryan_1258078809_biz_api1.gmail.com'
+      password = '1258078814' 
+      signature = 'AO84zOzoAqax-rHP-gFjqDnBjuzkAohS6iWGsgfm1AW6zCPOxZwRYE2f'
+    end
     @gateway ||= PaypalExpressGateway.new(
-      :login => 'mydaddypuzzles_api1.gmail.com',
-      :password => 'XMVXDN6DBBKLA2S7',
-      :signature => 'AFcWxV21C7fd0v3bYYYRCpSSRl31AZHDiRvUxQHKgHjRTRQr9FCGiYeu'
+      :login => login,
+      :password => password,
+      :signature => signature 
     )
   end
 end

@@ -1,5 +1,6 @@
 class Configuration < ActiveRecord::Base
   belongs_to :puzzle
+  has_many :line_items
   
   validates_presence_of :puzzle_id, :name, :default_thumbnail, :default_picture
   validates_numericality_of :price

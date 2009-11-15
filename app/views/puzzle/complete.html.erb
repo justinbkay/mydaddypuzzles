@@ -1,1 +1,26 @@
-<p>Thank you for your purchase</p>
+<h1>Thank you for your purchase</h1>
+
+<p>Transaction ID: <%= @order.reference %></p>
+
+<table style="width: 500px;">
+	<tr>
+		<th>Product</th>
+		<th>Quantity</th>
+		<th>Price</th>
+	</tr>
+	<% @order.line_items.each do |i| -%>
+		<tr class="<%= cycle('even','odd') %>">
+			<td><%= i.configuration.name %>::<%= i.configuration.puzzle.name %></td>
+			<td class="center"><%= i.quantity %></td>
+			<td class="center"><%= number_to_currency(i.price) %></td>
+		</tr>
+	<% end -%>
+	<tr>
+		<td colspan="2">Shipping</td>
+		<td class="center"><%= number_to_currency(@order.shipping) %></td>
+	</tr>
+	<tr>
+		<td colspan="2"><strong>Total</strong></td>
+		<td class="center"><%= number_to_currency(@order.total + @order.shipping) %></td>
+	</tr>
+</table>

@@ -35,7 +35,7 @@
 	</tr>
 	<tr>
 		<td class="label"><strong>Total:</strong></td>
-		<td class="field"><strong><%= number_to_currency @cart.items.sum {|item| item.price} %></strong></td>
+		<td class="field"><strong><%= number_to_currency(@cart.items.sum {|item| item.price} + @cart.shipping_cost) %></strong></td>
 	</tr>
 </table>
 <p>
