@@ -22,7 +22,7 @@ class PuzzleController < ApplicationController
   
   def checkout
     cart = find_cart
-    price = cart.items.sum {|item| item.price} * 100
+    price = ((cart.items.sum {|item| item.price} + cart.shipping_cost) * 100).to_i
     setup_response = gateway.setup_purchase(price,
       :ip                => request.remote_ip,
       :return_url        => url_for(:action => 'confirm', :only_path => false),
@@ -47,7 +47,7 @@ class PuzzleController < ApplicationController
   
   def complete
     cart = find_cart
-    price = cart.items.sum {|item| item.price} * 100
+    price = ((cart.items.sum {|item| item.price} + cart.shipping_cost) * 100).to_i
     purchase = gateway.purchase(price,
       :ip       => request.remote_ip,
       :payer_id => params[:payer_id],

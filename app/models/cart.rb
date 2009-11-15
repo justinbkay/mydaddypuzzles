@@ -18,4 +18,19 @@ class Cart
     @items.delete_if {|i| i.configuration == configuration }
   end
   
+  def total_items
+    @items.inject(0) {|sum, t| sum + t.quantity}
+  end
+  
+  def shipping_cost
+    # if total items is odd lets add 1
+    ti = total_items
+    ti = ti % 2 == 1 ? ti += 1 : ti
+    if ti < 3
+      8
+    else
+      ((ti - 2) * 2) + 8
+    end
+  end
+  
 end
