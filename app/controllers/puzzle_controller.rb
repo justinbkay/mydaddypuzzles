@@ -221,9 +221,9 @@ class PuzzleController < ApplicationController
 private
   def gateway
     @gateway ||= PaypalExpressGateway.new(
-      :login => 'ryan_1258078809_biz_api1.gmail.com',
-      :password => '1258078814',
-      :signature => 'AO84zOzoAqax-rHP-gFjqDnBjuzkAohS6iWGsgfm1AW6zCPOxZwRYE2f'
+      :login => 'mydaddypuzzles_api1.gmail.com',
+      :password => 'XMVXDN6DBBKLA2S7',
+      :signature => 'AFcWxV21C7fd0v3bYYYRCpSSRl31AZHDiRvUxQHKgHjRTRQr9FCGiYeu'
     )
   end
 end
