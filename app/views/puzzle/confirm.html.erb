@@ -2,40 +2,21 @@
 
 <table style="width: 350px;" cellspacing="0">
   <tr>
-		<td class="label">Name:</td>
 		<td class="field"><%= @address['name'] %></td>
 	</tr>
-  <tr class="odd">
-		<td class="label">Company:</td>
+  <tr>
 		<td class="field"><%= @address['company'] %></td>
 	</tr>
   <tr>
-		<td class="label">Address:</td>
-		<td class="field"><%= @address['address1'] %></td>
-	</tr>
-  <tr class="odd">
-		<td class="label">Address:</td>
-		<td class="field"><%= @address['address2'] %></td>
-	</tr>
-  <tr>
-		<td class="label">City:</td>
-		<td class="field"><%= @address['city'] %></td>
-	</tr>
-  <tr class="odd">
-		<td class="label">State:</td>
-		<td class="field"><%= @address['state'] %></td>
-	</tr>
-  <tr>
-		<td class="label">Country:</td>
-		<td class="field"><%= @address['country'] %></td>
-	</tr>
-  <tr class="odd">
-		<td class="label">Zip:</td>
-		<td class="field"><%= @address['zip'] %></td>
+		<td class="field">
+			<%= @address['address1'] %><br />
+			<%= @address['address2'] unless @address['address2'].nil? %>
+			<%= @address['city'] %>, <%= @address['state'] %> <%= @address['zip'] %><br />
+			<%= @address['country'] %>
+		</td>
 	</tr>
 	<tr>
-		<td class="label"><strong>Total:</strong></td>
-		<td class="field"><strong><%= number_to_currency(@cart.items.sum {|item| item.price} + @cart.shipping_cost) %></strong></td>
+		<td class="field"><br /><strong><%= number_to_currency(@cart.items.sum {|item| item.price} + @cart.shipping_cost) %></strong></td>
 	</tr>
 </table>
 <p>

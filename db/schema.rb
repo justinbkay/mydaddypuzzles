@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091115215520) do
+ActiveRecord::Schema.define(:version => 20091116021758) do
 
   create_table "configurations", :force => true do |t|
     t.integer "puzzle_id"
@@ -73,6 +73,15 @@ ActiveRecord::Schema.define(:version => 20091115215520) do
     t.string   "total"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
+    t.string   "company"
+    t.string   "address1"
+    t.string   "address2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "country"
+    t.string   "email"
   end
 
   create_table "prizes", :force => true do |t|

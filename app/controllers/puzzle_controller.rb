@@ -34,8 +34,13 @@ class PuzzleController < ApplicationController
   def confirm
     redirect_to :action => 'index' unless params[:token]
     @cart = find_cart
+    
     details_response = gateway.details_for(params[:token])
-
+    
+    @cart.customer = details_response.address
+    
+    @cart.customer['email'] = details_response.params['payer']
+    
     if !details_response.success?
       @message = details_response.message
       render :action => 'error'
@@ -59,7 +64,18 @@ class PuzzleController < ApplicationController
       render :action => 'error'
       return
     else
-      @order = Order.create(:reference => purchase.params['transaction_id'], :shipping =>  cart.shipping_cost, :total => cart.items.sum {|item| item.price})
+      @order = Order.create(:reference => purchase.params['transaction_id'], 
+                            :shipping =>  cart.shipping_cost, 
+                            :total => cart.items.sum {|item| item.price},
+                            :name => cart.customer['name'],
+                            :address1 => cart.customer['address1'],
+                            :address2 => cart.customer['address2'],
+                            :company => cart.customer['company'],
+                            :city => cart.customer['city'],
+                            :state => cart.customer['state'],
+                            :zip => cart.customer['zip'],
+                            :country => cart.customer['country'],
+                            :email => cart.customer['email'])
       cart.items.each do |i|
         @order.line_items << LineItem.create(:configuration_id => i.configuration.id, :quantity => i.quantity, :price => i.price)
       end
