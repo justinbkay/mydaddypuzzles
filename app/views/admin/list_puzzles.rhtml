@@ -1,6 +1,6 @@
 <h2>Puzzles</h2>
 
-<table style="border-collapse: collapse; width: 800px;">
+<table style="border-collapse: collapse; width: 100%;">
   <tr>
   	<th style="text-align: left;">Name</th>
   	<th style="text-align: left;">Description</th>
@@ -16,8 +16,8 @@
 	<td><%=h puzzle.size %></td>
 	<td class="center"><%=h puzzle.active? %></td>
 	<td style="text-align: center;"><%= puzzle.configurations.count %></td>
-    <td><%= link_to 'Edit', :action => 'edit_puzzle', :id => puzzle %></td>
-	<td><%= link_to "Show Configs", :action => "show_configurations", :id => puzzle %></td>
+    <td><%= link_to 'Edit', :action => 'edit_puzzle', :id => puzzle %>&nbsp;</td>
+	<td>&nbsp;<%= link_to "Configs", :action => "show_configurations", :id => puzzle %></td>
   </tr>
 <% end %>
 </table>

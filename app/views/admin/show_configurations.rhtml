@@ -1,11 +1,12 @@
 <h2>Configurations for <%=h @puzzle.name %></h2>
-<table style="width: 800px; border-collapse: collapse;">
+<table style="width: 100%; border-collapse: collapse;">
 	<tr>
 		<th>Name</th>
 		<th>Thumbnail</th>
 		<th>Picture</th>
 		<th>Price</th>
 		<th>Active</th>
+		<th>Out of Stock</th>
 		<th>Default</th>
 	</tr>
 <% for config in @puzzle.configurations %>
@@ -13,9 +14,10 @@
 		<td><%=h config.name %></td>
 		<td><%=h config.default_thumbnail %></td>  
 		<td><%=h config.default_picture %></td>
-		<td><%=h config.price %></td>
-		<td><%= config.active? %></td>
-		<td><%= is_default? config %></td>
+		<td class="center"><%=h config.price %></td>
+		<td class="center"><%= config.active? %></td>
+		<td class="center"><%= config.out_of_stock %></td>
+		<td class="center"><%= is_default? config %></td>
 		<td><%= link_to "Edit", :action => "edit_configuration", :id => config %></td>
 	</tr>
 <% end %>

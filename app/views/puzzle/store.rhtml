@@ -22,7 +22,7 @@
 	
 	<tr class="<%= cycle('even','odd') %>">
 		<td id="picture_<%= puzzle.id %>" style="text-align: center;width: 150px;">
-			<%= link_to image_tag("/images/thumbnails/#{@default.default_thumbnail}", :id => "thumbnail#{puzzle.id}"), :action => "images", :id => @default %><br />
+			<%= link_to image_tag("/images/thumbnails/#{@default.default_thumbnail}", :width => 170, :id => "thumbnail#{puzzle.id}"), :action => "images", :id => @default %><br />
 			<%= link_to "More Images", :action => "images", :id => @default %>
 		</td>
 		<td style="width: 250px;"><span style="font-size: 2em; font-weight: bold;"><%= puzzle.name %></span><br /><%= puzzle.description %></td>
@@ -33,7 +33,7 @@
 					<% if c.active? %>
 						<% unless c.out_of_stock? %>
 							<%= radio_button_tag 'finish', c.id, (@c = c == @default ? true : false), :onClick => "javascript:void($(\"thumbnail#{puzzle.id}\").src = '/images/thumbnails/#{c.default_thumbnail}')" %> 
-							<%= c.name %> :: <%= number_to_currency(c.price, :precision => 2) %><br />
+							<%= c.name %> :: <%= number_to_currency(c.price, :precision => 0) %><br />
 						<% else %>
 							 <span style="color: red;"><%= c.name %> Out Of Stock</span><br />
 						<% end %>
@@ -49,4 +49,4 @@
 <% end %>
 
 </table>
-<p style="padding-left: 30px; font-size: .9em; font-weight: bold;padding-top: 5px;">***Choking Hazzard - Some puzzle pieces are small.  Not intended for children under three years old.***</p>
+<p style="padding-left: 30px; font-size: .9em; font-weight: bold;padding-top: 5px;">*** Choking Hazzard - Some puzzle pieces are small.  Not intended for children under three years old. ***</p>
