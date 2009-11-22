@@ -9,4 +9,12 @@ class Configuration < ActiveRecord::Base
   def to_s
     name
   end
+  
+  def default_configuration?
+    if self.puzzle.default_configuration == self.id
+      true
+    else
+      false
+    end
+  end
 end

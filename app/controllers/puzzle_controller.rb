@@ -141,7 +141,8 @@ class PuzzleController < ApplicationController
     @page_title = 'Puzzle Gallery'
     @page_meta = 'See wooden puzzle images here'
     @page_keywords = 'puzzles made in usa wooden images'
-    render
+    @puzzles = Puzzle.active
+    @configurations = @puzzles.map {|p| p.default_configurations }.flatten
   end
   
   def gallery_xml

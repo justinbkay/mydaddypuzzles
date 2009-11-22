@@ -4,6 +4,7 @@ class Puzzle < ActiveRecord::Base
   
   validates_presence_of :name, :description, :size
   validates_uniqueness_of :name
+  named_scope :active, :conditions => {:active => true}
   
   def find_default_configuration
     if default_configuration

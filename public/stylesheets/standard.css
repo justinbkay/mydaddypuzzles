@@ -134,6 +134,7 @@ td.field {
 }
 
 #footer {
+	clear: both;
 	text-align: center;
 	width: 800px;
 	margin: 0px;
