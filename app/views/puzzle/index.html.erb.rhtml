@@ -1,7 +1,7 @@
 <div id="specials" style="width: 30%; float: left; text-align: center;">
 	<h3 class="sale">Internet Specials</h3>
 	<% for puzzle in @onsale %>
-		<p><%= image_tag "/images/thumbnails/#{puzzle.find_default_configuration.default_thumbnail}", :width => 200 %><br />
+		<p><%= image_tag "/images/thumbnails/#{puzzle.find_default_configuration.default_thumbnail}", :width => 170 %><br />
 		<%= link_to puzzle.name, :action => "store" %> <br />
 		<span class="sale">ON SALE FOR <%= number_to_currency(puzzle.find_default_configuration.price, :precision => 2) %></span></p>
 	<% end %>
