@@ -4,15 +4,19 @@ class PuzzleController < ApplicationController
   #caches_page :gallery
   #caches_page :extreme_makeover
   include ActiveMerchant::Billing
+  before_filter :return_cart
   
   def add_to_cart
     @cart = find_cart
     configuration = Configuration.find(params[:finish])
     @cart.add_puzzle(configuration)
     render :update do |page|
-      page.replace_html 'cart', "Shopping Cart total: #{number_to_currency(@cart.items.sum {|item| item.price})} #{link_to("Show Cart", :action => "show_cart")}"
+      page.replace_html 'cart', "#{image_tag('shopping_cart.png', :style => 'border: 0px;')} Cart total: #{number_to_currency(@cart.total)}<br /> #{link_to("Show Cart", :action => "show_cart")}"
+      page.replace_html 'cart_status', "#{link_to(image_tag('shopping_cart.png', :style => 'border: 0px;'), :action => 'show_cart')} &nbsp;
+			#{link_to(number_to_currency(@cart.total), :action => 'show_cart')}"
       page.show 'cart' 
       page.visual_effect :highlight, 'cart'
+      page.visual_effect :highlight, 'cart_status'
     end
   end
 
@@ -22,7 +26,7 @@ class PuzzleController < ApplicationController
   
   def checkout
     cart = find_cart
-    price = ((cart.items.sum {|item| item.price} + cart.shipping_cost) * 100).to_i
+    price = ((cart.total + cart.shipping_cost) * 100).to_i
     setup_response = gateway.setup_purchase(price,
       :ip                => request.remote_ip,
       :return_url        => url_for(:action => 'confirm', :only_path => false),
@@ -52,7 +56,7 @@ class PuzzleController < ApplicationController
   
   def complete
     cart = find_cart
-    price = ((cart.items.sum {|item| item.price} + cart.shipping_cost) * 100).to_i
+    price = ((cart.total + cart.shipping_cost) * 100).to_i
     purchase = gateway.purchase(price,
       :ip       => request.remote_ip,
       :payer_id => params[:payer_id],
@@ -118,10 +122,6 @@ class PuzzleController < ApplicationController
     end
   end
   
-  def find_cart
-    session[:cart] ||= Cart.new
-  end
-  
   def story
     @page_title = 'Our Story'
     @page_meta = 'The story of how the company of MyDaddyPuzzles came to be'
@@ -167,7 +167,6 @@ class PuzzleController < ApplicationController
     @page_meta = 'Buy your very own wooden handcrafted puzzle here'
     @page_keywords = 'wooden puzzles made in usa store'
     @puzzles = Puzzle.find(:all, :conditions => 'active = 1', :order => 'on_sale desc')
-    @cart = find_cart
   end
   
   def thanks
@@ -257,4 +256,13 @@ private
       :signature => signature 
     )
   end
+  
+  def return_cart
+    @cart = find_cart
+  end
+  
+  def find_cart
+    session[:cart] ||= Cart.new
+  end
+  
 end

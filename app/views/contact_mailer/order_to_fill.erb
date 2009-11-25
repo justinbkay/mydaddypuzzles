@@ -10,11 +10,12 @@ Customer:
 	<%= @order.city %> <%= @order.state %> <%= @order.zip %>
 	<%= @order.country %>
 	
-Total of items: <%= @order.total %>
-Shipping total: <%= @order.shipping %>
+Total of items: <%= number_to_currency(@order.total) %>
+Shipping total: <%= number_to_currency(@order.shipping) %>
+Order Total: <%= number_to_currency(@order.total + @order.shipping) %>
 
 Items
 ===========================
 <% @order.line_items.each do |i| -%>
-	<%= i.configuration.name %>::<%= i.configuration.puzzle.name %> 		<%= i.quantity %>				 <%= i.price %>
+<%= i.configuration.name %>::<%= i.configuration.puzzle.name %> 		<%= i.quantity %>     <%= number_to_currency(i.price) %>
 <% end -%>

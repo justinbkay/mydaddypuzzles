@@ -23,6 +23,10 @@ class Cart
     @items.inject(0) {|sum, t| sum + t.quantity}
   end
   
+  def total
+    @items.sum {|item| item.price}
+  end
+  
   def shipping_cost
     # if total items is odd lets add 1
     ti = total_items

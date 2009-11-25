@@ -178,3 +178,17 @@ td.field {
   font-size: 12px;
   list-style: square;
 }
+
+#cart_status {
+	text-align: center; 
+	position: relative; 
+	top: 0px; 
+	left: 710px;
+	width: 100px;
+	border-right: 1px solid red;
+	border-left: 1px solid red;
+	border-bottom: 1px solid red;
+	padding: 3px 0px 2px 0px;
+	color: #7F6632;
+	background-color: #FFF7B8;
+}

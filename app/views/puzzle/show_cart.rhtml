@@ -17,13 +17,18 @@
 				<td><%= link_to "Remove Item", :action => "remove_item", :id => item.configuration.id %></td>
 			</tr>
 		<% end %>
+		<tr style="border-top: 1px solid #000;">
+			<td colspan="3" class="center">Cart Total</td>
+			<td class="center"><%= number_to_currency(@cart.total) %></td>
+			<td colspan="2">&nbsp;</td>
+		</tr>
 		<tr>
 			<td colspan="3" class="center">Shipping</td>
 			<td class="center"><%= number_to_currency(@cart.shipping_cost)%></td>
 		</tr>
 		<tr>
 			<td colspan="3" style="font-weight: bold;" class="center">Total</td>
-			<td class="center" style="font-weight: bold;border-top: 1px solid #000;border-bottom: 2px solid #000;"><%= number_to_currency(@cart.items.sum {|item| item.price} + @cart.shipping_cost) %></td>
+			<td class="center" style="font-weight: bold;border-top: 1px solid #000;border-bottom: 2px solid #000;"><%= number_to_currency(@cart.total + @cart.shipping_cost) %></td>
 		</tr>
 	</table>
 	<div id="paypal" style="width: 100%; text-align: center;padding-top: 30px;">
