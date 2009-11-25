@@ -1,0 +1,37 @@
+<div id="specials" style="width: 30%; float: left; text-align: center;">
+	<h3 class="sale">Internet Specials</h3>
+	<% for puzzle in @onsale %>
+		<p><%= image_tag "/images/thumbnails/#{puzzle.find_default_configuration.default_thumbnail}", :width => 170 %><br />
+		<%= link_to puzzle.name, :action => "store" %> <br />
+		<span class="sale">ON SALE FOR <%= number_to_currency(puzzle.find_default_configuration.price, :precision => 2) %></span></p>
+	<% end %>
+	
+</div>
+<div id="verbage" style="width: 70%; float:left;">
+	<h2>Welcome to MyDaddyPuzzles</h2>
+	<p style="line-height:1.5em;"><span class="first_letter">T</span>hank you for visiting MyDaddyPuzzles.com, where you'll find high quality, handcrafted, durable wood puzzles that will thrill your children and grandchildren for years to come. Our wood puzzles are designed and created in our home. They were created for our two young sons (ages six and two). Our wood puzzles will help you recall the days when everything was not plastic or made overseas. These wood puzzles remind us of a time when toys were handmade, not produced by the millions in a factory. Our puzzles were drawn, cut, sanded, painted or stained, and packaged right here in the USA by our family.  <%= image_tag 'boy2.jpg', :alt => 'Play time!', :title => 'Play Time!', :style => 'float: right; margin: 20px;' %>
+	</p>
+
+	<h2>High Quality & American Made Wood Puzzles</h2>
+	<p style="line-height: 1.5em;"><span class="first_letter">O</span>ur puzzles are made of the hardwoods <a href="http://en.wikipedia.org/wiki/Poplar">poplar</a> and <a href="http://en.wikipedia.org/wiki/maple">maple</a>, grown and harvested in the United States. They are painted or stained and sealed with materials manufactured in Ohio. They are hand sanded and painted in our home in Alexandria, Virginia. We are very proud of our puzzles. Proud that we made them with our hands and proud that they are 100% <a href="http://www.ftc.gov/bcp/edu/pubs/business/adv/bus03.shtm">made in the USA</a>.
+	</p>
+
+	<h2>Hand Crafted & Durable Wood Puzzles</h2>	
+	<p style="line-height: 1.5em;"><span class="first_letter">O</span>ur puzzles are beautifully-made and are as fun to display as they are to play with.   Our two sons play with our puzzles and they have withstood quite a beating.  They are well made and well used.   There are few wood toys in our home that are as durable as our wood puzzles.  We use quality poplar and maple because of its strength and durability. 
+	</p>
+
+	<h2>Made with Safe, Non-Toxic, US Made Materials</h2>
+	<p style="line-height: 1.5em;"><span class="first_letter">E</span>verything we sell here at MyDaddyPuzzles is 100% made in the United States of America. Our puzzles are stained and sealed or painted with RustOleum paints and stains. It is manufactured in Ohio.  According to the Material Safety Data Sheet, this paint contains no substances that are required to be disclosed under the Toxic Substances Control Act.  Additionally, it complies with the standards imposed under California Proposition 65, specifically, that the paints are certified to contain no chemicals that cause cancer or cause birth defects or reproductive harm.  <%= image_tag 'saw_board_2.jpg', :alt => 'Cutting a puzzle', :title => 'Cutting a puzzle', :style => 'float: right;margin: 20px;' %>.
+
+	</p>
+
+	<h2>Wood Puzzles that Challenge Young Minds</h2>
+	<p style="line-height: 1.5em;"><span class="first_letter">O</span>ur wood puzzles are challenging yet simple in their design. Children as young as 18 months enjoy our puzzles. Our puzzles range from five to ten pieces. We paint both the front and back of our puzzles, so children may need to flip the piece to find its home. This added level of complexity teaches the child to explore new dimensions to complete the puzzle. <a href="http://www.mentalhelp.net/poc/view_doc.php?type=doc&id=14342&cn=462", target='_blank'>MentalHelp.net</a> and the <a href="http://www.naeyc.org/ece/1997/17.asp", target='_blank'>National Association for the Education of Young Children</a> suggest that playing with puzzles develop critical thinking and physical skills.
+	</p>
+	
+</div>
+
+
+<div style="text-align: center; width: 100%">
+	<br style="clear: both;"/>
+</div>
