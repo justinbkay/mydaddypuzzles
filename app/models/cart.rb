@@ -1,9 +1,10 @@
 class Cart
   attr_reader :items
-  attr_accessor :customer
+  attr_accessor :customer, :shipping
   
   def initialize
     @items = []
+    @shipping = '1'
   end
   
   def add_puzzle(configuration)
@@ -29,6 +30,9 @@ class Cart
   
   def shipping_cost
     # if total items is odd lets add 1
+    return 0 unless @shipping == '1'
+    
+    # if usps is shipping we return calc'd shipping
     ti = total_items
     ti = ti % 2 == 1 ? ti += 1 : ti
     if ti < 3
@@ -36,6 +40,10 @@ class Cart
     else
       ((ti - 2) * 2) + 8
     end
+  end
+  
+  def empty_items
+    @items = []
   end
   
 end

@@ -7,7 +7,6 @@ class PuzzleController < ApplicationController
   before_filter :return_cart
   
   def add_to_cart
-    @cart = find_cart
     configuration = Configuration.find(params[:finish])
     @cart.add_puzzle(configuration)
     render :update do |page|
@@ -37,7 +36,6 @@ class PuzzleController < ApplicationController
   
   def confirm
     redirect_to :action => 'index' unless params[:token]
-    @cart = find_cart
     
     details_response = gateway.details_for(params[:token])
     
@@ -83,8 +81,19 @@ class PuzzleController < ApplicationController
       cart.items.each do |i|
         @order.line_items << LineItem.create(:configuration_id => i.configuration.id, :quantity => i.quantity, :price => i.price)
       end
+      
+      # if there is a pickup lets give instructions
+      if cart.shipping == '2'
+        @instructions = "Items can be picked up weekday evenings after 7:30 pm or weekends between 8:00 am and 7:30 pm.  You will be contacted with directions via email."
+      elsif cart.shipping == '3'
+        @instructions = "Puzzles will be delivered to Valley Drive Preschool.  MyDaddyPuzzles will donate 20% of the proceeds to Valley Drive.  You will be contacted with details via email."
+      elsif cart.shipping == '1'
+        @instructions = 'Puzzles will be mailed via USPS.'
+      end
+      
       ContactMailer.deliver_order_to_fill(@order)
       session[:cart] = nil
+      @cart.empty_items
     end
   end
   
@@ -97,12 +106,10 @@ class PuzzleController < ApplicationController
     @page_title = 'Shopping Cart'
     @page_meta = 'MyDaddy Puzzles shopping cart for buying puzzles'
     @page_keywords = 'buy puzzles kids development'
-    @cart = find_cart
   end
 
   def remove_item
     @configuration = Configuration.find(params[:id])
-    @cart = find_cart
     @cart.remove_item(@configuration)
     redirect_to :action => :show_cart
   end
@@ -237,6 +244,20 @@ class PuzzleController < ApplicationController
   def drawing_confirmation
     @page_title = 'Monthly Drawing Confirmation'
     render
+  end
+  
+  def change_shipping
+    @cart.shipping = params[:id]
+    case params[:id]
+    when '1' then desc = "(Shipped via the United States Postal Service)"
+    when '2' then desc = "(Order to be picked-up at MyDaddyPuzzles)"
+    when '3' then desc = "(Order to be picked-up at Valley Drive Preschool)"
+    else
+      desc ="(Shipped via the United States Postal Service)"
+    end 
+    render :update do |page|
+      page.replace_html 'ship_desc', desc
+    end
   end
   
 private

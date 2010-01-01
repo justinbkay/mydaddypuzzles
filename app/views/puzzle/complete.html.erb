@@ -1,7 +1,13 @@
 <h1>Thank you for your purchase</h1>
 
-<p>Transaction ID: <%= @order.reference %></p>
+<p><strong>Transaction ID:</strong> <%= @order.reference %></p>
 
+<% if @instructions %>
+	<p>
+		<strong>Instructions:</strong><br />
+		<span style="font-style: italic;"><%= @instructions %></span>
+	</p>
+<% end -%>
 <table style="width: 500px;">
 	<tr>
 		<th>Product</th>

@@ -1,6 +1,6 @@
 <p style="font-style: italic;">Your puzzle may not appear exactly as you see below.  We'll use the same color combinations, but we may not necessarily paint each piece the same color that is shown below.  If you have a specific request, <%= link_to "email", :action => "contact" %> us.</p>
 <div style="text-align: center; width: 100%;">
-	<p><%= link_to "Enter to Win a free puzzle from MyDaddyPuzzles!", :action => "give_away" %></p>
+	<p><%= link_to "Enter to Win a free puzzle!", :action => "give_away" %></p>
 </div>
 <div id="cart" style="<% if @cart.items.empty? %>display: none; <% end %>width: 200px;padding: 4px;text-align: center;background-color: #FFF7B8;border: 1px solid red;">
 <% unless @cart.items.empty? %>	

@@ -5,16 +5,21 @@
 
 	<table style="width: 750px;border-collapse: collapse;">
 		<tr>
-			<th>Picture</th><th>Puzzle</th><th>Quantity</th><th>Price/item</th><th>Total</th>
+			<th style="width: 300px;">Picture</th>
+			<th class="center">Quantity</th>
+			<th class="center">Price/item</th>
+			<th class="center" style="width: 150px;">Total</th>
 		</tr>
 		<% for item in @cart.items %>
 			<tr class="<%= cycle('even','odd') %>">
-				<td><img src="/images/thumbnails/<%= item.configuration.default_thumbnail %>" alt="<%= item.title %>"/></td>
-				<td class="center"><%= item.title %></td> 
+				<td>
+					<img src="/images/thumbnails/<%= item.configuration.default_thumbnail %>" alt="<%= item.title %>"/><br />
+					<span style="font-size: .9em;"><%= item.title %></span>
+				</td> 
 				<td class="center"><%= item.quantity %></td>
 				<td class="center"><%= number_to_currency(item.configuration.price) %></td>
 				<td style="font-weight: bold;" class="center"><%= number_to_currency(item.price) %></td>
-				<td><%= link_to "Remove Item", :action => "remove_item", :id => item.configuration.id %></td>
+				<td class="center"><%= link_to "Remove Item", :action => "remove_item", :id => item.configuration.id %></td>
 			</tr>
 		<% end %>
 		<tr style="border-top: 1px solid #000;">
@@ -23,17 +28,32 @@
 			<td colspan="2">&nbsp;</td>
 		</tr>
 		<tr>
+			<td colspan="6">&nbsp;</td>
+		</tr>
+		<tr id="shipping_options">
+			<td colspan="6" class="center">
+				Shipping Options: <br /><select onChange="new Ajax.Request('/puzzle/change_shipping/' + this.value, { method:'put' });"><option value="1">USPS &nbsp; (<%= number_to_currency(@cart.shipping_cost) %>)</option><option value="2">Pick-up &nbsp; (<%= number_to_currency(0) %>)</option><option value="3">Valley Drive Group  &nbsp; (<%= number_to_currency(0) %>)</option></select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="6" class="center" style="font-style: italic; font-size: 0.8em;" id="ship_desc">(Shipped via the United States Postal Service)</td>
+		</tr>
+		
+		<!-- 
+		<tr>
 			<td colspan="3" class="center">Shipping</td>
-			<td class="center"><%= number_to_currency(@cart.shipping_cost)%></td>
+			<td class="center"><%= number_to_currency(@cart.shipping_cost) %></td>
 		</tr>
 		<tr>
 			<td colspan="3" style="font-weight: bold;" class="center">Total</td>
 			<td class="center" style="font-weight: bold;border-top: 1px solid #000;border-bottom: 2px solid #000;"><%= number_to_currency(@cart.total + @cart.shipping_cost) %></td>
 		</tr>
+		-->
 	</table>
 	<div id="paypal" style="width: 100%; text-align: center;padding-top: 30px;">
 		<%= link_to image_tag('https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif', :style => 'border: 0px;'), :action => 'checkout' %>
-		<p style="font-size: .95em;">If you live in the DC Metro area and would like to pick up your puzzles, please <a href="mailto:mydaddypuzzles@gmail.com">email us</a> to make arrangements.  Tell us which puzzles you would like and when you would be able to pick them up.  Puzzles ordered for pick may be paid for with cash or personal check.   You can also visit our friends at <a href="http://www.ashowofhands.biz" target="_blank">A Show of Hands</a> in the Del Ray neighborhood of Alexandria if you just can't wait to start playing with your new puzzles.</p>
+	</div>
+		<p style="font-size: .95em;">You can visit our friends at <a href="http://www.ashowofhands.biz" target="_blank">A Show of Hands</a> in the Del Ray neighborhood of Alexandria if you just can't wait to start playing with your new puzzles.</p>
 		<p><strong>Return Policy:</strong> <br />
 			 If within 15 days you are not satisfied with a recent purchase, you can return the merchandise for a refund less shipping and handling.  Returned puzzles must be in re-saleable condition.  If not, your return may be subject to a 50% restocking fee. </p>
 
@@ -41,7 +61,7 @@
 
 			<p>Lost puzzle pieces can also be replaced.  <a href="mailto:mydaddypuzzles@gmail.com">Email</a> us for details and costs.
 		</p>
-	</div>
+	
 	
 <% else %>
 	<p><%= link_to "Continue Shopping", :action => "store" %></p>
