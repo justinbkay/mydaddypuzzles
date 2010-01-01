@@ -49,6 +49,18 @@ img {
 	position: relative;
 	top: -50px;
 	left: 600px;
+	width: 200px;
+	padding: 4px;
+	text-align: center;
+	background-color: #FFF7B8;
+	border: 1px solid red;
+	margin-top: 35px;
+}
+
+#inventory {
+	width: 100%; 
+	border-collapse: collapse;
+	margin-top: -20px;
 }
 
 #nav { 
