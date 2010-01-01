@@ -3,7 +3,6 @@ set :user, 'deploy'
 set :scm, :git
 set :deploy_via, :remote_cache
 set :repository,  "deploy@justinbkay.org:/var/git/mydaddypuzzles.git"
-#set :repository,  "--username deploy --password challengeme svn+ssh://deploy@208.53.44.52/usr/local/svn/mydaddypuzzles"
 set :deploy_to, "/usr/local/rails/#{application}"
 set :runner, 'deploy'
 set :svn, "/usr/bin/svn"
@@ -32,10 +31,8 @@ after "deploy:restart", "start_thin"
 desc "commit article pics to svn"
 task :commit_pics do
   run "cd #{current_path} && git add public/images/full_size/*"
-  #run "cd #{current_path} && svn ci public/images/full_size/* -m \"adding pic\""
   run "cd #{current_path} && git add public/images/thumbnails/*"
-  #run "cd #{current_path} && svn ci public/images/thumbnails/* -m \"adding pic\""
   run "cd #{current_path} && git add public/images/articles/*"
   run "cd #{current_path} && git commit -v -a -m \"adding pic\""
 end
-#before "deploy:update", "commit_pics"
+before "deploy:update", "commit_pics"
