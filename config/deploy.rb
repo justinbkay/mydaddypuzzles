@@ -2,7 +2,7 @@ set :application, "mydaddypuzzles"
 set :user, 'deploy'
 set :scm, :git
 set :deploy_via, :remote_cache
-set :repository,  "git@bsd.nwrecc.local:/var/git/essence.git"
+set :repository,  "deploy@justinbkay.org:/var/git/mydaddypuzzles.git"
 #set :repository,  "--username deploy --password challengeme svn+ssh://deploy@208.53.44.52/usr/local/svn/mydaddypuzzles"
 set :deploy_to, "/usr/local/rails/#{application}"
 set :runner, 'deploy'
