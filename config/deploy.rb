@@ -22,13 +22,22 @@ role :app, "208.53.44.52"
 role :web, "208.53.44.52"
 role :db,  "208.53.44.52", :primary => true
 
-desc "start thin web server"
-task :start_thin do
-  run "cd #{release_path} && /usr/bin/thin start -C config/thin.yml -d"
-end
-after "deploy:restart", "start_thin"
+namespace :deploy do
+  task :start, :roles => :app do
+    run "touch #{current_release}/tmp/restart.txt"
+  end
 
-desc "commit article pics to svn"
+  task :stop, :roles => :app do
+    # Do nothing.
+  end
+
+  desc "Restart Application"
+  task :restart, :roles => :app do
+    run "touch #{current_release}/tmp/restart.txt"
+  end
+end
+
+desc "commit article pics to git"
 task :commit_pics do
   run "cd #{current_path} && git add public/images/full_size/*"
   run "cd #{current_path} && git add public/images/thumbnails/*"
