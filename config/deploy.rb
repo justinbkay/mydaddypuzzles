@@ -1,13 +1,15 @@
 set :application, "mydaddypuzzles"
 set :user, 'deploy'
+
 set :scm, :git
 set :deploy_via, :remote_cache
-set :repository,  "deploy@justinbkay.org:/var/git/mydaddypuzzles.git"
+set :repository,  "." #deploy@justinbkay.org:/var/git/mydaddypuzzles.git"
+set :use_sudo, false
 set :deploy_to, "/usr/local/rails/#{application}"
 set :runner, 'deploy'
 set :svn, "/usr/bin/svn"
 set :ssh, "/usr/bin/ssh"
-
+set :deploy_via, :copy
 
 # If you aren't deploying to /u/apps/#{application} on the target
 # servers (which is the default), you can specify the actual location
