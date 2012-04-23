@@ -57,6 +57,11 @@ img {
 	margin-top: 35px;
 }
 
+.fb-like {
+  float: right;
+  margin-right: -100px;
+}
+
 #inventory {
 	width: 100%; 
 	border-collapse: collapse;
