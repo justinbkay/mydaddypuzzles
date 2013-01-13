@@ -46,4 +46,4 @@ task :commit_pics do
   run "cd #{current_path} && git add public/images/articles/*"
   run 'cd #{current_path} && git commit -v -a -m "adding pic"'
 end
-before "deploy:update", "commit_pics"
+#before "deploy:update", "commit_pics"
