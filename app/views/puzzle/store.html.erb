@@ -3,7 +3,7 @@
 	<p><%= link_to "Enter to Win a free puzzle!", :action => "give_away" %></p>
 </div>
 <div id="cart" style="<% if @cart.items.empty? %>display: none; <% end %>">
-<% unless @cart.items.empty? %>	
+<% unless @cart.items.empty? %>
 	<%= image_tag('shopping_cart.png', :style => 'border: 0px;') %> <%= "Cart total: #{number_to_currency(@cart.items.sum {|item| item.price})}" %><br />
 	<%= link_to "Show Cart", :action => "show_cart" %>
 <% end %>
@@ -17,35 +17,36 @@
 	</tr>
 <% for puzzle in @puzzles %>
 	<% next if puzzle.configurations.empty? || puzzle.find_default_configuration.nil? %>
-	
+
 		<% @default = puzzle.find_default_configuration %>
-	
+
 	<tr class="<%= cycle('even','odd') %>">
 		<td id="picture_<%= puzzle.id %>" style="text-align: center;width: 150px;">
-			<%= link_to image_tag("/images/thumbnails/#{@default.default_thumbnail}", :width => 170, :id => "thumbnail#{puzzle.id}"), :action => "images", :id => @default %><br />
+			<%= link_to image_tag("/assets/thumbnails/#{@default.default_thumbnail}", :width => 170, :id => "thumbnail#{puzzle.id}"), :action => "images", :id => @default %><br />
 			<%= link_to "More Images", :action => "images", :id => @default %>
 		</td>
-		<td style="width: 250px;"><span style="font-size: 2em; font-weight: bold;"><%= puzzle.name %></span><br /><%= puzzle.description %></td>
-		<td style="width: 200px;text-align: center;"><%= puzzle.size %></td>
+    <td style="width: 250px;">
+      <span style="font-size: 2em; font-weight: bold;"><%= puzzle.name %></span><br /><%= puzzle.description %></td>
+		<td style="width: 200px;text-align: center;"><%= puzzle.size.html_safe %></td>
 		<td style="width: 200px;">
-			<% form_remote_for "Add to Cart", :url => {:action => "add_to_cart", :id => puzzle} do %>
+      <%= form_for "Add to Cart", :remote => true, :url => {:action => "add_to_cart", :id => puzzle} do %>
 				<% puzzle.configurations.each do |c| %>
 					<% if c.active? %>
 						<% unless c.out_of_stock? %>
-							<%= radio_button_tag 'finish', c.id, (@c = c == @default ? true : false), :onClick => "javascript:void($(\"thumbnail#{puzzle.id}\").src = '/images/thumbnails/#{c.default_thumbnail}')" %> 
+							<%= radio_button_tag 'finish', c.id, (@c = c == @default ? true : false), :onClick => "javascript:void($(\"thumbnail#{puzzle.id}\").src = '/assets/thumbnails/#{c.default_thumbnail}')" %>
 							<%= c.name %> :: <%= number_to_currency(c.price, :precision => 0) %><br />
 						<% else %>
 							 <span style="color: red;"><%= c.name %> Out Of Stock</span><br />
 						<% end %>
-						
+
 					<% end %>
 				<% end %>
-					
+
 				<p><%= submit_tag 'Add to Cart' %></p>
 			<% end %>
 		</td>
 	</tr>
-	  
+
 <% end %>
 
 </table>

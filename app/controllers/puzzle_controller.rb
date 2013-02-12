@@ -1,11 +1,11 @@
 class PuzzleController < ApplicationController
-  #caches_page :index 
+  #caches_page :index
   #caches_page :story
   #caches_page :gallery
   #caches_page :extreme_makeover
   include ActiveMerchant::Billing
   before_filter :return_cart
-  
+
   def add_to_cart
     configuration = Configuration.find(params[:finish])
     @cart.add_puzzle(configuration)
@@ -13,7 +13,7 @@ class PuzzleController < ApplicationController
       page.replace_html 'cart', "#{image_tag('shopping_cart.png', :style => 'border: 0px;')} Cart total: #{number_to_currency(@cart.total)}<br /> #{link_to("Show Cart", :action => "show_cart")}"
       page.replace_html 'cart_status', "#{link_to(image_tag('shopping_cart.png', :style => 'border: 0px;'), :action => 'show_cart')} &nbsp;
 			#{link_to(number_to_currency(@cart.total), :action => 'show_cart')}"
-      page.show 'cart' 
+      page.show 'cart'
       page.visual_effect :highlight, 'cart'
       page.visual_effect :highlight, 'cart_status'
     end
@@ -22,7 +22,7 @@ class PuzzleController < ApplicationController
   def extreme_makeover
     render
   end
-  
+
   def checkout
     cart = find_cart
     price = ((cart.total + cart.shipping_cost) * 100).to_i
@@ -33,16 +33,16 @@ class PuzzleController < ApplicationController
     )
     redirect_to gateway.redirect_url_for(setup_response.token)
   end
-  
+
   def confirm
     redirect_to :action => 'index' unless params[:token]
-    
+
     details_response = gateway.details_for(params[:token])
-    
+
     @cart.customer = details_response.address
-    
+
     @cart.customer['email'] = details_response.params['payer']
-    
+
     if !details_response.success?
       @message = details_response.message
       render :action => 'error'
@@ -51,7 +51,7 @@ class PuzzleController < ApplicationController
 
     @address = details_response.address
   end
-  
+
   def complete
     cart = find_cart
     price = ((cart.total + cart.shipping_cost) * 100).to_i
@@ -66,8 +66,8 @@ class PuzzleController < ApplicationController
       render :action => 'error'
       return
     else
-      @order = Order.create(:reference => purchase.params['transaction_id'], 
-                            :shipping =>  cart.shipping_cost, 
+      @order = Order.create(:reference => purchase.params['transaction_id'],
+                            :shipping =>  cart.shipping_cost,
                             :total => cart.items.sum {|item| item.price},
                             :name => cart.customer['name'],
                             :address1 => cart.customer['address1'],
@@ -81,7 +81,7 @@ class PuzzleController < ApplicationController
       cart.items.each do |i|
         @order.line_items << LineItem.create(:configuration_id => i.configuration.id, :quantity => i.quantity, :price => i.price)
       end
-      
+
       # if there is a pickup lets give instructions
       if cart.shipping == '2'
         @instructions = "Items can be picked up weekday evenings after 7:30 pm or weekends between 8:00 am and 7:30 pm.  You will be contacted with directions via email."
@@ -90,13 +90,13 @@ class PuzzleController < ApplicationController
       elsif cart.shipping == '1'
         @instructions = 'Puzzles will be mailed via USPS.'
       end
-      
+
       ContactMailer.deliver_order_to_fill(@order)
       session[:cart] = nil
       @cart.empty_items
     end
   end
-  
+
   def empty_cart
     session[:cart] = nil
     redirect_to :action => :show_cart
@@ -120,7 +120,7 @@ class PuzzleController < ApplicationController
     @page_keywords = 'wooden puzzles made in usa wooden'
     @onsale = Puzzle.find(:all, :conditions => 'on_sale = 1', :order => 'name')
   end
-  
+
   def display_picture
     @configuration = Configuration.find(params[:id])
     render :update do |page|
@@ -128,14 +128,14 @@ class PuzzleController < ApplicationController
       page.replace_html 'config_name', @configuration.name
     end
   end
-  
+
   def story
     @page_title = 'Our Story'
     @page_meta = 'The story of how the company of MyDaddyPuzzles came to be'
     @page_keywords = 'puzzles story of the business'
     render
   end
-  
+
   def news
     @stories = NewsStory.find(:all, :order => 'post_date desc')
     @page_title = 'News'
@@ -151,17 +151,12 @@ class PuzzleController < ApplicationController
     @puzzles = Puzzle.active
     @configurations = @puzzles.map {|p| p.default_configurations }.flatten
   end
-  
-  def gallery_xml
-    @configurations = Configuration.find(:all, :conditions => 'active = 1')
-    render :layout => false
-  end
-  
+
   def email_confirmation
     @page_title = 'Email Confirmation'
     render
   end
-  
+
   def stories
     @page_title = 'Customer Stories'
     @page_meta = 'Stories of customers who enjoy their handcrafted wooden puzzles'
@@ -175,11 +170,11 @@ class PuzzleController < ApplicationController
     @page_keywords = 'wooden puzzles made in usa store'
     @puzzles = Puzzle.find(:all, :conditions => 'active = 1', :order => 'on_sale desc')
   end
-  
+
   def thanks
     @page_title = 'Thank you for your payment!'
   end
-  
+
   # def update_store
   #    @configuration = Configuration.find(params[:id])
   #    render :update do |page|
@@ -187,7 +182,7 @@ class PuzzleController < ApplicationController
   #      page.replace_html "picture_#{params[:p]}", link_to(image_tag(@configuration.default_thumbnail), :action => "images", :id => @configuration) + '<br />' + link_to("More Images", :action => "images", :id => @configuration)
   #    end
   #  end
-  
+
   # def inventory
   #   @products = Product.find(:all, :conditions => 'active = 1')
   #   @cart = find_cart
@@ -218,10 +213,10 @@ class PuzzleController < ApplicationController
         render :action => :contact
       end
     else
-      @email = EmailMessage.new()
+      @email_message = EmailMessage.new()
     end
   end
-  
+
   def give_away
     @page_title = 'Monthly Drawing Entry'
     @page_meta = 'Enter to win a free puzzle monthly in our drawing'
@@ -230,7 +225,7 @@ class PuzzleController < ApplicationController
     @prize = Prize.find(:first, :conditions => ['month = ?', Date.today.month])
     @puzzle = Configuration.find(@prize.puzzle_id)
   end
-  
+
   def record_entry
     @entry = Entry.new(params[:entry])
     if @entry.save
@@ -240,12 +235,12 @@ class PuzzleController < ApplicationController
       render :action => :give_away
     end
   end
-  
+
   def drawing_confirmation
     @page_title = 'Monthly Drawing Confirmation'
     render
   end
-  
+
   def change_shipping
     @cart.shipping = params[:id]
     case params[:id]
@@ -254,12 +249,12 @@ class PuzzleController < ApplicationController
     when '3' then desc = "(Order to be picked-up at Valley Drive Preschool)"
     else
       desc ="(Shipped via the United States Postal Service)"
-    end 
+    end
     render :update do |page|
       page.replace_html 'ship_desc', desc
     end
   end
-  
+
 private
   def gateway
     if RAILS_ENV == 'production'
@@ -268,22 +263,22 @@ private
       signature = 'AFcWxV21C7fd0v3bYYYRCpSSRl31AZHDiRvUxQHKgHjRTRQr9FCGiYeu'
     else
       login = 'ryan_1258078809_biz_api1.gmail.com'
-      password = '1258078814' 
+      password = '1258078814'
       signature = 'AO84zOzoAqax-rHP-gFjqDnBjuzkAohS6iWGsgfm1AW6zCPOxZwRYE2f'
     end
     @gateway ||= PaypalExpressGateway.new(
       :login => login,
       :password => password,
-      :signature => signature 
+      :signature => signature
     )
   end
-  
+
   def return_cart
     @cart = find_cart
   end
-  
+
   def find_cart
     session[:cart] ||= Cart.new
   end
-  
+
 end

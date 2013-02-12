@@ -2,8 +2,8 @@
 	<h3><%= story.title %></h3>
 	<p>
 		<% unless story.picture.nil? %>
-			<%= image_tag "/images/articles/#{story.picture}", :style => 'float: left; margin-right: 40px;' %>
-			<%= story.body %>
+			<%= image_tag "/assets/articles/#{story.picture}", :style => 'float: left; margin-right: 40px;' %>
+			<%= story.body.html_safe %>
 		<% end %>
 	</p>
 	<br style="clear: both;" />

@@ -1,11 +1,11 @@
 class Puzzle < ActiveRecord::Base
   has_many :configurations
   has_many :prizes
-  
+
   validates_presence_of :name, :description, :size
   validates_uniqueness_of :name
-  named_scope :active, :conditions => {:active => true}
-  
+  scope :active, lambda { where(:active => true) }
+
   def find_default_configuration
     if default_configuration
       return Configuration.find(default_configuration)
@@ -17,7 +17,7 @@ class Puzzle < ActiveRecord::Base
       end
     end
   end
-  
+
   def default_configurations
     configs = []
     self.configurations.each do |c|
@@ -27,9 +27,9 @@ class Puzzle < ActiveRecord::Base
     end
     return configs
   end
-  
+
   def to_s
     name
   end
-  
+
 end
