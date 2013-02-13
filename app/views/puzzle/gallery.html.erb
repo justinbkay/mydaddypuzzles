@@ -1,9 +1,11 @@
-<div id='slideshowHolder'>
-  <% @puzzles.each do |p| %>
-    <% p.configurations.each do |c| %>
-      <img src='/assets/full_size/<%= c.default_picture %>' alt="<%= c.puzzle.name %> - <%= c.name %>"></img>
+<div style="padding-top: 30px;clear: both;width: 100%; height: 400px;">
+  <div id='slideshowHolder' style="margin: auto;">
+    <% @puzzles.each do |p| %>
+      <% p.configurations.each do |c| %>
+        <img src='/assets/full_size/<%= c.default_picture %>' alt="<%= c.puzzle.name %> - <%= c.name %>"></img>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 </div>
 <script>
   $(document).ready( function(){
