@@ -207,7 +207,7 @@ class PuzzleController < ApplicationController
     if request.post?
       @email_message = EmailMessage.new(params[:email_message])
       if @email_message.save
-        ContactMailer.deliver_contact_us(@email_message)
+        ContactMailer.contact_us(@email_message).deliver
         redirect_to :action => :email_confirmation
       else
         render :action => :contact
