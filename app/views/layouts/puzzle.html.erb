@@ -23,7 +23,7 @@
 			<div id="header">
 				<div id="cart_status">
 					<%= link_to image_tag('shopping_cart.png', :style => 'border: 0px;'), :action => 'show_cart' %> &nbsp;
-					<%= link_to number_to_currency(@cart.cart_items.sum {|item| item.price}), :action => 'show_cart' %>
+					<%= link_to number_to_currency(@cart.cart_items.sum {|item| item.total }), :action => 'show_cart' %>
 				</div>
 				<div style="float: right;margin-bottom: 0px;">
 					<%= link_to image_tag('mydaddypuzzles.gif', :style => 'border: 0px;'), :action => "index" %><br />

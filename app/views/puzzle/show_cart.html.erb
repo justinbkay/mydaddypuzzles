@@ -18,7 +18,7 @@
 				</td>
 				<td class="center"><%= item.quantity %></td>
 				<td class="center"><%= number_to_currency(item.puzzle_config.price) %></td>
-				<td style="font-weight: bold;" class="center"><%= number_to_currency(item.price) %></td>
+				<td style="font-weight: bold;" class="center"><%= number_to_currency(item.total) %></td>
 				<td class="center"><%= link_to "Remove Item", :action => "remove_item", :id => item.puzzle_config %></td>
 			</tr>
 		<% end %>

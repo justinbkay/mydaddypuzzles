@@ -11,7 +11,7 @@ class Cart < ActiveRecord::Base
   end
 
   def total
-    self.cart_items.map(&:price).reduce(&:+)
+    self.cart_items.map(&:total).reduce(&:+)
   end
 
   def shipping_cost

@@ -1,7 +1,7 @@
 
 <div id="cart" style="<% if @cart.cart_items.empty? %>display: none; <% end %>">
 <% unless @cart.cart_items.empty? %>
-	<%= image_tag('shopping_cart.png', :style => 'border: 0px;') %> <%= "Cart total: #{number_to_currency(@cart.cart_items.sum {|item| item.price})}" %><br />
+	<%= image_tag('shopping_cart.png', :style => 'border: 0px;') %> <%= "Cart total: #{number_to_currency(@cart.cart_items.sum {|item| item.total})}" %><br />
 	<%= link_to "Show Cart", :action => "show_cart" %>
 <% end %>
 </div>

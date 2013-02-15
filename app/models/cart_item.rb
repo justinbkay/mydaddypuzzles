@@ -7,4 +7,13 @@ class CartItem < ActiveRecord::Base
     puzzle_config.puzzle.to_s + ' :: ' + puzzle_config.to_s
   end
 
+  def increment_quantity
+    self.quantity += 1
+    save!
+  end
+
+  def total
+    self.quantity * self.price
+  end
+
 end
