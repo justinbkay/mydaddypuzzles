@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  references: 
+  references: 
+  price: 9.99
+  quantity: 1
+
+two:
+  references: 
+  references: 
+  price: 9.99
+  quantity: 1

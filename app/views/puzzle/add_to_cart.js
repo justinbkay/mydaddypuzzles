@@ -1,0 +1,2 @@
+$('#cart').html('<%= image_tag('shopping_cart.png', :style => 'border: 0px;') %> Cart total: <%= number_to_currency(@cart.total) %><br /> <%= link_to("Show Cart", :action => "show_cart") %>').show();
+$('#cart_status').html('<%= link_to(image_tag('shopping_cart.png', :style => 'border: 0px;'), :action => 'show_cart') %> &nbsp; <%= link_to(number_to_currency(@cart.total), :action => 'show_cart') %>')

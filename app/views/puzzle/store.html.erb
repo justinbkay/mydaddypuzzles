@@ -2,12 +2,9 @@
 <div style="text-align: center; width: 100%;">
 	<p><%= link_to "Enter to Win a free puzzle!", :action => "give_away" %></p>
 </div>
-<div id="cart" style="<% if @cart.items.empty? %>display: none; <% end %>">
-<% unless @cart.items.empty? %>
-	<%= image_tag('shopping_cart.png', :style => 'border: 0px;') %> <%= "Cart total: #{number_to_currency(@cart.items.sum {|item| item.price})}" %><br />
-	<%= link_to "Show Cart", :action => "show_cart" %>
-<% end %>
-</div>
+
+<%= render :partial => 'cart' %>
+
 <table id="inventory">
 	<tr style="background-color: #a6ccd4;">
 		<th>&nbsp;</th>
@@ -16,7 +13,7 @@
 		<th>Configuration</th>
 	</tr>
 <% for puzzle in @puzzles %>
-	<% next if puzzle.configurations.empty? || puzzle.find_default_configuration.nil? %>
+	<% next if puzzle.puzzle_configs.empty? || puzzle.find_default_configuration.nil? %>
 
 		<% @default = puzzle.find_default_configuration %>
 
@@ -30,7 +27,7 @@
 		<td style="width: 200px;text-align: center;"><%= puzzle.size.html_safe %></td>
 		<td style="width: 200px;">
       <%= form_for "Add to Cart", :remote => true, :url => {:action => "add_to_cart", :id => puzzle} do %>
-				<% puzzle.configurations.each do |c| %>
+				<% puzzle.puzzle_configs.each do |c| %>
 					<% if c.active? %>
 						<% unless c.out_of_stock? %>
 							<%= radio_button_tag 'finish', c.id, (@c = c == @default ? true : false), :onClick => "javascript:void($(\"thumbnail#{puzzle.id}\").src = '/assets/thumbnails/#{c.default_thumbnail}')" %>

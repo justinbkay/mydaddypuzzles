@@ -1,5 +1,5 @@
 class Puzzle < ActiveRecord::Base
-  has_many :configurations
+  has_many :puzzle_configs
   has_many :prizes
 
   validates_presence_of :name, :description, :size
@@ -8,10 +8,10 @@ class Puzzle < ActiveRecord::Base
 
   def find_default_configuration
     if default_configuration
-      return Configuration.find(default_configuration)
+      return PuzzleConfig.find(default_configuration)
     else
       begin
-        self.configurations.detect {|c| c.active?}
+        self.puzzle_configs.detect {|c| c.active?}
       rescue ActiveRecord::RecordNotFound
         return nil
       end
@@ -20,7 +20,7 @@ class Puzzle < ActiveRecord::Base
 
   def default_configurations
     configs = []
-    self.configurations.each do |c|
+    self.puzzle_configs.each do |c|
       if c.active?
         configs.push(c)
       end

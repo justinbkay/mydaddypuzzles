@@ -7,16 +7,8 @@ class PuzzleController < ApplicationController
   before_filter :return_cart
 
   def add_to_cart
-    configuration = Configuration.find(params[:finish])
+    configuration = PuzzleConfig.find(params[:finish])
     @cart.add_puzzle(configuration)
-    render :update do |page|
-      page.replace_html 'cart', "#{image_tag('shopping_cart.png', :style => 'border: 0px;')} Cart total: #{number_to_currency(@cart.total)}<br /> #{link_to("Show Cart", :action => "show_cart")}"
-      page.replace_html 'cart_status', "#{link_to(image_tag('shopping_cart.png', :style => 'border: 0px;'), :action => 'show_cart')} &nbsp;
-			#{link_to(number_to_currency(@cart.total), :action => 'show_cart')}"
-      page.show 'cart'
-      page.visual_effect :highlight, 'cart'
-      page.visual_effect :highlight, 'cart_status'
-    end
   end
 
   def extreme_makeover
@@ -109,7 +101,7 @@ class PuzzleController < ApplicationController
   end
 
   def remove_item
-    @configuration = Configuration.find(params[:id])
+    @configuration = PuzzleConfig.find(params[:id])
     @cart.remove_item(@configuration)
     redirect_to :action => :show_cart
   end
@@ -122,7 +114,7 @@ class PuzzleController < ApplicationController
   end
 
   def display_picture
-    @configuration = Configuration.find(params[:id])
+    @configuration = PuzzleConfig.find(params[:id])
     render :update do |page|
       page.replace_html 'image', image_tag("/images/full_size/#{@configuration.default_picture}")
       page.replace_html 'config_name', @configuration.name
@@ -176,7 +168,7 @@ class PuzzleController < ApplicationController
   end
 
   # def update_store
-  #    @configuration = Configuration.find(params[:id])
+  #    @configuration = PuzzleConfig.find(params[:id])
   #    render :update do |page|
   #      page.replace_html "price_#{params[:p]}", number_to_currency(@configuration.price)
   #      page.replace_html "picture_#{params[:p]}", link_to(image_tag(@configuration.default_thumbnail), :action => "images", :id => @configuration) + '<br />' + link_to("More Images", :action => "images", :id => @configuration)
@@ -190,7 +182,7 @@ class PuzzleController < ApplicationController
 
   def images
     @page_title = 'Puzzle Pictures'
-    @configuration = Configuration.find(params[:id])
+    @configuration = PuzzleConfig.find(params[:id])
     @puzzle = @configuration.puzzle
   end
 
@@ -223,7 +215,7 @@ class PuzzleController < ApplicationController
     @page_keywords = 'puzzles made in usa wooden'
     @entry = Entry.new(:month => Date.today.strftime("%B"))
     @prize = Prize.find(:first, :conditions => ['month = ?', Date.today.month])
-    @puzzle = Configuration.find(@prize.puzzle_id)
+    @puzzle = PuzzleConfig.find(@prize.puzzle_id)
   end
 
   def record_entry

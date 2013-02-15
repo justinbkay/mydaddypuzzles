@@ -1,4 +1,5 @@
-class Configuration < ActiveRecord::Base
+class PuzzleConfig < ActiveRecord::Base
+  self.table_name = 'Configurations'
   belongs_to :puzzle
   has_many :line_items
 
