@@ -270,7 +270,7 @@ private
   end
 
   def find_cart
-    session[:cart] ||= Cart.new
+    Cart.where(:session_id => session[:session_id]).first || Cart.create(:session_id => session[:session_id])
   end
 
 end
