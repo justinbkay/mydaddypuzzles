@@ -1,5 +1,5 @@
 <h2>Shopping Cart</h2>
-<% unless @cart.items.empty? %>
+<% unless @cart.cart_items.empty? %>
 	<%= link_to "Empty Cart", :action => "empty_cart" %> :: <%= link_to "Continue Shopping", :action => "store" %><br />
 	<br />
 
@@ -10,16 +10,16 @@
 			<th class="center">Price/item</th>
 			<th class="center" style="width: 150px;">Total</th>
 		</tr>
-		<% for item in @cart.items %>
+		<% for item in @cart.cart_items %>
 			<tr class="<%= cycle('even','odd') %>">
 				<td>
-					<img src="/images/thumbnails/<%= item.configuration.default_thumbnail %>" alt="<%= item.title %>"/><br />
+					<img src="/assets/thumbnails/<%= item.puzzle_config.default_thumbnail %>" alt="<%= item.title %>"/><br />
 					<span style="font-size: .9em;"><%= item.title %></span>
-				</td> 
+				</td>
 				<td class="center"><%= item.quantity %></td>
-				<td class="center"><%= number_to_currency(item.configuration.price) %></td>
+				<td class="center"><%= number_to_currency(item.puzzle_config.price) %></td>
 				<td style="font-weight: bold;" class="center"><%= number_to_currency(item.price) %></td>
-				<td class="center"><%= link_to "Remove Item", :action => "remove_item", :id => item.configuration.id %></td>
+				<td class="center"><%= link_to "Remove Item", :action => "remove_item", :id => item.puzzle_config %></td>
 			</tr>
 		<% end %>
 		<tr style="border-top: 1px solid #000;">
@@ -38,8 +38,8 @@
 		<tr>
 			<td colspan="6" class="center" style="font-style: italic; font-size: 0.8em;" id="ship_desc">(Shipped via the United States Postal Service)</td>
 		</tr>
-		
-		<!-- 
+
+		<!--
 		<tr>
 			<td colspan="3" class="center">Shipping</td>
 			<td class="center"><%= number_to_currency(@cart.shipping_cost) %></td>
@@ -57,12 +57,12 @@
 		<p><strong>Return Policy:</strong> <br />
 			 If within 15 days you are not satisfied with a recent purchase, you can return the merchandise for a refund less shipping and handling.  Returned puzzles must be in re-saleable condition.  If not, your return may be subject to a 50% restocking fee. </p>
 
-			<p>If your puzzle is defective and breaks within 15 days of purchase,  <a href="mailto:mydaddypuzzles@gmail.com">notify us</a> and we will send you a new puzzle at no extra cost.</p> 
+			<p>If your puzzle is defective and breaks within 15 days of purchase,  <a href="mailto:mydaddypuzzles@gmail.com">notify us</a> and we will send you a new puzzle at no extra cost.</p>
 
 			<p>Lost puzzle pieces can also be replaced.  <a href="mailto:mydaddypuzzles@gmail.com">Email</a> us for details and costs.
 		</p>
-	
-	
+
+
 <% else %>
 	<p><%= link_to "Continue Shopping", :action => "store" %></p>
 	<p>Cart is empty!</p>
