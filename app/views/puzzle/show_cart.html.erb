@@ -16,7 +16,7 @@
 					<img src="/assets/thumbnails/<%= item.puzzle_config.default_thumbnail %>" alt="<%= item.title %>"/><br />
 					<span style="font-size: .9em;"><%= item.title %></span>
 				</td>
-				<td class="center"><%= item.quantity %></td>
+        <td class="center"><%= render(:partial => 'quantity_form', :locals => { :item => item }) %></td>
 				<td class="center"><%= number_to_currency(item.puzzle_config.price) %></td>
 				<td style="font-weight: bold;" class="center"><%= number_to_currency(item.total) %></td>
 				<td class="center"><%= link_to "Remove Item", :action => "remove_item", :id => item.puzzle_config %></td>

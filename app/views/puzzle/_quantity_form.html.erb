@@ -1,0 +1,4 @@
+<%= form_for item, :url => '/puzzle/update_quantity/' + item.id.to_s do |form| %>
+  <%= form.text_field :quantity, :size => 2, :class => 'cart_item_quantity' %> <br>
+  <%= form.submit :value => 'Update' %>
+<% end %>

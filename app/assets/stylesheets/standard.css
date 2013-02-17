@@ -210,3 +210,6 @@ td.field {
 	color: #7F6632;
 	background-color: #FFF7B8;
 }
+.cart_item_quantity {
+  text-align: center;
+}

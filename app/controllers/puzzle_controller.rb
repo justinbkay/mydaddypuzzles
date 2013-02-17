@@ -90,7 +90,7 @@ class PuzzleController < ApplicationController
   end
 
   def empty_cart
-    session[:cart] = nil
+    @cart.cart_items.delete_all
     redirect_to :action => :show_cart
   end
 
@@ -245,6 +245,15 @@ class PuzzleController < ApplicationController
     render :update do |page|
       page.replace_html 'ship_desc', desc
     end
+  end
+
+  def update_quantity
+    @cart_item = @cart.cart_items.find(params[:id])
+    @cart_item.update_attribute(:quantity, params[:cart_item][:quantity])
+    if @cart_item.quantity < 1
+      @cart_item.destroy
+    end
+    redirect_to :action => :show_cart
   end
 
 private

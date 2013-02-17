@@ -1,4 +1,6 @@
 class Cart < ActiveRecord::Base
+  attr_accessible :session_id
+
   has_many :cart_items
 
   def add_puzzle(puzzle)
@@ -26,6 +28,10 @@ class Cart < ActiveRecord::Base
     else
       ((ti - 2) * 2) + 8
     end
+  end
+
+  def remove_item(configuration)
+    self.cart_items.where(:puzzle_config_id => configuration).delete_all
   end
 
 end
