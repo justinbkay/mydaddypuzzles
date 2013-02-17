@@ -258,7 +258,7 @@ class PuzzleController < ApplicationController
 
 private
   def gateway
-    if RAILS_ENV == 'production'
+    if Rails.env == 'production'
       login = 'mydaddypuzzles_api1.gmail.com'
       password = 'XMVXDN6DBBKLA2S7'
       signature = 'AFcWxV21C7fd0v3bYYYRCpSSRl31AZHDiRvUxQHKgHjRTRQr9FCGiYeu'

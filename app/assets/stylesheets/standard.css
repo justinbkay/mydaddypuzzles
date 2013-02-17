@@ -57,8 +57,9 @@ img {
 	margin-top: 35px;
 }
 
-.fb-like {
-  float: right;
+#fb-container {
+  height: 40px;
+  float:right;
   margin-right: -100px;
 }
 
