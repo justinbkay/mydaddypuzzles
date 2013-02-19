@@ -8,16 +8,16 @@
 	<th class="center">Active?</th>
 	<th>Configurations<br />Entered</th>
   </tr>
-  
+
 <% for puzzle in @puzzles %>
   <tr class="<%= cycle('even','odd') %>">
-  	<td style="padding: 3px;"><%=h puzzle.name %></td>
-  	<td><%=h puzzle.description %></td>
-	<td><%=h puzzle.size %></td>
-	<td class="center"><%=h puzzle.active? %></td>
-	<td style="text-align: center;"><%= puzzle.configurations.count %></td>
+  	<td style="padding: 3px;"><%= puzzle.name %></td>
+  	<td><%= puzzle.description %></td>
+  	<td><%= puzzle.size.html_safe %></td>
+  	<td class="center"><%= puzzle.active? %></td>
+  	<td style="text-align: center;"><%= puzzle.configurations.count %></td>
     <td><%= link_to 'Edit', :action => 'edit_puzzle', :id => puzzle %>&nbsp;</td>
-	<td>&nbsp;<%= link_to "Configs", :action => "show_configurations", :id => puzzle %></td>
+  	<td>&nbsp;<%= link_to "Configs", :action => "show_configurations", :id => puzzle %></td>
   </tr>
 <% end %>
 </table>

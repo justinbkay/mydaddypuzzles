@@ -1,10 +1,6 @@
 class AdminController < ApplicationController
   before_filter :security, :except => [:login]
-  
-  # GETs should be safe (see http://www.w3.org/2001/tag/doc/whenToUseGet.html)
-  verify :method => :post, :only => [ :destroy, :create, :update ],
-         :redirect_to => { :action => :list }
-  
+
   def login
     if request.post?
       if params[:username] == 'puzzlemaster' && params[:secret] == 'polysci'
@@ -15,7 +11,7 @@ class AdminController < ApplicationController
       end
     end
   end
-  
+
   def logout
     session[:admin] = nil
     flash[:notice] = "Logged Out"
@@ -25,7 +21,7 @@ class AdminController < ApplicationController
 ################## Puzzles ########################
 
   def list_puzzles
-    @puzzles = Puzzle.find(:all, :order => 'name')
+    @puzzles = Puzzle.order(:name)
   end
 
   def new_puzzle
@@ -59,42 +55,42 @@ class AdminController < ApplicationController
   def show_configurations
     @puzzle = Puzzle.find(params[:id])
   end
-  
+
   def new_configuration
     @puzzle = Puzzle.find(params[:id])
     @configuration = Configuration.new
   end
-  
+
   def create_configuration
     @puzzle = Puzzle.find(params[:configuration][:puzzle_id])
     @configuration = Configuration.new(params[:configuration])
-    
+
     @configuration.default_thumbnail = base_part_of(params[:default_thumbnail].original_filename)
     @configuration.default_picture = base_part_of(params[:default_picture].original_filename)
-    
+
     save_file(@configuration.default_thumbnail,params[:default_thumbnail].read, 1)
 		save_file(@configuration.default_picture, params[:default_picture].read)
-		
-		if @configuration.save
+
+    if @configuration.save
       flash[:notice] = 'Configuration was successfully created.'
       redirect_to :action => 'show_configurations', :id => @configuration.puzzle_id
     else
       render :action => 'new_configuration'
     end
-    
+
   rescue NoMethodError
     flash[:notice] = "It appears that you didn't select a file"
     render :action => 'new_configuration'
   end
-  
+
   def edit_configuration
     @configuration = Configuration.find(params[:id])
     @puzzle = @configuration.puzzle
   end
-  
+
   def update_configuration
     @configuration = Configuration.find(params[:id])
-    	
+
     if @configuration.update_attributes(params[:configuration])
       begin
         unless params[:default_thumbnail].original_filename.nil?
@@ -107,7 +103,7 @@ class AdminController < ApplicationController
       rescue
         # let it pass
       end
-      
+
       begin
         unless params[:default_picture].original_filename.nil?
           unless @configuration.default_picture == params[:default_picture].original_filename
@@ -119,7 +115,7 @@ class AdminController < ApplicationController
       rescue
         #let it pass
       end
-      
+
       # if we set the config to inactive, lets make sure that it is not the default config
       unless @configuration.active?
         if @configuration.puzzle.default_configuration == @configuration.id
@@ -127,7 +123,7 @@ class AdminController < ApplicationController
           @configuration.puzzle.save!
         end
       end
-      
+
       flash[:notice] = 'Configuration was successfully updated.'
       redirect_to :action => 'show_configurations', :id => @configuration.puzzle_id
     else
@@ -146,14 +142,14 @@ class AdminController < ApplicationController
   def list_stories
     @stories = CustomerStory.find(:all)
   end
-  
+
   def new_story
     @customer_story = CustomerStory.new
   end
-  
+
   def create_story
     @customer_story = CustomerStory.create(params[:customer_story])
-    
+
     if @customer_story.save
       flash[:notice] = 'Story Created!'
       redirect_to :action => :list_stories
@@ -161,14 +157,14 @@ class AdminController < ApplicationController
       render :action => :new_story
     end
   end
-  
+
   def edit_story
     @customer_story = CustomerStory.find(params[:id])
   end
-  
+
   def update_story
     @customer_story = CustomerStory.find(params[:id])
-    
+
     if @customer_story.update_attributes(params[:customer_story])
       flash[:notice] = "Story updated!"
       redirect_to :action => :list_stories
@@ -202,8 +198,8 @@ class AdminController < ApplicationController
     rescue
       # do nothing on error
     end
-    
-    if @news_story.save 
+
+    if @news_story.save
       flash[:notice] = "Article Successfully created..."
       redirect_to :action => :list_news
     else
@@ -236,15 +232,15 @@ class AdminController < ApplicationController
 #### prizes
 
   def list_prizes
-    @prizes = Prize.find(:all, :order => 'month')
-    @puzzles = Configuration.find(:all, :conditions => 'active = 1').map {|p| [p.puzzle.to_s + ' ' + p.name, p.id]}
+    @prizes = Prize.order(:month)
+    @puzzles = PuzzleConfig.where(:active => true).map {|p| [p.puzzle.to_s + ' ' + p.name, p.id]}
     @puzzles.unshift(['',''])
   end
-  
+
   def save_prize
     @prize = Prize.find(params[:id])
     @prize.update_attribute(:puzzle_id, params[:puzzle])
-    
+
     render :update do |page|
       page.replace_html 'flash', "Choice Saved"
       page.visual_effect :highlight, 'flash'
@@ -252,7 +248,7 @@ class AdminController < ApplicationController
   end
 
   def list_entries
-    @entries = Entry.find(:all)
+    @entries = Entry.where('created_at IS NOT NULL').order('created_at DESC')
   end
 
 private
@@ -260,7 +256,7 @@ private
   	name = File.basename(file_name)
   	name.gsub(/[^\w._-]/, '')
   end
-  
+
   def save_file(filename, data, thumbnail=nil)
     if thumbnail == 1
       @rails_root = File.expand_path(RAILS_ROOT) + '/public/images/thumbnails/' + filename
@@ -273,9 +269,9 @@ private
 		fh.print data
 		fh.close
   end
-  
+
   def remove_file(filename, thumbnail=nil)
-    if thumbnail == 1 
+    if thumbnail == 1
       @rails_root = File.expand_path(RAILS_ROOT) + '/public/images/thumbnails/' + filename
     elsif thumbnail == 2
       @rails_root = File.expand_path(RAILS_ROOT) + '/public/images/articles/' + filename
