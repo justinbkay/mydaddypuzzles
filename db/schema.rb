@@ -16,10 +16,10 @@ ActiveRecord::Schema.define(:version => 20130215201335) do
   create_table "cart_items", :force => true do |t|
     t.integer  "puzzle_config_id"
     t.integer  "cart_id"
-    t.decimal  "price",            :precision => 10, :scale => 0
+    t.decimal  "price",            :precision => 8, :scale => 2
     t.integer  "quantity"
-    t.datetime "created_at",                                      :null => false
-    t.datetime "updated_at",                                      :null => false
+    t.datetime "created_at",                                     :null => false
+    t.datetime "updated_at",                                     :null => false
   end
 
   add_index "cart_items", ["cart_id", "puzzle_config_id"], :name => "index_cart_items_on_cart_id_puzzle_id"
@@ -73,8 +73,8 @@ ActiveRecord::Schema.define(:version => 20130215201335) do
     t.integer  "configuration_id"
     t.string   "quantity"
     t.string   "price"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "news_stories", :force => true do |t|
@@ -82,16 +82,16 @@ ActiveRecord::Schema.define(:version => 20130215201335) do
     t.text     "body"
     t.string   "picture"
     t.date     "post_date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "orders", :force => true do |t|
     t.string   "reference"
     t.string   "shipping"
     t.string   "total"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.string   "name"
     t.string   "company"
     t.string   "address1"
@@ -106,8 +106,20 @@ ActiveRecord::Schema.define(:version => 20130215201335) do
   create_table "prizes", :force => true do |t|
     t.integer  "month"
     t.integer  "puzzle_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "products", :force => true do |t|
+    t.string  "name"
+    t.string  "description"
+    t.decimal "price",             :precision => 5, :scale => 2, :default => 0.0
+    t.string  "default_thumbnail"
+    t.string  "default_picture"
+    t.string  "size"
+    t.boolean "active"
+    t.string  "default_colored"
+    t.decimal "unfinished_price",  :precision => 5, :scale => 2
   end
 
   create_table "puzzles", :force => true do |t|

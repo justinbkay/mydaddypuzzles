@@ -110,7 +110,7 @@ class PuzzleController < ApplicationController
     @page_title = 'Handcrafted Wooden Puzzles'
     @page_meta = 'Handcrafted wooden puzzles made in the usa great for kids development and great gifts'
     @page_keywords = 'wooden puzzles made in usa wooden'
-    @onsale = Puzzle.find(:all, :conditions => 'on_sale = 1', :order => 'name')
+    @onsale = Puzzle.where(:on_sale => true).order(:name)
   end
 
   def display_picture
@@ -153,14 +153,14 @@ class PuzzleController < ApplicationController
     @page_title = 'Customer Stories'
     @page_meta = 'Stories of customers who enjoy their handcrafted wooden puzzles'
     @page_keywords = 'puzzles made in usa wooden'
-    @stories = CustomerStory.find(:all, :conditions => 'active = 1', :order => 'created_at desc')
+    @stories = CustomerStory.where(:active => true).order('created_at desc')
   end
 
   def store
     @page_title = 'Puzzle Store'
     @page_meta = 'Buy your very own wooden handcrafted puzzle here'
     @page_keywords = 'wooden puzzles made in usa store'
-    @puzzles = Puzzle.find(:all, :conditions => 'active = 1', :order => 'on_sale desc')
+    @puzzles = Puzzle.where(:active => true).order('on_sale desc')
   end
 
   def thanks
